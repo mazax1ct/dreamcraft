@@ -1,0 +1,24 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1280px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --dark: #2A303E;
+    --blue_light: #EFF8FF;
+    --blue_medium: #DAF0FF;
+    --primary: #1E76E2;
+    --primary_hover: #00A3FF;
+    --primary_pressed: #40B3F4;
+    --link_visited: #C08AEB;
+    --grey_light: #E3E7EC;
+    --grey_medium: #C9CAD1;
+    --grey_dark: #999EAB;
+    --header_min_heigt: 60px;
+    --container_padding: 16px;
+    @media(min-width: $fhd) {
+        --header_min_heigt: 125px;
+    }
+}

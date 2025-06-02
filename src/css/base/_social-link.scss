@@ -1,0 +1,22 @@
+.social-link {
+    align-items: center;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    min-width: 32px;
+    text-decoration: none;
+    width: 32px;
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        transition: fill 0.3s;
+        width: 24px;
+    }
+}
