@@ -17,64 +17,85 @@
     //= template/common/styles.html
 </head>
 
-<body class="page">
-    //= template/common/header.html
+<body class="page page--inner">
+    <div class="header-container">
+        <div class="header-container__inner">
+            //= template/common/header.html
+        </div>
+
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">UI</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="page__content">
         <div class="container">
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Главная</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    Оформление медкнижек в Ивантеевке
-                </li>
-            </ul>
+            <h1>Заголовок первого уровня</h1>
 
-            <h1>Оформление медкнижек в Ивантеевке</h1>
+            <h2>Тёмная кнопка</h2>
 
-            <h2>Красная кнопка</h2>
+            <a class="button button--dark button--h_56" href="#"><span>Button</span></a><br><br>
 
-            <a class="button button--red" href="#">Запись на приём</a><br>
+            <button class="button button--dark button--h_56" type="button">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>Заказать звонок</span>
+            </button>
+            <br><br>
 
-            <a class="button button--red disabled" href="#">Запись на приём</a><br>
+            <button class="button button--dark button--h_56" type="button" disabled><span>Button</span></button><br><br>
 
-            <button class="button button--red" type="button">Запись на приём</button><br>
+            <a class="button button--dark button--h_48" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+                <span>Заказать звонок</span>
+            </a><br><br>
 
-            <button class="button button--red" type="button" disabled>Запись на приём</button><br>
+            <button class="button button--dark button--h_48" type="button"><span>Button</span></button><br><br>
 
-            <h2>Синяя кнопка</h2>
+            <button class="button button--dark button--h_48" type="button" disabled><span>Button</span></button><br><br>
 
-            <a class="button button--blue" href="#">Запись на приём</a><br>
+            <a class="button button--dark button--h_24" href="#">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#doc_icon" />
+                </svg>
+                <span>Заказать звонок</span>
+            </a><br><br>
 
-            <a class="button button--blue disabled" href="#">Запись на приём</a><br>
+            <button class="button button--dark button--h_24" type="button"><span>Button</span></button><br><br>
 
-            <button class="button button--blue" type="button">Запись на приём</button><br>
+            <button class="button button--dark button--h_24" type="button" disabled><span>Button</span></button><br><br>
 
-            <button class="button button--blue" type="button" disabled>Запись на приём</button><br>
+            <h2>Светлая кнопка</h2>
 
-            <h2>Голубая кнопка</h2>
+            <a class="button button--light button--h_56" href="#"><span>Button</span></a><br><br>
 
-            <a class="button button--light_blue" href="#">Запись на приём</a><br>
+            <button class="button button--light button--h_56" type="button"><span>Button</span></button><br><br>
 
-            <a class="button button--light_blue disabled" href="#">Запись на приём</a><br>
+            <button class="button button--light button--h_56" type="button" disabled><span>Button</span></button><br><br>
 
-            <button class="button button--light_blue" type="button">Запись на приём</button><br>
+            <a class="button button--light button--h_48" href="#"><span>Button</span></a><br><br>
 
-            <button class="button button--light_blue" type="button" disabled>Запись на приём</button><br>
+            <button class="button button--light button--h_48" type="button"><span>Button</span></button><br><br>
 
-            <h2>Белая кнопка</h2>
+            <button class="button button--light button--h_48" type="button" disabled><span>Button</span></button><br><br>
 
-            <a class="button button--white" href="#">Запись на приём</a><br>
+            <a class="button button--light button--h_24" href="#"><span>Button</span></a><br><br>
 
-            <a class="button button--white disabled" href="#">Запись на приём</a><br>
+            <button class="button button--light button--h_24" type="button"><span>Button</span></button><br><br>
 
-            <button class="button button--white" type="button">Запись на приём</button><br>
+            <button class="button button--light button--h_24" type="button" disabled><span>Button</span></button><br><br>
 
-            <button class="button button--white" type="button" disabled>Запись на приём</button><br>
 
             <h2>Ссылка для скачивания документа</h2>
 
