@@ -45,6 +45,7 @@ $(document).on('click', '.js-mobile-menu-closer', function() {
   return false;
 });
 
+//возврат на уровень выше в моб меню
 $(document).on('click', '.js-menu-back', function() {
   $('.m-menu__submenu.is-last:last').removeClass('is-last').fadeOut();
 
@@ -62,6 +63,7 @@ $(document).on('click', '.js-menu-back', function() {
   return false;
 });
 
+//уровень ниже в моб меню
 $(document).on('click', '.js-next-lvl-opener', function() {
   let _this = $(this);
   $('.m-menu__title').hide();
@@ -75,17 +77,46 @@ $(document).on('click', '.js-next-lvl-opener', function() {
 });
 
 //тогглер меню
-$(document).on('click', '.js-menu-toggler', function () {
+$(document).on('mouseenter mouseleave', '.js-d-menu-toggler', function () {
   if(!$(this).hasClass('is-active')) {
     $(this).addClass('is-active');
-    $(this).find('use').attr('xlink:href', 'images/sprite.svg#close_icon');
-    $('body').addClass('is-overflow');
+    $('.header').addClass('menu-is-open');
+    $('.d-menu').addClass('is-open');
+    setTimeout(function() {
+      $('.d-menu').addClass('is-visible');
+    }, 10);
   } else {
     $(this).removeClass('is-active');
-    $(this).find('use').attr('xlink:href', 'images/sprite.svg#burger_icon');
-    $('body').removeClass('is-overflow');
+    $('.d-menu').removeClass('is-visible');
+    setTimeout(function() {
+      $('.header').removeClass('menu-is-open');
+      $('.d-menu').removeClass('is-open');
+    }, 150);
   }
-  $('.header').toggleClass('menu-is-open');
+
+  return false;
+});
+
+//табы в десктопном меню
+$(document).on('click', '.js-d-menu-tab', function () {
+  $('.js-d-menu-tab').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.d-menu__tab').removeClass('is-active');
+  $('.d-menu__tab[data-target="'+$(this).attr('data-target')+'"]').addClass('is-active');
+  return false;
+});
+
+//аккордеон в футере
+$(document).on('click', '.js-accordion-toggler', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')){
+    _this.addClass('is-active');
+    _this.next('.f-accordion__body').slideDown();
+  }else{
+    _this.next('.f-accordion__body').slideUp(function() {
+      _this.removeClass('is-active');
+    });
+  }
   return false;
 });
 

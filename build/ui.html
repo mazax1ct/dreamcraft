@@ -120,13 +120,211 @@
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Портфолио</span></a>
                             </li>
-                            <li class="header__bottom-menu-item">
+                            <li class="js-d-menu-toggler header__bottom-menu-item">
                                 <a href="#">
                                     <span>Разработка игр</span>
                                     <svg aria-hidden="true">
                                         <use xlink:href="images/sprite.svg#chevron_down_16" />
                                     </svg>
                                 </a>
+            
+                                <div class="d-menu">
+                                    <div class="d-menu__inner">
+                                        <div class="d-menu__tabs-buttons">
+                                            <button class="js-d-menu-tab d-menu__tabs-button" type="button" data-target="1">Операционная система</button>
+                                            <button class="js-d-menu-tab d-menu__tabs-button" type="button" data-target="2">Тип графики</button>
+                                            <button class="js-d-menu-tab d-menu__tabs-button is-active" type="button" data-target="3">Жанры</button>
+                                            <button class="js-d-menu-tab d-menu__tabs-button" type="button" data-target="4">Среда разработки (движок)</button>
+                                        </div>
+            
+                                        <div class="d-menu__tabs">
+                                            <div class="d-menu__tab" data-target="1">
+                                                <ul class="d-menu__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Android</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>iOS</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>ПК</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+            
+                                            <div class="d-menu__tab" data-target="2">
+                                                <ul class="d-menu__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Пиксель арт</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#racing" />
+                                                            </svg>
+                                                            <span>Воксель арт</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#shooter" />
+                                                            </svg>
+                                                            <span>Реализм</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+            
+                                            <div class="d-menu__tab is-active" data-target="3">
+                                                <ul class="d-menu__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#platformer" />
+                                                            </svg>
+                                                            <span>Платформеры</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#racing" />
+                                                            </svg>
+                                                            <span>Гонки</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#shooter" />
+                                                            </svg>
+                                                            <span>Шутеры</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#clicker" />
+                                                            </svg>
+                                                            <span>Кликеры</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#fighting" />
+                                                            </svg>
+                                                            <span>Файтинги</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#casual" />
+                                                            </svg>
+                                                            <span>Казуальные</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#cci" />
+                                                            </svg>
+                                                            <span>Карточные игры (ККИ)</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#survive" />
+                                                            </svg>
+                                                            <span>Выживание</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#horror" />
+                                                            </svg>
+                                                            <span>Хорроры</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#cash" />
+                                                            </svg>
+                                                            <span>С выводом денег</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#multiplayer" />
+                                                            </svg>
+                                                            <span>Многопользовательские игры</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#strategy" />
+                                                            </svg>
+                                                            <span>Стратегии</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#rpg" />
+                                                            </svg>
+                                                            <span>RPG</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#mmorpg" />
+                                                            </svg>
+                                                            <span>MMORPG</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+            
+                                            <div class="d-menu__tab" data-target="4">
+                                                <ul class="d-menu__list">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Unity</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+            
+                                                            <span>Unreal Engine</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+            
+                                                            <span>Godot</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Промоигры</span></a>
@@ -1156,7 +1354,232 @@
     </div>
 
     <footer class="footer">
+        <div class="footer__mobile footer__inner container">
+            <div class="footer__mobile-block f-ratings">
+                <p class="footer__title">Отзывы и рейтинги</p>
     
+                <div class="f-ratings__layout f-ratings__layout--mobile">
+                    <a href="#">
+                        <img src="images/content/footer/ya.svg" alt="">
+                    </a>
+    
+                    <a href="#">
+                        <img src="images/content/footer/2gis.svg" alt="">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__mobile-block f-reqs">
+                <p class="footer__title">Реквизиты</p>
+    
+                <p>ООО «ДРИМЛИД»</p>
+                <p>ОГРН 1207700153385</p>
+                <p>ИНН 9724011229</p>
+                <p>Генеральный директор Малыхин Андрей Львович</p>
+            </div>
+    
+            <div class="footer__mobile-block f-gos">
+                <p class="footer__title">
+                    <a href="#" target="_blank">
+                        <img width="147" height="32" src="images/content/footer/mincifri.svg" alt="Минцифры России">
+                    </a>
+                </p>
+    
+                <p>Государственная аккредитация ООО&nbsp;«ДРИМЛИД» является аккредитованной организацией, осуществляющей деятельность в области информационных технологий</p>
+            </div>
+    
+            <div class="footer__mobile-block f-gos">
+                <p class="footer__title">
+                    <a href="#" target="_blank">
+                        <img width="115" height="32" src="images/content/footer/skolkovo.svg" alt="Сколково">
+                    </a>
+                </p>
+            </div>
+    
+            <div class="footer__mobile-block">
+                <p class="footer__title">Социальные сети</p>
+    
+                <div class="f-socials">
+                    <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#wa_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Наш Instagram" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#inst_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы Вконтакте" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы на YouTube" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#yt_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы на Behance" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#be_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы на LinkedIn" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#li_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы в Steam" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#steam_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы на VC.RU" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vc_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" title="Мы на Хабре" rel="nofollow noreferrer">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#habr_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer__mobile-block">
+                <ul class="f-service-menu">
+                    <li>
+                        <a href="#">Политика обработки персональных данных</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Карта сайта</a>
+                    </li>
+                    <li>
+                        © 2022 Все права защищены
+                    </li>
+                    <li>
+                        <a class="coala" href="#" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#coala" />
+                            </svg>
+                            <span>Дизайн с характером<br> Coalla Agency</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer__mobile-block">
+                <div class="f-accordion">
+                    <button class="js-accordion-toggler f-accordion__toggler" type="button">
+                        <span>Разработка игр</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_down_16" />
+                        </svg>
+                    </button>
+    
+                    <div class="f-accordion__body">
+                        <ul class="f-accordion__menu">
+                            <li><a href="#">Мобильные игры</a></li>
+                            <li><a href="#">Компьютерные игры</a></li>
+                            <li><a href="#">Браузерные игры</a></li>
+                            <li><a href="#">Unreal Engine</a></li>
+                            <li><a href="#">Unity</a></li>
+                            <li><a href="#">2D игры</a></li>
+                            <li><a href="#">3D игры</a></li>
+                            <li><a href="#">RPG</a></li>
+                            <li><a href="#">MMO</a></li>
+                            <li><a href="#">FPS</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="f-accordion">
+                    <button class="js-accordion-toggler f-accordion__toggler" type="button">
+                        <span>Контакты</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_down_16" />
+                        </svg>
+                    </button>
+    
+                    <div class="f-accordion__body">
+                        <p>+7 499 113-44-31</p>
+                        <p><a href="mailto:info@dreamcraftstudio.ru">info@dreamcraftstudio.ru</a></p>
+                        <p>115409 г.Москва, ш. Каширское, д. 66, корп. 2, офис 52</p>
+                    </div>
+                </div>
+    
+                <div class="f-accordion">
+                    <button class="js-accordion-toggler f-accordion__toggler" type="button">
+                        <span>Клиентам</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_down_16" />
+                        </svg>
+                    </button>
+    
+                    <div class="f-accordion__body">
+                        <ul class="f-accordion__menu">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Частые вопросы</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Прайс</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">СМИ о нас</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="f-accordion">
+                    <button class="js-accordion-toggler f-accordion__toggler" type="button">
+                        <span>Услуги</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_down_16" />
+                        </svg>
+                    </button>
+    
+                    <div class="f-accordion__body">
+                        <ul class="f-accordion__menu">
+                            <li><a href="#">Разработка промо-игр</a></li>
+                            <li><a href="#">Создание питч-презентаций</a></li>
+                            <li><a href="#">Разработка ГДД</a></li>
+                            <li><a href="#">Геймдизайн</a></li>
+                            <li><a href="#">Графика для игр</a></li>
+                            <li><a href="#">Портирование игр</a></li>
+                            <li><a href="#">Озвучка игр</a></li>
+                            <li><a href="#">Продвижение игр</a></li>
+                            <li><a href="#">Тестирование игр</a></li>
+                            <li><a href="#">Локализация игр</a></li>
+                            <li><a href="#">Издательство игр</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Консалтинг</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer__desktop footer__inner container"></div>
     </footer>
 
     

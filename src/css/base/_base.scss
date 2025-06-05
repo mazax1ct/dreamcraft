@@ -165,18 +165,6 @@ p {
     &:last-child {
         margin-bottom: 0;
     }
-
-    a {
-        &:not([class]) {
-            font-weight: 600;
-            @include hover {
-                color: var(--blue_10);
-            }
-            @include active {
-                color: var(--blue_10);
-            }
-        }
-    }
 }
 
 ol,
