@@ -35,7 +35,7 @@ $(document).on('click', '.js-mobile-menu-opener', function() {
 //закрытие мобильного меню
 $(document).on('click', '.js-mobile-menu-closer', function() {
   $('.m-menu').fadeOut(function() {
-    $('.page').addClass('is-overflow');
+    $('.page').removeClass('is-overflow');
     $('.m-menu__main-title').text('');
     $('.m-menu__title').show();
     $('.js-menu-back').hide();
