@@ -72,6 +72,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--secondary_font);
     margin-top: 0;
 }
 
@@ -89,14 +90,15 @@ h1 {
 
 .h2,
 h2 {
-    font-size: 22px;
-    font-weight: 800;
-    line-height: 1.22727;
-    margin-bottom: 16px;
-    margin-top: 24px;
-    @media(min-width: $sm) {
-        margin-bottom: 24px;
-        margin-top: 48px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.33333;
+    margin-bottom: 24px;
+    @media(min-width: $fhd) {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 1.16666;
+        margin-bottom: 32px;
     }
 
     &:first-child {

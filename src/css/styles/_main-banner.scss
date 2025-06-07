@@ -1,4 +1,11 @@
 .main-banner {
+    margin-left: calc(0.02px - var(--container_padding));
+    margin-right: calc(0.02px - var(--container_padding));
+    @media(min-width: 1248px) {
+        margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+        margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+    }
+
     picture {
         display: block;
         width: 100%;

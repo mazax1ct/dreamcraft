@@ -710,12 +710,67 @@
     </div>
 
     <main class="page__content">
-        <section class="main-banner">
-            <picture>
-                <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 1024px)">
-                <img src="images/content/main_banner/banner_mobile.svg" alt="">
-            </picture>
-        </section>
+        <div class="container">
+            <section class="main-banner">
+                <picture>
+                    <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 1024px)">
+                    <img src="images/content/main_banner/banner_mobile.svg" alt="">
+                </picture>
+            </section>
+
+            <section class="request-form">
+                <div class="request-form__inner">
+                    <div class="request-form__left">
+                        <h2>Готовы создать свою<br> игру?</h2>
+            
+                        <div class="request-form__socials">
+                            <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+            
+                            <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="request-form__right">
+                        <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+            
+                        <form class="request-form__form" action="">
+                            <div class="input-group">
+                                <div class="required">
+                                    <input class="input" type="text" placeholder="Имя" required>
+                                </div>
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="required">
+                                    <input class="input" type="text" placeholder="Телефон" required>
+                                </div>
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="required">
+                                    <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                                </div>
+                            </div>
+            
+                            <button class="button button--light button--h_56" type="submit">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#doc_icon" />
+                                </svg>
+                                <span>Отправить заявку</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
