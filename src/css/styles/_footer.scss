@@ -5,6 +5,18 @@
     position: relative;
     z-index: 1;
 
+    a {
+        color: currentColor;
+        text-decoration: none;
+        @include hover {
+            color: currentColor;
+            text-decoration: underline;
+        }
+        @include active {
+            color: currentColor;
+        }
+    }
+
     &::before {
         background: url("../images/backgrounds/footer/mobile.svg") no-repeat 50% 100% / 100% auto;
         bottom: 0;
@@ -62,6 +74,12 @@
     }
 
     &__desktop {
+        padding-bottom: 100px;
+        padding-top: 100px;
+        @media(min-width: $fhd) {
+            padding-bottom: 290px;
+            padding-top: 215px;
+        }
         @media(max-width: $md - 0.02px) {
             display: none;
         }
@@ -70,14 +88,88 @@
             font-size: 20px;
             line-height: 1.2;
         }
+
+        p {
+            &:not([class]) {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .f-socials {
+            max-width: 270px;
+
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+
+        .f-gos {
+            font-size: 12px;
+            line-height: 1.5;
+            @media(min-width: $fhd) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__desktop-top {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__desktop-bottom {
+        color: rgba(255,255,255,0.6);
+        font-size: 12px;
+        line-height: 1.5;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+        }
+    }
+
+    &__desktop-container {
+        display: flex;
+    }
+
+    &__desktop-left {
+        padding-right: 32px;
+        width: 41.7%;
+    }
+
+    &__desktop-right {
+        width: 58.3%;
+    }
+
+    &__desktop-block {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__desktop-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        @media(min-width: 1600px) {
+            gap: 32px;
+        }
+
+        & + & {
+            margin-top: 40px;
+        }
     }
 }
 
 .f-ratings {
     &__layout {
+        align-items: flex-start;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+
         &--mobile {
-            display: flex;
-            gap: 8px;
             flex-wrap: wrap;
 
             & > * {
@@ -118,10 +210,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-
-    .social-link {
-        color: #fff;
-    }
 }
 
 .f-service-menu {
@@ -131,18 +219,6 @@
     li {
         &:not(:last-child) {
             margin-bottom: 16px;
-        }
-    }
-
-    a {
-        color: currentColor;
-        text-decoration: none;
-        transition: color 0.3s;
-        @include hover {
-            color: #fff;
-        }
-        @include active {
-            color: #fff;
         }
     }
 }
@@ -195,11 +271,6 @@
         line-height: 1.5;
         padding-bottom: 16px;
 
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-
         p {
             &:not(:last-child) {
                 margin-bottom: 8px;
@@ -211,6 +282,18 @@
         @include list-reset;
 
         li {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.f-menu {
+    @include list-reset;
+
+    li {
+        &:not([class]) {
             &:not(:last-child) {
                 margin-bottom: 8px;
             }
