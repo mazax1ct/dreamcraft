@@ -1,0 +1,106 @@
+.combobox {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    gap: 12px;
+    white-space: nowrap;
+
+    &__title {
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
+    }
+
+    &__value-block {
+        @include button-reset;
+        align-items: center;
+        color: var(--primary);
+        display: flex;
+        gap: 8px;
+        font-weight: 600;
+        height: 40px;
+        transition: color 0.3s;
+        width: 100%;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @include active {
+            color: var(--primary_pressed);
+        }
+        @media(max-width: $md - 0.02px) {
+            background-color: #fff;
+            border-radius: 16px;
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+
+    &__container {
+        flex-grow: 1;
+        position: relative;
+
+        &.is-open {
+            z-index: 2;
+
+            .combobox__value-block {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .combobox__dropdown {
+                display: block;
+            }
+        }
+    }
+
+    &__dropdown {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 90, 199, 0.25);
+        border-radius: 12px;
+        display: none;
+        left: 0;
+        min-width: 100px;
+        position: absolute;
+        padding: 8px;
+        top: calc(100% + 8px);
+    }
+
+    &__list {
+        //overflow-y: auto;
+    }
+
+    &__link {
+        border-radius: 8px;
+        color: var(--dark);
+        display: block;
+        padding: 4px 8px;
+        transition: background-color 0.3s;
+        text-decoration: none;
+
+        &.is-active {
+            background-color: var(--blue_medium);
+        }
+
+        &:not(.is-active) {
+            @include hover {
+                background-color: var(--blue_light);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+            @media(min-width: $fhd) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

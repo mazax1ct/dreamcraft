@@ -1,22 +1,14 @@
 .checkbox {
     align-items: center;
-    color: var(--blue_4);
     display: flex;
     gap: 8px;
-    line-height: 1.25;
-
-    &--small {
-        font-size: 12px;
-    }
-
-    a {
-        color: var(--blue_1);
-        text-decoration: none;
-        @include hover {
-            color: var(--blue_7);
-        }
-        @include active {
-            color: var(--blue_8);
+    @include hover {
+        input {
+            &:not(:disabled) {
+                & + .checkbox__icon {
+                    border-color: var(--primary);
+                }
+            }
         }
     }
 
@@ -28,8 +20,9 @@
         width: 1px;
 
         &:checked ~ .checkbox__icon {
-            background-color: var(--blue_1);
-            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M11.9,5c0.1,0.1,0.2,0.3,0.2,0.5c0,0.2-0.1,0.4-0.2,0.5l-4,5c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.2-0.1-0.2-0.2L4.2,8.4C4.1,8.3,4,8.2,4,8.1S3.9,7.9,3.9,7.8c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.2-0.2c0.1-0.1,0.2-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1s0.2,0.1,0.2,0.2l2.1,2.1L10.8,5c0.1-0.1,0.2-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1C11.7,4.8,11.8,4.9,11.9,5L11.9,5z'/%3E%3C/svg%3E");
+            background-color: var(--primary);
+            border-color: var(--primary);
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M9.75 18L3 11.25L4.0605 10.1895L9.75 15.8783L19.9395 5.68951L21 6.75001L9.75 18Z'/%3E%3C/svg%3E");
         }
 
         &:not(:disabled) ~ .checkbox__icon {
@@ -37,25 +30,26 @@
         }
 
         &:disabled ~ .checkbox__icon {
-            border-color: var(--grey_7);
+            background-color: var(--grey_medium);
             user-select: none;
         }
 
         &:checked:disabled ~ .checkbox__icon {
-            background-color: var(--grey_7);
+            background-color: var(--grey_medium);
         }
     }
 
     &__icon {
-        border-radius: 3px;
-        border: 1px solid var(--blue_1);
-        background-color: var(--white_1);
+        border-radius: 4px;
+        border: 1px solid var(--grey_medium);
+        background-color: #fff;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         display: block;
-        height: 16px;
-        min-width: 16px;
-        width: 16px;
+        height: 24px;
+        min-width: 24px;
+        transition: background-color 0.3s, border-color 0.3s;
+        width: 24px;
     }
 }

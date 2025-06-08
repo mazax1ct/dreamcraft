@@ -120,6 +120,20 @@ $(document).on('click', '.js-accordion-toggler', function () {
   return false;
 });
 
+//тогглер комбобокса
+$(document).on('click', '.js-combobox-toggler', function () {
+  var combobox = $(this).closest('.combobox__container');
+
+  if(combobox.hasClass('is-open')) {
+    combobox.removeClass('is-open')
+  } else {
+    $('.combobox__container').removeClass('is-open');
+    combobox.addClass('is-open')
+  }
+  return false;
+});
+
+
 //аккордеон
 $(document).on('click', '.accordion__toggler', function () {
   var _this = $(this);

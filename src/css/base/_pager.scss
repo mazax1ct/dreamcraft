@@ -1,0 +1,106 @@
+.pager {
+    font-family: var(--secondary_font);
+    margin-top: 24px;
+    @media(min-width: $fhd) {
+        margin-top: 40px;
+    }
+
+    &__show-more {
+        align-items: center;
+        background-color: var(--blue_medium);
+        border-radius: 8px;
+        color: var(--primary);
+        display: flex;
+        gap: 8px;
+        height: 48px;
+        justify-content: center;
+        text-decoration: none;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @include active {
+            color: var(--primary_pressed);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__list {
+        @include list-reset;
+        align-items: center;
+        display: flex;
+        margin-top: 16px;
+        justify-content: center;
+    }
+
+    &__item {
+        &--prev {
+            margin-right: auto;
+        }
+
+        &--next {
+            margin-left: auto;
+        }
+    }
+
+    &__link {
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        color: var(--dark);
+        display: flex;
+        font-size: 20px;
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-decoration: none;
+
+        &.is-active {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        &:not(.is-active) {
+            @include hover {
+                color: var(--primary_hover);
+            }
+            @include active {
+                color: var(--primary_pressed);
+            }
+        }
+    }
+
+    &__arrow {
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--grey_medium);
+        color: var(--grey_dark);
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 64px;
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+a.pager__arrow {
+    border: 1px solid var(--primary);
+    color: var(--dark);
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+}
