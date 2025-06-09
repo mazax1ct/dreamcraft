@@ -10,4 +10,6 @@ $.fancybox.defaults.buttons = ['close'];
 $.fancybox.defaults.closeExisting = true;
 $.fancybox.defaults.clickSlide = true;
 $.fancybox.defaults.clickOutside = false;
-$.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="popup__closer fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#popup_close_icon" /></svg></button>';
+$.fancybox.defaults.animationEffect = "zoom-in-out";
+//$.fancybox.defaults.animationDuration = "10000";
+$.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#popup_close_icon" /></svg></button>';

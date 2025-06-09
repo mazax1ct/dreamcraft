@@ -54,30 +54,6 @@
         }
     }
 
-    &__sort-block {
-        align-items: center;
-        display: flex;
-        gap: 24px;
-        @media(min-width: $md) {
-            margin-left: auto;
-        }
-        @media(max-width: $md - 0.02px) {
-            flex-grow: 1;
-        }
-
-        .combobox {
-            @media(max-width: $md - 0.02px) {
-                width: 100%;
-            }
-        }
-
-        .mobile-hide {
-            @media(max-width: $md - 0.02px) {
-                display: none;
-            }
-        }
-    }
-
     &__list {
         --gap: 16px;
         display: flex;
@@ -87,6 +63,7 @@
             flex-direction: column;
         }
         @media(max-width: $md - 0.02px) {
+            border-top: 1px solid var(--blue_medium);
             margin-left: calc(0.01px - var(--container_padding));
             margin-right: calc(0.01px - var(--container_padding));
             padding-left: var(--container_padding);
@@ -178,6 +155,8 @@
 
 .title-block {
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: space-between;
     margin-bottom: 24px;
     @media(min-width: $fhd) {
@@ -186,6 +165,45 @@
 
     h1 {
         margin: 0;
+    }
+}
+
+.sort-block {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    @media(min-width: $md) {
+        margin-left: auto;
+        gap: 16px;
+    }
+    @media(max-width: $md - 0.02px) {
+        width: 100%;
+    }
+    @media(min-width: $fhd) {
+        gap: 24px;
+    }
+
+    .combobox {
+        @media(max-width: $md - 0.02px) {
+            width: 100%;
+        }
+
+        &:last-child {
+            .combobox__dropdown {
+                @media(min-width: $md) and (max-width: $lg) {
+                    left: auto;
+                    right: 0;
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .mobile-hide {
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
     }
 }
 
@@ -581,7 +599,7 @@
         line-height: 1.33333;
         margin-bottom: 8px;
         @media(min-width: $fhd) {
-            font-size: 24px;
+            font-size: 23px;
         }
         @media(max-width: $fhd - 0.02px) {
             font-family: var(--secondary_font);
@@ -644,6 +662,113 @@
         @media(min-width: $fhd) {
             font-size: 20px;
             line-height: 1.2;
+        }
+    }
+}
+
+.small-filter {
+    font-size: 14px;
+    line-height: 1.28571;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    white-space: nowrap;
+    @media(max-width: $md - 0.02px) {
+        font-family: var(--secondary_font);
+    }
+    @media(min-width: $fhd) {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 8px;
+        @media(max-width: $md - 0.02px) {
+            margin-bottom: 8px;
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+            overflow-x: auto;
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+        }
+        @media(min-width: $md) {
+            flex-wrap: wrap;
+        }
+        @media(min-width: $hd) {
+            gap: 12px;
+        }
+        @media(min-width: $fhd) {
+            gap: 16px;
+        }
+
+        .small-filter__reset {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+    }
+
+    &__button {
+        @include button-reset;
+        align-items: center;
+        border-radius: 16px;
+        background-color: var(--blue_medium);
+        display: flex;
+        gap: 10px;
+        height: 32px;
+        padding-left: 12px;
+        padding-right: 12px;
+        transition: background-color 0.3s, color 0.3s;
+        @include hover {
+            background-color: var(--primary_pressed);
+            color: #fff;
+        }
+
+        &.is-active {
+            background-color: var(--primary_pressed);
+            color: #fff;
+            @include hover {
+                background-color: var(--primary_hover);
+                color: #fff;
+            }
+        }
+    }
+
+    &__button-icon {
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--blue_medium);
+        display: flex;
+        height: 24px;
+        justify-content: center;
+        min-width: 24px;
+        width: 24px;
+
+        svg {
+            fill: var(--primary);
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__reset {
+        @include button-reset;
+        border: 1px solid transparent;
+        border-radius: 16px;
+        color: var(--alert);
+        min-height: 32px;
+        padding-left: 12px;
+        padding-right: 12px;
+        transition: border-color 0.3s;
+        @include hover {
+            border-color: var(--alert);
+        }
+    }
+
+    & > .small-filter__reset {
+        @media(min-width: $md) {
+            display: none;
         }
     }
 }

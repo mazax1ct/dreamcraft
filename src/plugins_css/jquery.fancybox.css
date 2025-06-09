@@ -51,7 +51,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-bg {
-  background: rgba(13, 110, 253, 0.19);
+  background: rgba(7, 60, 124, 0.75);
   opacity: 0;
   transition-duration: inherit;
   transition-property: opacity;
@@ -165,6 +165,12 @@ body.compensate-for-scrollbar {
 
 .fancybox-slide--html {
   padding: 24px 20px 32px;
+}
+
+@media(max-width: 767.98px) {
+  .fancybox-slide--html {
+    padding: 0;
+  }
 }
 
 .fancybox-content {
@@ -563,7 +569,7 @@ body.compensate-for-scrollbar {
 /* transitionEffect: zoom-in-out */
 .fancybox-fx-zoom-in-out.fancybox-slide--previous {
   opacity: 0;
-  transform: scale3d(1.5, 1.5, 1.5);
+  transform: scale3d(.5, .5, .5);
 }
 
 .fancybox-fx-zoom-in-out.fancybox-slide--next {
@@ -627,8 +633,8 @@ body.compensate-for-scrollbar {
 /* Styling for Small-Screen Devices */
 @media all and (max-height: 576px) {
   .fancybox-slide {
-    padding-left: 6px;
-    padding-right: 6px;
+    /*padding-left: 6px;
+    padding-right: 6px;*/
   }
 
   .fancybox-slide--image {

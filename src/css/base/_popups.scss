@@ -1,0 +1,56 @@
+.request-popup {
+    display: none;
+    max-width: 1024px;
+    width: 100%;
+    @media(max-width: $sm - 0.02px) {
+        height: 100%;
+    }
+    @media(min-width: $fhd) {
+        max-width: 1296px;
+    }
+
+    &.fancybox-content {
+        padding: 0;
+        @media(min-width: $sm) {
+            padding: 16px 32px;
+        }
+    }
+
+    .fancybox-close-small {
+        color: #fff;
+        height: 32px;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 32px;
+        @media(max-width: $sm - 0.02px) {
+            right: 16px;
+            top: 16px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    &__inner {
+        background-image: url("../images/backgrounds/request_form/mobile.svg"), linear-gradient(90deg, #12AAFF 0%, #0079E5 100%);
+        background-position: 50% 0, 0 0;
+        background-size: cover, cover;
+        background-repeat: no-repeat, no-repeat;
+        padding: 24px 32px;
+        @media(max-width: $sm - 0.02px) {
+            min-height: 100%;
+        }
+        @media(min-width: $sm) {
+            background-image: url("../images/backgrounds/request_popup/desktop.svg"), linear-gradient(90deg, #12AAFF 0%, #0079E5 100%);
+            background-position: 50% 100%, 0 0;
+            background-size: cover, cover;
+            border-radius: 32px;
+            max-width: 1232px;
+            padding: 64px;
+        }
+    }
+}

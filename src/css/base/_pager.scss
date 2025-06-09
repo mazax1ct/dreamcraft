@@ -1,8 +1,8 @@
 .pager {
     font-family: var(--secondary_font);
     margin-top: 24px;
-    @media(min-width: $fhd) {
-        margin-top: 40px;
+    @media(min-width: $md) {
+        margin-top: 48px;
     }
 
     &__show-more {
@@ -33,6 +33,7 @@
         @include list-reset;
         align-items: center;
         display: flex;
+        gap: 4px;
         margin-top: 16px;
         justify-content: center;
     }
@@ -90,6 +91,20 @@
             fill: currentColor;
             height: 24px;
             width: 24px;
+        }
+    }
+
+    &--short {
+        .pager__show-more {
+            @media(min-width: $md) {
+                display: none;
+            }
+        }
+
+        .pager__list {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
         }
     }
 }

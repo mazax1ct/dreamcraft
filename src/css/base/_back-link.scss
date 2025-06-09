@@ -1,0 +1,26 @@
+.back-link {
+    @include active-area;
+    align-items: center;
+    color: var(--primary);
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    text-decoration: none;
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+    @media(min-width: $md) {
+        display: none;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+    }
+}

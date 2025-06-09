@@ -3,9 +3,10 @@
     display: flex;
     font-size: 16px;
     gap: 12px;
-    white-space: nowrap;
+    line-height: 1.5;
 
     &__title {
+        white-space: nowrap;
         @media(max-width: $md - 0.02px) {
             display: none;
         }
@@ -20,6 +21,7 @@
         font-weight: 600;
         height: 40px;
         transition: color 0.3s;
+        white-space: nowrap;
         width: 100%;
         @include hover {
             color: var(--primary_hover);
@@ -67,11 +69,19 @@
         box-shadow: 0 0 10px rgba(0, 90, 199, 0.25);
         border-radius: 12px;
         display: none;
-        left: 0;
-        min-width: 100px;
+        left: 50%;
+        min-width: 100%;
         position: absolute;
         padding: 8px;
+        transform: translateX(-50%);
         top: calc(100% + 8px);
+        width: 290px;
+        @media(max-width: $md - 0.02px) {
+            left: 0;
+            max-width: 100%;
+            transform: none;
+            width: 100%;
+        }
     }
 
     &__list {
@@ -79,10 +89,13 @@
     }
 
     &__link {
+        align-items: center;
         border-radius: 8px;
         color: var(--dark);
-        display: block;
-        padding: 4px 8px;
+        display: flex;
+        gap: 12px;
+        min-height: 32px;
+        padding: 3px 8px;
         transition: background-color 0.3s;
         text-decoration: none;
 
@@ -101,6 +114,51 @@
             @media(min-width: $fhd) {
                 margin-bottom: 8px;
             }
+        }
+    }
+
+    &__link-avatar {
+        align-items: center;
+        background-color: var(--blue_dark);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 32px;
+        min-width: 32px;
+        overflow: hidden;
+        width: 32px;
+
+        &--image {
+            position: relative;
+            z-index: 1;
+            /*&::after {
+                background-color: var(--blue_dark);
+                bottom: 0;
+                content: '';
+                left: 0;
+                opacity: 0.5;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }*/
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            height: 32px;
+            object-fit: cover;
+            object-position: center;
+            width: 32px;
+            background: var(--blue_dark);
+            mix-blend-mode: overlay;
+        }
+
+        svg {
+            fill: #fff;
+            height: 16px;
+            width: 16px;
         }
     }
 }

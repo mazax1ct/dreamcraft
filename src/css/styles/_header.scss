@@ -92,7 +92,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
     z-index: 10;
 
     &.is-scrolled,
@@ -439,6 +439,7 @@
     }
 
     &__address {
+        transition: color 0.3s;
         @media(max-width: $lg - 0.02px) {
             display: none;
         }
@@ -954,7 +955,7 @@
                 margin-top: 0.05em;
                 width: 24px;
                 @media(min-width: $fhd) {
-                    margin-top: 0.3em;
+                    margin-top: 0.175em;
                 }
             }
         }

@@ -1,0 +1,25 @@
+.more-button {
+    @include button-reset;
+    @include active-area;
+    align-items: center;
+    color: var(--primary);
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+    position: relative;
+    transition: color 0.3s;
+    z-index: 1;
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

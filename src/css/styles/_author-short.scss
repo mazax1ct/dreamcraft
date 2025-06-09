@@ -1,0 +1,50 @@
+.author-short {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+
+    &__avatar {
+        font-size: 10px;
+        height: 64px;
+        min-width: 64px;
+        overflow: hidden;
+        width: 64px;
+
+        &--bordered {
+            img {
+                border: 1px solid var(--grey_light);
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            height: 64px;
+            object-fit: cover;
+            object-position: center;
+            width: 64px;
+        }
+    }
+
+    &__info {}
+
+    &__name {
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 2px;
+        @media(min-width: $fhd) {
+            line-height: 1.2;
+        }
+    }
+
+    &__about {
+        color: var(--grey_dark);
+        font-size: 14px;
+        line-height: 1.28571;
+        margin: 0;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}

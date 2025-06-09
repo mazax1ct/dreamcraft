@@ -29,7 +29,6 @@
     <link rel="preload" href="fonts/subset-Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
-    <link rel="stylesheet" href="plugins_css/select2.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -66,18 +65,23 @@
                                     </ul>
                                 </div>
                             </li>
+            
                             <li class="header__top-menu-item">
                                 <a href="#"><span>О компании</span></a>
                             </li>
+            
                             <li class="header__top-menu-item">
                                 <a href="#"><span>Статьи</span></a>
                             </li>
+            
                             <li class="header__top-menu-item">
                                 <a href="#"><span>СМИ о нас</span></a>
                             </li>
+            
                             <li class="header__top-menu-item">
                                 <a href="#"><span>Карьера</span></a>
                             </li>
+            
                             <li class="header__top-menu-item">
                                 <a href="#"><span>Контакты</span></a>
                             </li>
@@ -120,6 +124,7 @@
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Портфолио</span></a>
                             </li>
+            
                             <li class="js-d-menu-toggler header__bottom-menu-item">
                                 <a href="#">
                                     <span>Разработка игр</span>
@@ -326,24 +331,29 @@
                                     </div>
                                 </div>
                             </li>
+            
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Промоигры</span></a>
                             </li>
+            
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Игры для телеграм</span></a>
                             </li>
+            
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Игры для мероприятий</span></a>
                             </li>
+            
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Геймдизайн</span></a>
                             </li>
+            
                             <li class="header__bottom-menu-item">
                                 <a href="#"><span>Консультация</span></a>
                             </li>
                         </ul>
             
-                        <button class="header__callback button button--h_48" type="button">
+                        <button class="header__callback button button--h_48" type="button" data-fancybox="request" data-src="#request">
                             <svg aria-hidden="true">
                                 <use xlink:href="images/sprite.svg#phone_icon" />
                             </svg>
@@ -1151,21 +1161,51 @@
             </div>
     </footer>
 
+    <div id="request" class="request-popup">
+        <div class="request-popup__inner">
+            <div class="request-form">
+                <div class="request-form__left">
+                    <h2>Готовы создать свою<br> игру?</h2>
+                </div>
     
+                <div class="request-form__right">
+                    <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+    
+                    <form class="request-form__form" action="">
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Имя" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <input class="input" type="text" placeholder="Телефон" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-group">
+                            <div class="required">
+                                <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                            </div>
+                        </div>
+    
+                        <button class="request-form__submit button button--light button--h_56" type="submit">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#doc_icon" />
+                            </svg>
+                            <span>Отправить заявку</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/fancybox-defaults.js"></script>
-    
-    <script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/inputmask-init.js"></script>
-    
-    <script src="js/select2.full.min.js"></script>
-    <script src="js/select2-addon.js"></script>
-    <script src="js/select2-searchInputPlaceholder.js"></script>
-    
-    <script src="js/onepageNav.js"></script>
     
     <script src="js/main.js"></script>
 </body>
