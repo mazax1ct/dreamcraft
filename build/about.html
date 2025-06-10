@@ -29,10 +29,11 @@
     <link rel="preload" href="fonts/subset-Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page">
+<body class="page page--inner">
     <div class="header-container">
         <div class="header-container__inner">
             <header class="header compensate-for-scrollbar">
@@ -718,7 +719,7 @@
             </header>
         </div>
 
-        <div class="breadcrumbs ">
+        <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
                     <a href="#">Главная</a>
@@ -732,7 +733,371 @@
     </div>
 
     <main class="page__content">
+        <div class="container">
+            <section class="page__section">
+                <h2>Команда</h2>
 
+                <div class="persons-slider persons-slider--big">
+                    <div class="js-persons-slider-2 swiper" data-slider="persons_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="person-card person-card--big">
+                                    <div class="person-card__left">
+                                        <div class="person-card__avatar">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                        <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_1" data-src="#person_1">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                
+                                    <div id="person_1" class="person-card__right">
+                                        <div class="person-card__right-inner">
+                                            <div class="person-card__avatar-block">
+                                                <div class="person-card__avatar">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                                </div>
+                
+                                                <div>
+                                                    <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                                    <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                                    <div class="person-card__props">
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#user_icon" />
+                                                            </svg>
+                                                            <span>Руководитель арт отдела</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#edu_icon" />
+                                                            </svg>
+                                                            <span>МГУ, графический дизайн</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#award_icon" />
+                                                            </svg>
+                                                            <span>11 лет</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="person-card__text">
+                                                <p>Создаёт визуальный язык, с которым каждое нажатие по‑настоящему приятно. В индустрии более 5 лет: от простых интерфейсов до игровых миров. Превращет сложные механики в простой и понятный UX, а скучные кнопки —
+                                                    в объекты
+                                                    желания.</p>
+                                                <p><b>Увлечения:</b> коллекционирует старые игровые консоли и обожает настолки.</p>
+                                                <p><b>Суперсила:</b> умеет сочетать эстетику с функциональностью — чтобы было красиво и удобно.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="person-card person-card--big">
+                                    <div class="person-card__left">
+                                        <div class="person-card__avatar">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                        <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_2" data-src="#person_2">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                
+                                    <div id="person_2" class="person-card__right">
+                                        <div class="person-card__right-inner">
+                                            <div class="person-card__avatar-block">
+                                                <div class="person-card__avatar">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                                </div>
+                
+                                                <div>
+                                                    <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                                    <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                                    <div class="person-card__props">
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#user_icon" />
+                                                            </svg>
+                                                            <span>Руководитель арт отдела</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#edu_icon" />
+                                                            </svg>
+                                                            <span>МГУ, графический дизайн</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#award_icon" />
+                                                            </svg>
+                                                            <span>11 лет</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="person-card__text">
+                                                <p>Создаёт визуальный язык, с которым каждое нажатие по‑настоящему приятно. В индустрии более 5 лет: от простых интерфейсов до игровых миров. Превращет сложные механики в простой и понятный UX, а скучные кнопки —
+                                                    в объекты
+                                                    желания.</p>
+                                                <p><b>Увлечения:</b> коллекционирует старые игровые консоли и обожает настолки.</p>
+                                                <p><b>Суперсила:</b> умеет сочетать эстетику с функциональностью — чтобы было красиво и удобно.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="person-card person-card--big">
+                                    <div class="person-card__left">
+                                        <div class="person-card__avatar">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                        <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_3" data-src="#person_3">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                
+                                    <div id="person_3" class="person-card__right">
+                                        <div class="person-card__right-inner">
+                                            <div class="person-card__avatar-block">
+                                                <div class="person-card__avatar">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                                </div>
+                
+                                                <div>
+                                                    <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                                    <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                                    <div class="person-card__props">
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#user_icon" />
+                                                            </svg>
+                                                            <span>Руководитель арт отдела</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#edu_icon" />
+                                                            </svg>
+                                                            <span>МГУ, графический дизайн</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#award_icon" />
+                                                            </svg>
+                                                            <span>11 лет</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="person-card__text">
+                                                <p>Создаёт визуальный язык, с которым каждое нажатие по‑настоящему приятно. В индустрии более 5 лет: от простых интерфейсов до игровых миров. Превращет сложные механики в простой и понятный UX, а скучные кнопки —
+                                                    в объекты
+                                                    желания.</p>
+                                                <p><b>Увлечения:</b> коллекционирует старые игровые консоли и обожает настолки.</p>
+                                                <p><b>Суперсила:</b> умеет сочетать эстетику с функциональностью — чтобы было красиво и удобно.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="person-card person-card--big">
+                                    <div class="person-card__left">
+                                        <div class="person-card__avatar">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                        <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_4" data-src="#person_4">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                
+                                    <div id="person_4" class="person-card__right">
+                                        <div class="person-card__right-inner">
+                                            <div class="person-card__avatar-block">
+                                                <div class="person-card__avatar">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                                </div>
+                
+                                                <div>
+                                                    <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                                    <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                                    <div class="person-card__props">
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#user_icon" />
+                                                            </svg>
+                                                            <span>Руководитель арт отдела</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#edu_icon" />
+                                                            </svg>
+                                                            <span>МГУ, графический дизайн</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#award_icon" />
+                                                            </svg>
+                                                            <span>11 лет</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="person-card__text">
+                                                <p>Создаёт визуальный язык, с которым каждое нажатие по‑настоящему приятно. В индустрии более 5 лет: от простых интерфейсов до игровых миров. Превращет сложные механики в простой и понятный UX, а скучные кнопки —
+                                                    в объекты
+                                                    желания.</p>
+                                                <p><b>Увлечения:</b> коллекционирует старые игровые консоли и обожает настолки.</p>
+                                                <p><b>Суперсила:</b> умеет сочетать эстетику с функциональностью — чтобы было красиво и удобно.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="person-card person-card--big">
+                                    <div class="person-card__left">
+                                        <div class="person-card__avatar">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                        </div>
+                
+                                        <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                        <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_5" data-src="#person_5">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                
+                                    <div id="person_5" class="person-card__right">
+                                        <div class="person-card__right-inner">
+                                            <div class="person-card__avatar-block">
+                                                <div class="person-card__avatar">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
+                                                </div>
+                
+                                                <div>
+                                                    <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
+                
+                                                    <p class="person-card__place">Директор DreamCraft Studio</p>
+                
+                                                    <div class="person-card__props">
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#user_icon" />
+                                                            </svg>
+                                                            <span>Руководитель арт отдела</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#edu_icon" />
+                                                            </svg>
+                                                            <span>МГУ, графический дизайн</span>
+                                                        </p>
+                
+                                                        <p class="person-card__prop">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#award_icon" />
+                                                            </svg>
+                                                            <span>11 лет</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="person-card__text">
+                                                <p>Создаёт визуальный язык, с которым каждое нажатие по‑настоящему приятно. В индустрии более 5 лет: от простых интерфейсов до игровых миров. Превращет сложные механики в простой и понятный UX, а скучные кнопки —
+                                                    в объекты
+                                                    желания.</p>
+                                                <p><b>Увлечения:</b> коллекционирует старые игровые консоли и обожает настолки.</p>
+                                                <p><b>Суперсила:</b> умеет сочетать эстетику с функциональностью — чтобы было красиво и удобно.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="js-persons-slider-pagination slider-pagination swiper-pagination" data-slider="persons_slider"></div>
+                    </div>
+                
+                    <button class="js-persons-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="persons_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+                
+                    <button class="js-persons-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="persons_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -1202,12 +1567,16 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/fancybox-defaults.js"></script>
     
+    <script src="js/swiper-bundle.min.js"></script>
+    
     <script src="js/main.js"></script>
+
+    <script src="js/persons_slider.js"></script>
 </body>
 
 </html>

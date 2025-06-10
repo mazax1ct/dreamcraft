@@ -53,6 +53,12 @@ html {
     &__content {
         flex: 1 0 auto;
     }
+
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: var(--section_vertical_gap);
+        }
+    }
 }
 
 .container {

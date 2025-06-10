@@ -1,0 +1,69 @@
+.slider-arrow {
+    @include button-reset;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    color: var(--primary);
+    cursor: default;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+    width: 40px;
+    z-index: 1;
+
+    &:not(.swiper-button-lock) {
+        cursor: pointer;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @include active {
+            color: var(--primary_pressed);
+        }
+    }
+    @media(max-width: 1319.98px) {
+        display: none;
+    }
+    @media(min-width: $fhd) {
+        height: 56px;
+        width: 56px;
+    }
+
+    &.swiper-button-prev {
+        left: -44px;
+        @media(min-width: $lg) {
+            left: -56px;
+        }
+        @media(min-width: $fhd) {
+            left: -80px;
+        }
+    }
+
+    &.swiper-button-next {
+        right: -44px;
+        @media(min-width: $lg) {
+            right: -56px;
+        }
+        @media(min-width: $fhd) {
+            right: -80px;
+        }
+    }
+
+    &.swiper-button-lock {
+        color: var(--grey_dark);
+    }
+
+    &::after {
+        display: none;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+}

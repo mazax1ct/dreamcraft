@@ -315,12 +315,15 @@
                 &::after {
                     background-color: currentColor;
                     content: '';
-                    height: 2px;
+                    height: 1px;
                     left: 0;
                     position: absolute;
                     top: 100%;
                     transition: width 0.3s;
                     width: 0;
+                    @media(min-width: $fhd) {
+                        height: 2px;
+                    }
                 }
             }
 
@@ -456,6 +459,9 @@
             @media(max-width: $md - 0.02px) {
                 min-height: var(--header_min_heigt);
             }
+            @media(min-width: $md) {
+                min-height: 63px;
+            }
             @media(min-width: $fhd) {
                 min-height: 70px;
             }
@@ -554,9 +560,11 @@
             font-size: 16px;
             gap: 16px;
         }
+        @media(min-width: 1500px) {
+            gap: 24px;
+        }
         @media(min-width: $fhd) {
             font-size: 20px;
-            gap: 24px;
         }
     }
 
@@ -614,12 +622,15 @@
                 &::after {
                     background-color: currentColor;
                     content: '';
-                    height: 2px;
+                    height: 1px;
                     left: 0;
                     position: absolute;
                     top: 100%;
                     transition: width 0.3s;
                     width: 0;
+                    @media(min-width: $fhd) {
+                        height: 2px;
+                    }
                 }
             }
 
@@ -627,7 +638,7 @@
                 fill: currentColor;
                 height: 12px;
                 min-width: 12px;
-                margin-top: 5px;
+                margin-top: 2px;
                 width: 12px;
                 @media(min-width: $fhd) {
                     height: 16px;
@@ -650,6 +661,7 @@
             height: 40px;
             padding-left: 16px;
             padding-right: 16px;
+            padding-bottom: 0;
         }
         @include hover {
             color: var(--primary_hover);

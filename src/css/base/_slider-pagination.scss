@@ -1,0 +1,27 @@
+.slider-pagination {
+    bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+    position: static;
+    top: auto;
+    @media(min-width: $hd) {
+        display: none;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid transparent;
+        background-color: rgba(0,122, 255,0.15);
+        height: 8px;
+        margin: 0 !important;
+        opacity: 1;
+        width: 8px;
+
+        &.swiper-pagination-bullet-active {
+            border-color: rgba(30, 118, 226,0.18);
+            background: linear-gradient(180deg, #1066D0 -46.38%, #5BA5FF 79.82%);
+        }
+    }
+}

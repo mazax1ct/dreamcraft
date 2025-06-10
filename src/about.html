@@ -17,13 +17,13 @@
     //= template/common/styles.html
 </head>
 
-<body class="page">
+<body class="page page--inner">
     <div class="header-container">
         <div class="header-container__inner">
             //= template/common/header.html
         </div>
 
-        <div class="breadcrumbs ">
+        <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
                     <a href="#">Главная</a>
@@ -37,7 +37,13 @@
     </div>
 
     <main class="page__content">
+        <div class="container">
+            <section class="page__section">
+                <h2>Команда</h2>
 
+                //= template/persons-slider-big.html
+            </section>
+        </div>
     </main>
 
     //= template/common/footer.html
@@ -45,6 +51,8 @@
     //= template/common/popups.html
 
     //= template/common/scripts.html
+
+    <script src="js/persons_slider.js"></script>
 </body>
 
 </html>

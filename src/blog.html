@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>DreamCraft</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--inner">
+    <div class="header-container">
+        <div class="header-container__inner">
+            //= template/common/header.html
+        </div>
+
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">Статьи</li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+            <section class="page__section">
+                <h1>Популярные темы</h1>
+
+                <div class="popular-blog">
+                    <div class="js-popular-blog swiper" data-slider="popular_blog">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Браузерные игры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Промоигры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Мобильные игры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Игры для бизнеса</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Браузерные игры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Промоигры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Мобильные игры</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="popular" href="#">
+                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
+                                    <span class="popular__inner">
+                                        <span class="popular__title">Игры для бизнеса</span>
+                                        <span class="popular__text">16 статей</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="js-popular-blog-pagination slider-pagination swiper-pagination" data-slider="popular_blog"></div>
+                    </div>
+
+                    <button class="js-popular-blog-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="popular_blog">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+
+                    <button class="js-popular-blog-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="popular_blog">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Популярные посты</h2>
+
+                <div class="blog-list">
+                    <div class="blog-group">
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-group">
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <a class="blog-card__image" href="#">
+                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                            </a>
+
+                            <div class="blog-card__info">
+                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+
+                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+
+                                <div class="blog-card__bottom">
+                                    <a class="blog-card__author" href="#">
+                                        <img src="images/content/blog/author_2.svg" alt="">
+
+                                        <span>Habr</span>
+                                    </a>
+
+                                    <div class="blog-card__props">
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#timer_icon" />
+                                            </svg>
+
+                                            <span>22 мин</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#comment_icon" />
+                                            </svg>
+
+                                            <span>389</span>
+                                        </div>
+
+                                        <div class="blog-card__prop">
+                                            <svg class="star" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                            </svg>
+
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Наши авторы</h2>
+
+                //= template/persons-slider-small.html
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/popular_blog.js"></script>
+
+    <script src="js/persons_slider.js"></script>
+</body>
+
+</html>
