@@ -149,15 +149,11 @@ $(document).on('click', '.accordion__toggler', function () {
 });
 
 //табы
-$(document).on('click', '.js-tabs-menu__button', function () {
-  $(this).closest('.tabs-container').find('.js-tabs-menu__button').removeClass('is-active');
+$(document).on('click', '.js-tabs-button', function () {
+  $(this).closest('.tabs').find('.js-tabs-button').removeClass('is-active');
   $(this).addClass('is-active');
-  $(this).closest('.tabs-container').find('.tab').removeClass('is-active');
-  $(this).closest('.tabs-container').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
-
-  if($(this).closest('.tabs-container').find('.js-licenses-slider').length > 0) {
-    $('.js-licenses-slider').slick('setPosition');
-  }
+  $(this).closest('.tabs').find('.tab').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
 
   return false;
 });

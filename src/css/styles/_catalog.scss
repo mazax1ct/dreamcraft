@@ -154,6 +154,7 @@
 }
 
 .title-block {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -163,7 +164,8 @@
         margin-bottom: 32px;
     }
 
-    h1 {
+    h1,
+    h2 {
         margin: 0;
     }
 }

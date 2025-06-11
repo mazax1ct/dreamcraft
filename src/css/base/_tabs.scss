@@ -1,0 +1,40 @@
+.tabs-nav {
+    background-color: #BEE5FF;
+    border-radius: 30px;
+    display: flex;
+    height: 60px;
+    padding: 6px;
+    @media(max-width: $sm - 0.02px) {
+        width: 100%;
+    }
+
+    &__button {
+        @include button-reset;
+        border-radius: 24px;
+        color: var(--dark);
+        font-weight: 16px;
+        font-weight: 600;
+        flex-grow: 1;
+        height: 48px;
+        line-height: 1.5;
+        padding: 0 12px;
+        @media(min-width: $fhd) {
+            font-size: 20px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        &.is-active {
+            background: linear-gradient(135deg, #3BA8EC 0%, #6AC6FF 100%);
+            color: #fff;
+        }
+    }
+}
+
+.tab {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}

@@ -39,9 +39,24 @@
     <main class="page__content">
         <div class="container">
             <section class="page__section">
-                <h2>Команда</h2>
+                <div class="tabs">
+                    <div class="title-block">
+                        <h2>Команда</h2>
 
-                //= template/persons-slider-big.html
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Геймдизайнеры</button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Разработчики</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        //= template/persons-slider-big.html
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        //= template/persons-slider-small.html
+                    </div>
+                </div>
             </section>
         </div>
     </main>
