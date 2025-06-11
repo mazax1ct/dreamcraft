@@ -23,3 +23,11 @@
         width: 24px;
     }
 }
+
+.more-button-block {
+    margin-top: 24px;
+    text-align: center;
+    @media(min-width: $md) {
+        margin-top: 48px;
+    }
+}

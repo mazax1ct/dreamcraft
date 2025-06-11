@@ -152,3 +152,79 @@
         }
     }
 }
+
+.reviews-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $md - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+
+        .review {
+            height: 100%;
+        }
+    }
+}
+
+.client-card {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    @media(max-width: $md - 0.02px) {
+        border-radius: 24px;
+        border: 1px solid var(--blue_dark);
+        font-family: var(--secondary_font);
+        padding: 16px;
+    }
+
+    &__image {
+        margin-bottom: 16px;
+        @media(min-width: $fhd) {
+            margin-bottom: 24px;
+        }
+
+        img {
+            border-radius: 16px;
+            display: block;
+            height: 48px;
+            object-fit: contain;
+            object-position: center;
+            width: auto;
+            @media(min-width: $fhd) {
+                height: 64px;
+            }
+        }
+    }
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        & + h5 {
+            @media(min-width: $fhd) {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 8px;
+        @media(min-width: $fhd) {
+            font-size: 20px;
+        }
+    }
+}

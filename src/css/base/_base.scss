@@ -58,6 +58,44 @@ html {
         &:not(:last-child) {
             margin-bottom: var(--section_vertical_gap);
         }
+
+        &--bg {
+            @media(min-width: $lg) {
+                padding-top: 64px;
+                padding-bottom: 64px;
+                position: relative;
+                z-index: 1;
+            }
+
+            & > * {
+                @media(min-width: $lg) {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            &::before {
+                @media(min-width: $lg) {
+                    background-color: var(--blue_medium);
+                    border-radius: 32px;
+                    bottom: 0;
+                    content: '';
+                    left: -80px;
+                    position: absolute;
+                    right: -80px;
+                    top: 0;
+                    z-index: 0;
+                }
+                @media(min-width: 1600px) {
+                    left: -120px;
+                    right: -120px;
+                }
+                @media(min-width: $fhd) {
+                    left: -160px;
+                    right: -160px;
+                }
+            }
+        }
     }
 }
 

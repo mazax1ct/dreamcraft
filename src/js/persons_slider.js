@@ -5,22 +5,26 @@ $(document).ready(function() {
       spaceBetween: 8,
       slidesPerView: 'auto',
       slidesOffsetBefore: 16,
+      slidesOffsetAfter: 16,
 
       breakpoints: {
         1024: {
           slidesPerView: 'auto',
           spaceBetween: 16,
-          slidesOffsetBefore: 16
+          slidesOffsetBefore: 16,
+          slidesOffsetAfter: 16,
         },
         1280: {
           slidesPerView: 'auto',
           spaceBetween: 16,
-          slidesOffsetBefore: 0
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
         },
         1900: {
           slidesPerView: 'auto',
           spaceBetween: 24,
-          slidesOffsetBefore: 0
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
         },
       },
 
@@ -42,19 +46,22 @@ $(document).ready(function() {
       spaceBetween: 8,
       slidesPerView: 'auto',
       slidesOffsetBefore: 16,
+      slidesOffsetAfter: 16,
 
       breakpoints: {
         1024: {
           centeredSlides: true,
           slidesPerView: 'auto',
           spaceBetween: 16,
-          slidesOffsetBefore: 0
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
         },
         1900: {
           centeredSlides: true,
           slidesPerView: 'auto',
           spaceBetween: 24,
-          slidesOffsetBefore: 0
+          slidesOffsetBefore: 0,
+          slidesOffsetAfter: 0,
         },
       },
 
