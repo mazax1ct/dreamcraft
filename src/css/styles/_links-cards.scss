@@ -1,0 +1,88 @@
+.link-card {
+    border-radius: 16px;
+    background-color: #CFEDFF;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33333;
+    padding: 16px;
+    text-decoration: none;
+    @media(min-width: $fhd) {
+        font-size: 23px;
+        line-height: 1.39130;
+    }
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 8px;
+        width: 64px;
+        @media(min-width: $fhd) {
+            margin-bottom: 40px;
+            width: 80px;
+        }
+    }
+
+    &__title {
+        align-items: flex-end;
+        display: flex;
+        gap: 2px;
+        margin-top: auto;
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+}
+
+h2 + .links-cards-slider {
+    @media(min-width: $fhd) {
+        margin-top: 56px;
+    }
+}
+
+.links-cards-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $hd - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+    @media(min-width: $lg) {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    @media(min-width: 1600px) {
+        margin-left: -48px;
+        margin-right: -48px;
+    }
+
+    .slider-pagination {
+        @media (min-width: $hd) and (max-width: 1319.98px) {
+            display: flex;
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+
+        .link-card {
+            height: 100%;
+        }
+    }
+}

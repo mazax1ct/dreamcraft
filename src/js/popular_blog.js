@@ -12,6 +12,13 @@ $(document).ready(function() {
           slidesPerView: 4,
           slidesPerGroup: 4,
           spaceBetween: 16,
+          slidesOffsetBefore: 16,
+          slidesOffsetAfter: 16,
+        },
+        1280: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 16,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0
         },

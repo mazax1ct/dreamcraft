@@ -1,0 +1,140 @@
+.service-card {
+    border-radius: 16px;
+    background-color: var(--blue_medium);
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        display: flex;
+        gap: 16px;
+    }
+    @media(min-width: $fhd) {
+        border-radius: 32px;
+        gap: 24px;
+        padding: 24px;
+    }
+    @include hover {
+        .service-card__title {
+            color: var(--primary_hover);
+        }
+
+        .service-card__image {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+    @include active {
+        .service-card__title {
+            color: var(--primary_pressed);
+        }
+    }
+
+    &__image {
+        align-self: flex-start;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        width: 120px;
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            min-width: 38.7%;
+            width: 38.7%;
+        }
+        @media(min-width: $fhd) {
+            border-radius: 24px;
+        }
+
+        img {
+            display: block;
+            transform: scale(1);
+            transition: transform 0.3s;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-top: 0;
+        transition: color 0.3s;
+        @media(min-width: $fhd) {
+            font-size: 32px;
+            line-height: 1.25;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__text {
+        @media(min-width: $fhd) {
+            padding-right: 40px;
+        }
+    }
+
+    &__price-block {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    &__price {
+        font-family: var(--secondary_font);
+        font-weight: 500;
+        margin: 0;
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+    }
+
+    .arrow-button {
+        &::after {
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.services-cards-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $hd - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .slider-pagination {
+        @media (min-width: $hd) and (max-width: 1319.98px) {
+            display: flex;
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+
+        .service-card {
+            height: 100%;
+        }
+    }
+}

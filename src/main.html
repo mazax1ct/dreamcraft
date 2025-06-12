@@ -33,6 +33,53 @@
                 </picture>
             </section>
 
+            <section class="page__section">
+                <h2 class="text-center">Самые популярные запросы наших клиентов</h2>
+
+                //= template/links-cards-slider.html
+            </section>
+
+            <section class="page__section">
+                <h2>Услуги</h2>
+
+                //= template/services-cards-slider.html
+            </section>
+
+            <section class="page__section">
+                <div class="tabs">
+                    <div class="title-block">
+                        <h2 class="tabs__title is-active" data-tab="1">Мы в СМИ и соцсетях</h2>
+
+                        <h2 class="tabs__title" data-tab="2">Наши мероприятия</h2>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Мы в СМИ <span class="mobile-hidden"> и соцсетях</span></button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2"><span class="desktop-hidden">Мероприятия</span> <span class="mobile-hidden">Наши мероприятия</span></button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        //= template/articles-slider.html
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        //= template/articles-slider-2.html
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <a class="arrow-button" href="#">
+                        <span>Узнать больше</span>
+
+                        <span class="arrow-button__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
             //= template/request_form.html
         </div>
     </main>
@@ -42,6 +89,10 @@
     //= template/common/popups.html
 
     //= template/common/scripts.html
+
+    <script src="js/links_cards_slider.js"></script>
+    <script src="js/services_cards_slider.js"></script>
+    <script src="js/articles_slider.js"></script>
 </body>
 
 </html>

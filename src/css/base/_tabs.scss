@@ -28,6 +28,39 @@
             background: linear-gradient(135deg, #3BA8EC 0%, #6AC6FF 100%);
             color: #fff;
         }
+
+        .mobile-hidden {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+
+        .desktop-hidden {
+            @media(min-width: $md) {
+                display: none;
+            }
+        }
+    }
+}
+
+.tabs {
+    & + .text-right {
+        margin-top: 12px;
+    }
+
+    &__title {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+
+        p {
+            color: var(--grey_dark);
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
     }
 }
 

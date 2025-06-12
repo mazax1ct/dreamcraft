@@ -1,0 +1,70 @@
+.arrow-button {
+    @include button-reset;
+    align-items: center;
+    color: var(--primary);
+    display: inline-flex;
+    gap: 12px;
+    font-family: var(--secondary_font);
+    text-decoration: none;
+    @include hover {
+        color: var(--primary_hover);
+
+        .arrow-button__icon {
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+    @media(min-width: $fhd) {
+        font-size: 24px;
+    }
+
+    &__icon {
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--primary_hover);
+        color: #fff;
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        margin: 5px;
+        outline: 5px solid rgba(30, 118, 226, 0.18);
+        overflow: hidden;
+        position: relative;
+        width: 32px;
+        z-index: 1;
+        @include hover {
+            background-color: var(--primary_hover);
+            color: #fff;
+        }
+        @media(min-width: $fhd) {
+            height: 40px;
+            min-width: 40px;
+            width: 40px;
+        }
+
+        &::before {
+            background: radial-gradient(100% 100% at 50% 0%, #1066D0 0%, #5BA5FF 100%);
+            bottom: 0;
+            content: '';
+            left: 0;
+            opacity: 1;
+            position: absolute;
+            right: 0;
+            transition: opacity 0.3s;
+            top: 0;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            position: relative;
+            width: 24px;
+            z-index: 1;
+        }
+    }
+}

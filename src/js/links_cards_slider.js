@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('.js-popular-blog').each(function(index, el) {
+  $('.js-links-cards-slider').each(function(index, el) {
     new Swiper(el, {
-      loop: true,
+      loop: false,
       spaceBetween: 8,
       slidesPerView: 'auto',
       slidesOffsetBefore: 16,
@@ -16,30 +16,23 @@ $(document).ready(function() {
           slidesOffsetAfter: 16,
         },
         1280: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerView: 6,
+          slidesPerGroup: 6,
           spaceBetween: 16,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0
-        },
-        1900: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          spaceBetween: 24,
-          slidesOffsetBefore: 0,
-          slidesOffsetAfter: 0
-        },
+        }
       },
 
       pagination: {
-        el: '.js-popular-blog-pagination[data-slider="'+el.dataset.slider+'"]',
+        el: '.js-links-cards-slider-pagination[data-slider="'+el.dataset.slider+'"]',
         clickable: true,
       },
 
       navigation: {
-        nextEl: '.js-popular-blog-next[data-slider="'+el.dataset.slider+'"]',
-        prevEl: '.js-popular-blog-prev[data-slider="'+el.dataset.slider+'"]',
-      }
+        nextEl: '.js-links-cards-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-links-cards-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
     });
   });
 });

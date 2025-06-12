@@ -133,6 +133,26 @@ $(document).on('click', '.js-combobox-toggler', function () {
   return false;
 });
 
+//табы
+$(document).on('click', '.js-tabs-button', function () {
+  $(this).closest('.tabs').find('.js-tabs-button').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.tabs').find('.tab').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
+  $(this).closest('.tabs').find('.tabs__title').removeClass('is-active');
+  $(this).closest('.tabs').find('.tabs__title[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
+
+  return false;
+});
+
+
+//транс таблица
+$(document).on('click', '.js-trans-table-toggler', function () {
+  $(this).closest('.trans-table__toggler-block').toggleClass('is-active');
+  $(this).closest('tr').find('td:not(.trans-table__toggler-block)').slideToggle();
+
+  return false;
+});
 
 //аккордеон
 $(document).on('click', '.accordion__toggler', function () {
@@ -145,15 +165,5 @@ $(document).on('click', '.accordion__toggler', function () {
       _this.removeClass('is-active');
     });
   }
-  return false;
-});
-
-//табы
-$(document).on('click', '.js-tabs-button', function () {
-  $(this).closest('.tabs').find('.js-tabs-button').removeClass('is-active');
-  $(this).addClass('is-active');
-  $(this).closest('.tabs').find('.tab').removeClass('is-active');
-  $(this).closest('.tabs').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
-
   return false;
 });
