@@ -1,0 +1,48 @@
+.document {
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    @media(min-width: $fhd) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &__image {
+        border-radius: 16px;
+        background-color: #8ABDDC;
+        margin-bottom: 24px;
+        overflow: hidden;
+
+        img {
+            background-color: #8ABDDC;
+            border-radius: 16px;
+            display: block;
+            mix-blend-mode: overlay;
+            width: 100%;
+        }
+    }
+}
+
+.docs-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $hd - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .slider-pagination {
+        @media (min-width: $hd) and (max-width: 1319.98px) {
+            display: flex;
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+    }
+}

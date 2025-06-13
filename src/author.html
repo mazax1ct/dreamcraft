@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>DreamCraft</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--inner">
+    <div class="header-container">
+        <div class="header-container__inner">
+            //= template/common/header.html
+        </div>
+
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Статьи</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">Сироватко Роман</li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+            <section class="page__section">
+                <h2>Портфолио</h2>
+
+                //= template/portfolio-cards-slider.html
+            </section>
+
+            <section class="page__section">
+                <h2>Статьи автора</h2>
+
+                //= template/articles-slider.html
+            </section>
+
+            <section class="page__section">
+                <h2>Документы</h2>
+
+                //= template/docs-slider.html
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/portfolio_slider.js"></script>
+    <script src="js/articles_slider.js"></script>
+    <script src="js/docs_slider.js"></script>
+</body>
+
+</html>

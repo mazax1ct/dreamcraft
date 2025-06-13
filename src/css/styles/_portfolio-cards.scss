@@ -1,0 +1,106 @@
+.portfolio-card {
+    border-radius: 16px;
+    border: 1px solid var(--blue_medium);
+    background-color: #fff;
+    padding: 16px;
+
+    &__images {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+
+        img {
+            border-radius: 8px;
+            display: block;
+            width: calc(100% / 2 - 8px / 2);
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    &__badge {
+        border: 1px solid;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 24px;
+        line-height: 1.33333;
+        padding: 4px 8px 3px;
+
+        &--type_1 {
+            background-color: var(--blue_light);
+            border-color: var(--blue_medium);
+            color: var(--primary);
+        }
+
+        &--type_2 {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33333;
+        margin-bottom: 8px;
+        @media(min-width: $fhd) {
+            font-size: 23px;
+            line-height: 1.39130;
+        }
+
+        a {
+            color: var(--dark);
+            display: block;
+            text-decoration: none;
+            @include hover {
+                color: var(--primary_hover);
+            }
+            @include active {
+                color: var(--primary_pressed);
+            }
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.28571;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.portfolio-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $hd - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .slider-pagination {
+        @media (min-width: $hd) and (max-width: 1319.98px) {
+            display: flex;
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+
+        .portfolio-card {
+            height: 100%;
+        }
+    }
+}
