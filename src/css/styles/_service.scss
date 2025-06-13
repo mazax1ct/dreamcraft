@@ -1,0 +1,31 @@
+.service-banner {
+    background: linear-gradient(180.85deg, #0045A2 0.72%, #2FA5E6 87.07%, #BCE2F9 94.37%, #EFF8FF 99.26%);
+    min-height: 100vh;
+    margin-left: calc(0.02px - var(--container_padding));
+    margin-right: calc(0.02px - var(--container_padding));
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        background: linear-gradient(180.85deg, #0045A2 0.72%, #2FA5E6 54.91%, #BCE2F9 84.48%, rgba(239, 248, 255, 0) 99.26%);
+    }
+    @media(min-width: 1248px) {
+        margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+        margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+    }
+
+    picture {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+        }
+    }
+}

@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page page--inner">
+<body class="page page--banner">
     <div class="header-container">
         <div class="header-container__inner">
             <header class="header compensate-for-scrollbar">
@@ -727,103 +727,122 @@
                         <use xlink:href="images/sprite.svg#separator" />
                     </svg>
                 </li>
-                <li class="breadcrumbs__item">Статьи</li>
+                <li class="breadcrumbs__item">О компании</li>
             </ul>
         </div>
     </div>
 
     <main class="page__content">
         <div class="container">
-            <section class="page__section">
-                <h1>Популярные темы</h1>
+            <section class="service-banner">
+                <picture>
+                    <source srcset="images/backgrounds/service/desktop.svg" media="(min-width: 1024px)">
+                    <img src="images/backgrounds/service/mobile.svg" alt="">
+                </picture>
+            </section>
 
-                <div class="popular-blog">
-                    <div class="js-popular-blog swiper" data-slider="popular_blog">
+            <section class="page__section">
+                <h2>Тарифы</h2>
+
+                <div class="tarifs-slider">
+                    <div class="js-tarifs-slider swiper" data-slider="tarifs_slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Браузерные игры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
+                                <div class="tarif tarif--light">
+                                    <div class="tarif__inner">
+                                        <h3 class="tarif__title">Minimum</h3>
+                
+                                        <ul class="tarif__list bullet bullet--type_2">
+                                            <li>Консультация по идее и механикам</li>
+                                            <li>Прототип базовой игровой механики</li>
+                                            <li>Простая 2D-графика (плейсхолдеры или шаблоны)</li>
+                                            <li>1 платформа (Android или iOS)</li>
+                                        </ul>
+                
+                                        <p class="tarif__price">от 200 000 ₽</p>
+                
+                                        <button class="tarif__button" type="button">Оставить заявку</button>
+                                    </div>
+                                </div>
                             </div>
+                
                             <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Промоигры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
+                                <div class="tarif tarif--light">
+                                    <div class="tarif__inner">
+                                        <h3 class="tarif__title">Standart</h3>
+                
+                                        <ul class="tarif__list bullet bullet--type_2">
+                                            <li>Игровой цикл + 1-2 уникальные механики</li>
+                                            <li>Базовая UI/UX проработка</li>
+                                            <li>2D или стилизованная 3D-графика</li>
+                                            <li>Внедрение рекламы и простой донат</li>
+                                            <li>Поддержка 2 платформ (Android + iOS)</li>
+                                            <li>Тестирование и исправление критических багов</li>
+                                        </ul>
+                
+                                        <p class="tarif__price">от 700 000 ₽</p>
+                
+                                        <button class="tarif__button" type="button">Оставить заявку</button>
+                                    </div>
+                                </div>
                             </div>
+                
                             <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Мобильные игры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
+                                <div class="tarif tarif--dark">
+                                    <div class="tarif__badge">Оптимальный</div>
+                
+                                    <div class="tarif__inner">
+                                        <h3 class="tarif__title">Premium</h3>
+                
+                                        <ul class="tarif__list bullet bullet--type_2_white">
+                                            <li>Полноценная геймплейная логика</li>
+                                            <li>Качественная графика и анимация</li>
+                                            <li>Балансировка прогресса и уровней</li>
+                                            <li>Встроенная аналитика и A/B тесты</li>
+                                            <li>Рекламная и донатная монетизация</li>
+                                            <li>Поддержка событий, внутриигровых акций</li>
+                                            <li>Оптимизация под разные устройства</li>
+                                        </ul>
+                
+                                        <p class="tarif__price">от 3 000 000 ₽</p>
+                
+                                        <button class="tarif__button" type="button">Оставить заявку</button>
+                                    </div>
+                                </div>
                             </div>
+                
                             <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Игры для бизнеса</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Браузерные игры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Промоигры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Мобильные игры</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="popular" href="#">
-                                    <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg 2x" alt="">
-                                    <span class="popular__inner">
-                                        <span class="popular__title">Игры для бизнеса</span>
-                                        <span class="popular__text">16 статей</span>
-                                    </span>
-                                </a>
+                                <div class="tarif tarif--light">
+                                    <div class="tarif__inner">
+                                        <h3 class="tarif__title">Ultimate</h3>
+                
+                                        <ul class="tarif__list bullet bullet--type_2">
+                                            <li>Разработка уникального визуального стиля</li>
+                                            <li>Саунд-дизайн и музыкальное оформление</li>
+                                            <li>Продвинутая система внутриигровой экономики</li>
+                                            <li>Поддержка live-ops (ивенты, обновления, новые сезоны)</li>
+                                            <li>Маркетинговая подготовка (баннеры, трейлер, ASO)</li>
+                                            <li>Поддержка после релиза (3 месяца)</li>
+                                        </ul>
+                
+                                        <p class="tarif__price">от 12 000 000 ₽</p>
+                
+                                        <button class="tarif__button" type="button">Оставить заявку</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="js-popular-blog-pagination slider-pagination swiper-pagination" data-slider="popular_blog"></div>
+                
+                        <div class="js-tarifs-slider-pagination slider-pagination swiper-pagination" data-slider="tarifs_slider"></div>
                     </div>
-
-                    <button class="js-popular-blog-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="popular_blog">
+                
+                    <button class="js-tarifs-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="tarifs_slider">
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#chevron_left_24" />
                         </svg>
                     </button>
-
-                    <button class="js-popular-blog-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="popular_blog">
+                
+                    <button class="js-tarifs-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="tarifs_slider">
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#chevron_right_24" />
                         </svg>
@@ -832,309 +851,53 @@
             </section>
 
             <section class="page__section">
-                <h2>Популярные посты</h2>
+                <h2 class="text-center">Наши преимущества</h2>
 
-                <div class="blog-list">
-                    <div class="blog-group">
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="features">
+                    <div class="features__item">
+                        <img src="images/content/features/icon_1.svg" alt="">
+                
+                        <p>Новые технологии: от анализа данных до искусственного интеллекта</p>
                     </div>
-
-                    <div class="blog-group">
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-card">
-                            <a class="blog-card__image" href="#">
-                                <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
-                            </a>
-
-                            <div class="blog-card__info">
-                                <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
-
-                                <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
-
-                                <div class="blog-card__bottom">
-                                    <a class="blog-card__author" href="#">
-                                        <img src="images/content/blog/author_2.svg" alt="">
-
-                                        <span>Habr</span>
-                                    </a>
-
-                                    <div class="blog-card__props">
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#timer_icon" />
-                                            </svg>
-
-                                            <span>22 мин</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#comment_icon" />
-                                            </svg>
-
-                                            <span>389</span>
-                                        </div>
-
-                                        <div class="blog-card__prop">
-                                            <svg class="star" aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
-                                            </svg>
-
-                                            <span>4.9</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                
+                    <div class="features__item">
+                        <img src="images/content/features/icon_2.svg" alt="">
+                
+                        <p>Постоянное совершенствование процессов</p>
+                    </div>
+                
+                    <div class="features__item">
+                        <img src="images/content/features/icon_3.svg" alt="">
+                
+                        <p>Внедрение новых подходов и методологий</p>
+                    </div>
+                
+                    <div class="features__item">
+                        <img src="images/content/features/icon_4.svg" alt="">
+                
+                        <p>Обучение и повышение квалификации</p>
                     </div>
                 </div>
             </section>
 
             <section class="page__section">
-                <h2>Наши авторы</h2>
+                <h2>Команда</h2>
 
-                <div class="persons-slider persons-slider--small">
-                    <div class="js-persons-slider swiper" data-slider="persons_slider">
+                <div class="persons-slider persons-slider--big">
+                    <div class="js-persons-slider-2 swiper" data-slider="persons_slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="person-card person-card--small">
+                                <div class="person-card person-card--big">
                                     <div class="person-card__left">
                                         <div class="person-card__avatar">
-                                            <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                         </div>
                 
                                         <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
                 
                                         <p class="person-card__place">Директор DreamCraft Studio</p>
                 
-                                        <button class="person-card__more more-button" type="button" data-fancybox="person__1" data-src="#person__1">
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_1" data-src="#person_1">
                                             <span>Подробнее</span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#popup_icon" />
@@ -1142,11 +905,11 @@
                                         </button>
                                     </div>
                 
-                                    <div id="person__1" class="person-card__right">
+                                    <div id="person_1" class="person-card__right">
                                         <div class="person-card__right-inner">
                                             <div class="person-card__avatar-block">
                                                 <div class="person-card__avatar">
-                                                    <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                                 </div>
                 
                                                 <div>
@@ -1192,17 +955,17 @@
                             </div>
                 
                             <div class="swiper-slide">
-                                <div class="person-card person-card--small">
+                                <div class="person-card person-card--big">
                                     <div class="person-card__left">
                                         <div class="person-card__avatar">
-                                            <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                         </div>
                 
                                         <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
                 
                                         <p class="person-card__place">Директор DreamCraft Studio</p>
                 
-                                        <button class="person-card__more more-button" type="button" data-fancybox="person__2" data-src="#person__2">
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_2" data-src="#person_2">
                                             <span>Подробнее</span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#popup_icon" />
@@ -1210,11 +973,11 @@
                                         </button>
                                     </div>
                 
-                                    <div id="person__2" class="person-card__right">
+                                    <div id="person_2" class="person-card__right">
                                         <div class="person-card__right-inner">
                                             <div class="person-card__avatar-block">
                                                 <div class="person-card__avatar">
-                                                    <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                                 </div>
                 
                                                 <div>
@@ -1260,17 +1023,17 @@
                             </div>
                 
                             <div class="swiper-slide">
-                                <div class="person-card person-card--small">
+                                <div class="person-card person-card--big">
                                     <div class="person-card__left">
                                         <div class="person-card__avatar">
-                                            <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                         </div>
                 
                                         <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
                 
                                         <p class="person-card__place">Директор DreamCraft Studio</p>
                 
-                                        <button class="person-card__more more-button" type="button" data-fancybox="person__3" data-src="#person__3">
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_3" data-src="#person_3">
                                             <span>Подробнее</span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#popup_icon" />
@@ -1278,11 +1041,11 @@
                                         </button>
                                     </div>
                 
-                                    <div id="person__3" class="person-card__right">
+                                    <div id="person_3" class="person-card__right">
                                         <div class="person-card__right-inner">
                                             <div class="person-card__avatar-block">
                                                 <div class="person-card__avatar">
-                                                    <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                                 </div>
                 
                                                 <div>
@@ -1328,17 +1091,17 @@
                             </div>
                 
                             <div class="swiper-slide">
-                                <div class="person-card person-card--small">
+                                <div class="person-card person-card--big">
                                     <div class="person-card__left">
                                         <div class="person-card__avatar">
-                                            <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                         </div>
                 
                                         <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
                 
                                         <p class="person-card__place">Директор DreamCraft Studio</p>
                 
-                                        <button class="person-card__more more-button" type="button" data-fancybox="person__4" data-src="#person__4">
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_4" data-src="#person_4">
                                             <span>Подробнее</span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#popup_icon" />
@@ -1346,11 +1109,11 @@
                                         </button>
                                     </div>
                 
-                                    <div id="person__4" class="person-card__right">
+                                    <div id="person_4" class="person-card__right">
                                         <div class="person-card__right-inner">
                                             <div class="person-card__avatar-block">
                                                 <div class="person-card__avatar">
-                                                    <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                                 </div>
                 
                                                 <div>
@@ -1396,17 +1159,17 @@
                             </div>
                 
                             <div class="swiper-slide">
-                                <div class="person-card person-card--small">
+                                <div class="person-card person-card--big">
                                     <div class="person-card__left">
                                         <div class="person-card__avatar">
-                                            <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                            <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                         </div>
                 
                                         <h3 class="person-card__name"><a href="#">Пешехонов<br> Алексей Владимирович</a></h3>
                 
                                         <p class="person-card__place">Директор DreamCraft Studio</p>
                 
-                                        <button class="person-card__more more-button" type="button" data-fancybox="person__5" data-src="#person__5">
+                                        <button class="person-card__more more-button" type="button" data-fancybox="person_5" data-src="#person_5">
                                             <span>Подробнее</span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#popup_icon" />
@@ -1414,11 +1177,11 @@
                                         </button>
                                     </div>
                 
-                                    <div id="person__5" class="person-card__right">
+                                    <div id="person_5" class="person-card__right">
                                         <div class="person-card__right-inner">
                                             <div class="person-card__avatar-block">
                                                 <div class="person-card__avatar">
-                                                    <img src="images/content/team/img_2.jpg" srcset="images/content/team/img_2@2x.jpg 2x" alt="">
+                                                    <img src="images/content/team/img.jpg" srcset="images/content/team/img@2x.jpg 2x" alt="">
                                                 </div>
                 
                                                 <div>
@@ -1478,6 +1241,754 @@
                             <use xlink:href="images/sprite.svg#chevron_right_24" />
                         </svg>
                     </button>
+                </div>
+            </section>
+
+            <section class="page__section page__section--bg">
+                <div class="tabs">
+                    <div class="title-block">
+                        <div class="tabs__title is-active" data-tab="1">
+                            <h2>Отзывы наших клиентов</h2>
+                        </div>
+
+                        <div class="tabs__title" data-tab="2">
+                            <h2>Нам доверяют</h2>
+                            <p>Мы гордимся сотрудничеством с ведущими компаниями</p>
+                        </div>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Отзывы <span class="mobile-hidden"> клиентов</span></button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Нам доверяют</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="reviews-slider">
+                            <div class="js-reviews-slider swiper" data-slider="reviews_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_1" data-src="#review">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_3" data-src="#review_3">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review_3" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_4" data-src="#review_4">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review_4" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="js-reviews-slider-pagination slider-pagination swiper-pagination" data-slider="reviews_slider"></div>
+                            </div>
+                        
+                            <button class="js-reviews-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="reviews_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_left_24" />
+                                </svg>
+                            </button>
+                        
+                            <button class="js-reviews-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="reviews_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        <div class="reviews-slider">
+                            <div class="js-reviews-slider swiper" data-slider="clients_cards_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_2.jpg" srcset="images/content/reviews/img_2@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Крупный банк обратился к нам с задачей повысить вовлеченность новых сотрудников в процесс обучения.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы разработали геймифицированную платформу с квестами и симуляцией реальных банковских ситуаций. Результат — рост прохождения обучающих программ на 45% и сокращение срока адаптации персонала.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_3.jpg" srcset="images/content/reviews/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Банк хотел усилить узнаваемость бренда среди молодежной аудитории.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы предложили решение — яркую мобильную аркаду с элементами банковских сервисов и бонусной системой. За первый месяц игру скачали более 100 000 пользователей, а узнаваемость бренда в целевой группе выросла на 30%.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_2.jpg" srcset="images/content/reviews/img_2@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Крупный банк обратился к нам с задачей повысить вовлеченность новых сотрудников в процесс обучения.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы разработали геймифицированную платформу с квестами и симуляцией реальных банковских ситуаций. Результат — рост прохождения обучающих программ на 45% и сокращение срока адаптации персонала.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_3.jpg" srcset="images/content/reviews/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Банк хотел усилить узнаваемость бренда среди молодежной аудитории.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы предложили решение — яркую мобильную аркаду с элементами банковских сервисов и бонусной системой. За первый месяц игру скачали более 100 000 пользователей, а узнаваемость бренда в целевой группе выросла на 30%.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="js-reviews-slider-pagination slider-pagination swiper-pagination" data-slider="clients_cards_slider"></div>
+                            </div>
+                        
+                            <button class="js-reviews-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="clients_cards_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_left_24" />
+                                </svg>
+                            </button>
+                        
+                            <button class="js-reviews-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="clients_cards_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-button-block">
+                    <a class="button button--h_56 button--dark" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#star_review_icon" />
+                        </svg>
+                        <span>Читать все отзывы</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Дополнительные услуги</h2>
+
+                <div class="services-cards-slider">
+                    <div class="js-services-cards-slider swiper" data-slider="services_cards_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img.jpg" srcset="images/content/services/img@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Разработка игр</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img_2.jpg" srcset="images/content/services/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Промо-игры</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img.jpg" srcset="images/content/services/img@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Разработка игр</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img_2.jpg" srcset="images/content/services/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Промо-игры</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img.jpg" srcset="images/content/services/img@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Разработка игр</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="service-card">
+                                    <div class="service-card__image">
+                                        <img src="images/content/services/img_2.jpg" srcset="images/content/services/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                
+                                    <div class="service-card__info">
+                                        <h3 class="service-card__title">Промо-игры</h3>
+                                        <p class="service-card__text">С развитием технологий каждое новое открытие становится значительным.</p>
+                
+                                        <div class="service-card__price-block">
+                                            <p class="service-card__price">Стоимость от 300 000 ₽</p>
+                
+                                            <a class="arrow-button" href="#">
+                                                <span class="arrow-button__icon">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="js-services-cards-slider-pagination slider-pagination swiper-pagination" data-slider="services_cards_slider"></div>
+                    </div>
+                
+                    <button class="js-services-cards-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="services_cards_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+                
+                    <button class="js-services-cards-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="services_cards_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="request-form request-form--stand_alone">
+                <div class="request-form__inner">
+                    <div class="request-form__left">
+                        <h2>Готовы создать свою<br> игру?</h2>
+            
+                        <div class="request-form__socials">
+                            <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+            
+                            <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="request-form__right">
+                        <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+            
+                        <form class="request-form__form" action="">
+                            <div class="input-group">
+                                <div class="required">
+                                    <input class="input" type="text" placeholder="Имя" required>
+                                </div>
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="required">
+                                    <input class="input" type="text" placeholder="Телефон" required>
+                                </div>
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="required">
+                                    <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                                </div>
+                            </div>
+            
+                            <button class="request-form__submit button button--light button--h_56" type="submit">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#doc_icon" />
+                                </svg>
+                                <span>Отправить заявку</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </div>
@@ -1959,9 +2470,10 @@
     
     <script src="js/main.js"></script>
 
-    <script src="js/popular_blog.js"></script>
-
+    <script src="js/tarifs_slider.js"></script>
     <script src="js/persons_slider.js"></script>
+    <script src="js/reviews_slider.js"></script>
+    <script src="js/services_cards_slider.js"></script>
 </body>
 
 </html>

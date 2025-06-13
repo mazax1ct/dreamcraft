@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>DreamCraft</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--banner">
+    <div class="header-container">
+        <div class="header-container__inner">
+            //= template/common/header.html
+        </div>
+
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">О компании</li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+            <section class="service-banner">
+                <picture>
+                    <source srcset="images/backgrounds/service/desktop.svg" media="(min-width: 1024px)">
+                    <img src="images/backgrounds/service/mobile.svg" alt="">
+                </picture>
+            </section>
+
+            <section class="page__section">
+                <h2>Тарифы</h2>
+
+                //= template/tarifs-slider.html
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center">Наши преимущества</h2>
+
+                //= template/features.html
+            </section>
+
+            <section class="page__section">
+                <h2>Команда</h2>
+
+                //= template/persons-slider-big.html
+            </section>
+
+            <section class="page__section page__section--bg">
+                <div class="tabs">
+                    <div class="title-block">
+                        <div class="tabs__title is-active" data-tab="1">
+                            <h2>Отзывы наших клиентов</h2>
+                        </div>
+
+                        <div class="tabs__title" data-tab="2">
+                            <h2>Нам доверяют</h2>
+                            <p>Мы гордимся сотрудничеством с ведущими компаниями</p>
+                        </div>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Отзывы <span class="mobile-hidden"> клиентов</span></button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Нам доверяют</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        //= template/reviews-slider.html
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        //= template/clients-cards-slider.html
+                    </div>
+                </div>
+
+                <div class="more-button-block">
+                    <a class="button button--h_56 button--dark" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#star_review_icon" />
+                        </svg>
+                        <span>Читать все отзывы</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Дополнительные услуги</h2>
+
+                //= template/services-cards-slider.html
+            </section>
+
+            //= template/request_form.html
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/tarifs_slider.js"></script>
+    <script src="js/persons_slider.js"></script>
+    <script src="js/reviews_slider.js"></script>
+    <script src="js/services_cards_slider.js"></script>
+</body>
+
+</html>

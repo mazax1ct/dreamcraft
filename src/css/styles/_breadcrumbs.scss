@@ -70,3 +70,19 @@
         text-decoration: none;
     }
 }
+
+.page--banner {
+    .breadcrumbs {
+        border-bottom-color: var(--blue_medium);
+        border-top-color: var(--blue_medium);
+        color: var(--grey_light);
+
+        .breadcrumbs__separator {
+            fill: #fff;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
