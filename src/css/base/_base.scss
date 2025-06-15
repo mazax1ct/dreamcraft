@@ -340,108 +340,37 @@ ul {
     text-align: right;
 }
 
-.fill-red {
-    fill: var(--red_2);
-}
-
-.fill-blue {
-    fill: var(--blue_1);
-}
-
-.fill-green {
-    fill: var(--green);
-}
-
-.req,
-.required {
-    color: var(--red_1);
-}
-
-.color-blue {
-    color: var(--blue_1);
-}
-
-.color-red {
-    color: var(--red_1);
-}
-
-.color-grey {
-    color: var(--grey_4);
-}
-
-.category-selector {
-    margin-bottom: 16px;
+blockquote {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.27272;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    z-index: 1;
+    @media(max-width: $sm - 0.02px) {
+        padding-top: 32px;
+    }
     @media(min-width: $sm) {
-        margin-bottom: 32px;
-    }
-    @media(min-width: $md) {
-        max-width: 486px;
-    }
-}
-
-.more-link {
-    align-items: center;
-    color: var(--blue_1);
-    display: inline-flex;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    @include hover {
-        color: var(--blue_7);
-    }
-    @include active {
-        color: var(--blue_8);
+        padding-left: 32px;
     }
 
-    svg {
-        fill: currentColor;
-        height: 40px;
-        min-width: 40px;
-        width: 40px;
-    }
-}
-
-.bordered-text {
-    @media(min-width: $sm) {
-        border-left: 1px solid var(--blue_6);
-        padding-left: 24px;
-    }
-}
-
-.sign {
-    color: var(--grey_5);
-    font-size: 14px;
-    line-height: 1.21428;
-}
-
-.columns {
-    @media(min-width: $hd) {
-        display: flex;
-        gap: 24px;
+    &::before {
+        background: url("../images/icons/quotes.svg") no-repeat 0 0 transparent;
+        content: '';
+        height: 24px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 24px;
+        z-index: 1;
     }
 
-    &__left-column {
-        @media(max-width: $hd - 0.01px) {
-            margin-bottom: 16px;
-        }
-        @media(min-width: $hd) {
-            width: calc(100% - 24px - 384px);
-        }
+    &:not(:first-child) {
+        margin-top: 24px;
     }
 
-    &__right-column {
-        @media(min-width: $hd) {
-            width: 384px;
-        }
-    }
-}
-
-.accent-text {
-    color: var(--blue_1);
-    font-size: 20px;
-    font-weight: 900;
-    @media(min-width: $sm) {
-        font-size: 24px;
+    &:not(:last-child) {
+        margin-bottom: 24px;
     }
 }

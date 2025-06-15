@@ -1,0 +1,210 @@
+.person-detail {
+    background-color: var(--blue_medium);
+    border-radius: 32px;
+    padding: 16px;
+    @media(min-width: $md) {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 48px;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    @media(min-width: $lg) {
+        margin-left: -80px;
+        margin-right: -80px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @media(min-width: 1600px) {
+        margin-left: -120px;
+        margin-right: -120px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    @media(min-width: $fhd) {
+        margin-left: -160px;
+        margin-right: -160px;
+        padding: 76px 160px;
+    }
+
+    &__avatar {
+        position: relative;
+        z-index: 1;
+        @media(max-width: $md - 0.02px) {
+            margin-bottom: 24px;
+            max-width: 360px;
+        }
+        @media(min-width: $md) {
+            min-width: 50%;
+            width: 50%;
+        }
+
+        &::after,
+        &::before {
+            content: '';
+        }
+
+        &::after,
+        &::before,
+        .decor {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        &::before {
+            background: url("../images/backgrounds/author/decor_1.svg") no-repeat 0 0 / contain transparent;
+            height: 43px;
+            left: 0;
+            top: 0;
+            width: 45px;
+            @media(min-width: $fhd) {
+                height: 87px;
+                width: 92px;
+            }
+        }
+
+        &::after {
+            background: url("../images/backgrounds/author/decor_2.svg") no-repeat 0 0 / contain transparent;
+            height: 42px;
+            left: 100%;
+            top: 50%;
+            width: 55px;
+            @media(min-width: $fhd) {
+                height: 98px;
+                width: 128px;
+            }
+        }
+
+        .decor {
+            background: url("../images/backgrounds/author/decor_3.svg") no-repeat 0 0 / contain transparent;
+            height: 26px;
+            left: 50%;
+            top: 100%;
+            width: 46px;
+            @media(min-width: $fhd) {
+                height: 53px;
+                width: 94px;
+            }
+        }
+
+        img {
+            background-color: #8ABDDC;
+            border-radius: 24px;
+            display: block;
+            mix-blend-mode: overlay;
+            width: 100%;
+        }
+    }
+
+    &__avatar-inner {
+        background-color: #8ABDDC;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    &__text-block {
+        max-width: 640px;
+
+        h1 {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__badge {
+        border: 1px solid var(--blue_dark);
+        border-radius: 12px;
+        color: var(--primary);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.33333;
+        padding: 4px 8px;
+    }
+
+    &__props-block {
+        @media(min-width: $sm) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            @media(min-width: $fhd) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    &__props {
+        @media(max-width: $sm - 0.02px) {
+            margin-bottom: 16px;
+        }
+        @media(min-width: $sm) {
+            min-width: 370px;
+        }
+    }
+
+    &__prop {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.28571;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 20px;
+            min-width: 20px;
+            width: 20px;
+        }
+    }
+
+    &__social-block {
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.28571;
+            margin-bottom: 12px;
+            @media(min-width: $fhd) {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .social-link {
+            color: var(--primary);
+        }
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        @media(min-width: $fhd) {
+            margin-bottom: 24px;
+        }
+    }
+}

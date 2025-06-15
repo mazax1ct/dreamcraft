@@ -155,14 +155,16 @@ $(document).on('click', '.js-trans-table-toggler', function () {
 });
 
 //аккордеон
-$(document).on('click', '.accordion__toggler', function () {
+$(document).on('click', '.js-big-accordion-toggler', function () {
   var _this = $(this);
   if(!_this.hasClass('is-active')){
+    _this.closest('.accordion').addClass('is-active');
     _this.addClass('is-active');
     _this.next('.accordion__body').slideDown();
   }else{
     _this.next('.accordion__body').slideUp(function() {
       _this.removeClass('is-active');
+      _this.closest('.accordion').removeClass('is-active');
     });
   }
   return false;

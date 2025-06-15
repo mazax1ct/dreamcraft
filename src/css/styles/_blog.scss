@@ -231,6 +231,7 @@
 
         a {
             color: var(--dark);
+            display: block;
             text-decoration: none;
             @include hover {
                 color: var(--primary_hover);
