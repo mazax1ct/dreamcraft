@@ -52,6 +52,10 @@ html {
 
     &__content {
         flex: 1 0 auto;
+        overflow: hidden;
+        @media(min-width: $fhd) {
+            padding-bottom: 65px;
+        }
     }
 
     &__section {
@@ -93,6 +97,38 @@ html {
                 @media(min-width: $fhd) {
                     left: -160px;
                     right: -160px;
+                }
+            }
+        }
+
+        &--decor_1 {
+            @media(min-width: $md) {
+                position: relative;
+                z-index: 0;
+            }
+
+            & > * {
+                position: relative;
+                z-index: 1;
+            }
+
+            &::before {
+                @media(min-width: $md) {
+                    aspect-ratio: 1;
+                    background-color: #6AC6FF;
+                    content: '';
+                    filter: blur(175px);
+                    height: 100%;
+                    left: 0;
+                    max-width: 600px;
+                    opacity: 0.9;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 50%;
+                    touch-action: none;
+                    transform: translate(0, -50%) rotate(131deg);
+                    width: 100%;
+                    z-index: 0;
                 }
             }
         }
@@ -197,10 +233,7 @@ textarea {
 
 p {
     margin-top: 0;
-    margin-bottom: 1em;
-    @media(min-width: $sm) {
-        margin-bottom: 1.5em;
-    }
+    margin-bottom: 16px;
 
     &:last-child {
         margin-bottom: 0;
@@ -210,7 +243,7 @@ p {
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
     padding: 0;
 
     &:last-child {
@@ -246,6 +279,9 @@ ul {
                 top: 0;
                 width: 24px;
                 z-index: 1;
+                @media(min-width: $fhd) {
+                    top: 4px;
+                }
             }
         }
     }
@@ -336,16 +372,27 @@ ul {
     text-align: center;
 }
 
+.text-center-desktop {
+    @media(min-width: $md) {
+        text-align: center;
+    }
+}
+
 .text-right {
     text-align: right;
+}
+
+.text-right-desktop {
+    @media(min-width: $md) {
+        text-align: right;
+    }
 }
 
 blockquote {
     font-size: 22px;
     font-style: italic;
     line-height: 1.27272;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 24px 0;
     position: relative;
     z-index: 1;
     @media(max-width: $sm - 0.02px) {
@@ -366,11 +413,11 @@ blockquote {
         z-index: 1;
     }
 
-    &:not(:first-child) {
-        margin-top: 24px;
+    &:first-child {
+        margin-top: 0;
     }
 
-    &:not(:last-child) {
-        margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 0;
     }
 }

@@ -39,6 +39,46 @@
     <main class="page__content">
         <div class="container">
             <section class="page__section">
+                <div class="content-block content-block--type_1">
+                    <div class="content-block__image">
+                        <img src="images/content/content_blocks/img_5.png" srcset="images/content/content_blocks/img_5@2x.png 2x" alt="">
+                    </div>
+
+                    <div class="content-block__text">
+                        <h2>История</h2>
+
+                        <p>С развитием технологий каждое новое открытие становится значительным шагом вперёд. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в курсе последних
+                            тенденций, чтобы не упустить новые возможности.</p>
+
+                        <blockquote>
+                            <p>Никогда не стойте на месте. Идите вперёд, даже если путь кажется трудным. Главное — не останавливаться и верить в успех.</p>
+                        </blockquote>
+
+                        <p>Сотрудничество и обмен опытом становятся ключевыми факторами в успешной реализации проектов. Совместные усилия ведут к более быстрым и эффективным решениям, открывая новые горизонты для развития. Постоянное обучение
+                            и адаптация к изменениям — залог успешного будущего.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Наши проекты</h2>
+
+                //= template/projects-slider.html
+
+                <div class="arrow-button-block">
+                    <a class="arrow-button" href="#">
+                        <span>Смотреть все проекты</span>
+
+                        <span class="arrow-button__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
                 <div class="tabs">
                     <div class="title-block">
                         <h2>Команда</h2>
@@ -67,6 +107,7 @@
 
     //= template/common/scripts.html
 
+    <script src="js/big_cards_slider.js"></script>
     <script src="js/persons_slider.js"></script>
 </body>
 

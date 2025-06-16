@@ -40,16 +40,18 @@
                 width: 216px;
                 z-index: 0;
                 @media(min-width: $fhd) {
-                    width: 668px;
-                    height: 653px;
+                    width: 80%;
+                    height: 80%;
                     opacity: 0.9;
-                    transform: translate(-50%, -50%) rotate(131deg);
+                    transform: translate(-50%, -50%) rotate(130deg);
                 }
             }
         }
 
         .content-block__text {
             max-width: 750px;
+            position: relative;
+            z-index: 1;
 
             h2 {
                 margin-bottom: 24px;
@@ -117,8 +119,8 @@
                 width: 216px;
                 z-index: 0;
                 @media(min-width: $fhd) {
-                    width: 668px;
-                    height: 653px;
+                    width: 80%;
+                    height: 80%;
                     opacity: 0.9;
                     transform: translate(-50%, -50%) rotate(131deg);
                 }
@@ -126,6 +128,8 @@
         }
 
         .content-block__text {
+            position: relative;
+            z-index: 1;
             @media(min-width: $md) {
                 grid-column: 1;
                 max-width: 750px;

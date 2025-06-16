@@ -210,13 +210,7 @@
         color: var(--grey_dark);
         display: block;
         font-family: var(--secondary_font);
-        font-size: 16px;
-        line-height: 1.5;
         margin-bottom: 8px;
-        @media(min-width: $fhd) {
-            font-size: 20px;
-            line-height: 1.6;
-        }
     }
 
     &__title {

@@ -36,6 +36,8 @@
     &--dark {
         background-color: var(--primary);
         color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
         outline: 5px solid rgba(30, 118, 226, 0.18);
         @include hover {
             background-color: var(--primary_hover);

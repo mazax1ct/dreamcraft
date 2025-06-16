@@ -145,7 +145,6 @@ $(document).on('click', '.js-tabs-button', function () {
   return false;
 });
 
-
 //транс таблица
 $(document).on('click', '.js-trans-table-toggler', function () {
   $(this).closest('.trans-table__toggler-block').toggleClass('is-active');
@@ -167,5 +166,21 @@ $(document).on('click', '.js-big-accordion-toggler', function () {
       _this.closest('.accordion').removeClass('is-active');
     });
   }
+  return false;
+});
+
+//кат
+$(document).on('click', '.js-cut-toggler', function () {
+  let _this = $(this);
+  if(!_this.hasClass('is-active')){
+    $('.cut[data-cut="'+ $(this).attr('data-cut') +'"]').slideDown();
+    _this.find('span').text('Скрыть');
+    _this.addClass('is-active');
+  }else{
+    $('.cut[data-cut="'+ $(this).attr('data-cut') +'"]').slideUp();
+    _this.find('span').text('Показать больше');
+    _this.removeClass('is-active');
+  }
+
   return false;
 });

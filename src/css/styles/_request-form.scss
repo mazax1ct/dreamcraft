@@ -3,6 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 590px;
+    position: relative;
+    z-index: 1;
 
     &--stand_alone {
         border-radius: 24px;
@@ -98,9 +100,7 @@
 
     &__text {
         font-family: var(--secondary_font);
-        font-size: 16px;
         font-weight: 500;
-        line-height: 1.5;
         margin-bottom: 1em;
         @media(min-width: $fhd) {
             font-size: 24px;
@@ -115,6 +115,8 @@
     }
 
     &__submit {
-        width: 100%;
+        @media(max-width: $md - 0.02px) {
+            width: 100%;
+        }
     }
 }

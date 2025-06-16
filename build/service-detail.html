@@ -727,18 +727,193 @@
                         <use xlink:href="images/sprite.svg#separator" />
                     </svg>
                 </li>
-                <li class="breadcrumbs__item">О компании</li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Портфолио</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">Fantasy Hearts</li>
             </ul>
         </div>
     </div>
 
     <main class="page__content">
         <div class="container">
-            <section class="service-banner">
+            <section class="page__section service-banner">
                 <picture>
                     <source srcset="images/backgrounds/service/desktop.svg" media="(min-width: 1024px)">
                     <img src="images/backgrounds/service/mobile.svg" alt="">
                 </picture>
+
+                <div class="service-banner__inner container">
+                    <div class="service-banner__picture">
+                        <img src="images/content/services/detail.jpg" srcset="images/content/services/detail@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div class="service-banner__text-block">
+                        <h1>Разработка игр</h1>
+
+                        <p class="service-banner__subtitle">Профессиональная разработка игр по вашим требоавниями.</p>
+
+                        <p><b>Наши преимущества</b></p>
+
+                        <ul class="bullet bullet--type_2_white">
+                            <li>Полный цикл разработки</li>
+                            <li>Гибкая и вовлечённая команда</li>
+                            <li>Фокус на результат и масштаб</li>
+                        </ul>
+
+                        <div class="service-banner__price-block">
+                            <div>
+                                <p class="service-banner__price">от 500 000 ₽</p>
+                                <p>Бюджет проекта</p>
+                            </div>
+
+                            <div>
+                                <p class="service-banner__price">от 6 месяцев</p>
+                                <p>Срок разработки</p>
+                            </div>
+                        </div>
+
+                        <button class="service-banner__button button button--dark button--h_56" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#report_icon" />
+                            </svg>
+                            <span>Заказать проект</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section page__section--decor_1">
+                <h2>Наши проекты</h2>
+
+                <div class="big-cards-slider">
+                    <div class="js-big-cards-slider swiper" data-slider="big_cards_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="big-card big-card--type_1">
+                                    <div class="big-card__image">
+                                        <img src="images/content/content_blocks/img_3.jpg" srcset="images/content/content_blocks/img_3@2x.jpg 2x" alt="">
+                                        <img class="big-card__image-decor" src="images/backgrounds/big-card/decor_1.svg" alt="">
+                                    </div>
+                
+                                    <div class="big-card__text-block">
+                                        <h3><a href="#">Fantasy Hearts</a></h3>
+                
+                                        <p class="big-card__text">Мы обсуждаем и формализуем идею, предлагаем оптимальные пути реализации и вместе составляем список базовых требований.</p>
+                
+                                        <div id="big_card_detail_1" class="big-card__popup">
+                                            <div class="big-card__popup-inner">
+                                                <p><b>Платформа</b><br> iOS, Android (кросс-платформенный движок Unity)</p>
+                
+                                                <p><b>Жанр</b><br> Пошаговая RPG с элементами roguelike</p>
+                
+                                                <p><b>Ключевые особенности</b></p>
+                
+                                                <ul class="bullet bullet--type_1">
+                                                    <li>Генерация процедурных подземелий</li>
+                                                    <li>Глубокая кастомизация персонажа (100+ комбинаций навыков)</li>
+                                                    <li>PvP-арены с системой сезонных рейтингов</li>
+                                                    <li>Адаптивный ИИ противников</li>
+                                                </ul>
+                
+                                                <button class="button button--dark button--h_56" type="button">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#report_icon" />
+                                                    </svg>
+                                                    <span>Заказать проект</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                
+                                        <button class="big-card__more more-button" type="button" data-fancybox="big-big_card_detail_1" data-src="#big_card_detail_1">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="big-card big-card--type_1">
+                                    <div class="big-card__image">
+                                        <img src="images/content/content_blocks/img_4.jpg" srcset="images/content/content_blocks/img_4@2x.jpg 2x" alt="">
+                                        <img class="big-card__image-decor" src="images/backgrounds/big-card/decor_2.svg" alt="">
+                                    </div>
+                
+                                    <div class="big-card__text-block">
+                                        <h3><a href="#">Игра «Undeads Rush»</a></h3>
+                
+                                        <p class="big-card__text">С развитием технологий каждое новое открытие становится значительным шагом вперед. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в
+                                            курсе последних тенденций, чтобы не упустить новые возможности. С развитием технологий каждое новое открытие становится значительным шагом вперед. Современные решения находят применение в различных сферах жизни, улучшая
+                                            качество и ускоряя процессы. Важно быть в курсе последних тенденций, чтобы не упустить новые возможности.</p>
+                
+                                        <div id="big_card_detail_2" class="big-card__popup">
+                                            <div class="big-card__popup-inner">
+                                                <p><b>Платформа</b><br> iOS, Android (кросс-платформенный движок Unity)</p>
+                
+                                                <p><b>Жанр</b><br> Пошаговая RPG с элементами roguelike</p>
+                
+                                                <p><b>Ключевые особенности</b></p>
+                
+                                                <ul class="bullet bullet--type_1">
+                                                    <li>Генерация процедурных подземелий</li>
+                                                    <li>Глубокая кастомизация персонажа (100+ комбинаций навыков)</li>
+                                                    <li>PvP-арены с системой сезонных рейтингов</li>
+                                                    <li>Адаптивный ИИ противников</li>
+                                                </ul>
+                
+                                                <button class="button button--dark button--h_56" type="button">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#report_icon" />
+                                                    </svg>
+                                                    <span>Заказать проект</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                
+                                        <button class="big-card__more more-button" type="button" data-fancybox="big-big_card_detail_2" data-src="#big_card_detail_2">
+                                            <span>Подробнее</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#popup_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="js-big-cards-slider-pagination slider-pagination swiper-pagination" data-slider="big_cards_slider"></div>
+                    </div>
+                
+                    <button class="js-big-cards-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="big_cards_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+                
+                    <button class="js-big-cards-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="big_cards_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="arrow-button-block">
+                    <a class="arrow-button" href="#">
+                        <span>Смотреть все проекты</span>
+
+                        <span class="arrow-button__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </section>
 
             <section class="page__section">
@@ -857,25 +1032,25 @@
                     <div class="features__item">
                         <img src="images/content/features/icon_1.svg" alt="">
                 
-                        <p>Новые технологии: от анализа данных до искусственного интеллекта</p>
+                        <p>Новые технологии: от анализа<br> данных до искусственного<br> интеллекта</p>
                     </div>
                 
                     <div class="features__item">
                         <img src="images/content/features/icon_2.svg" alt="">
                 
-                        <p>Постоянное совершенствование процессов</p>
+                        <p>Постоянное совершенствование<br> процессов</p>
                     </div>
                 
                     <div class="features__item">
                         <img src="images/content/features/icon_3.svg" alt="">
                 
-                        <p>Внедрение новых подходов и методологий</p>
+                        <p>Внедрение новых подходов и<br> методологий</p>
                     </div>
                 
                     <div class="features__item">
                         <img src="images/content/features/icon_4.svg" alt="">
                 
-                        <p>Обучение и повышение квалификации</p>
+                        <p>Обучение и повышение<br> квалификации</p>
                     </div>
                 </div>
             </section>
@@ -2188,57 +2363,59 @@
                 </div>
             </section>
 
-            <section class="request-form request-form--stand_alone">
-                <div class="request-form__inner">
-                    <div class="request-form__left">
-                        <h2>Готовы создать свою<br> игру?</h2>
-            
-                        <div class="request-form__socials">
-                            <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#tg_icon" />
-                                </svg>
-                            </a>
-            
-                            <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#wa_icon" />
-                                </svg>
-                            </a>
+            <section class="page__section">
+                <section class="request-form request-form--stand_alone">
+                    <div class="request-form__inner">
+                        <div class="request-form__left">
+                            <h2>Готовы создать свою<br> игру?</h2>
+                
+                            <div class="request-form__socials">
+                                <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#tg_icon" />
+                                    </svg>
+                                </a>
+                
+                                <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#wa_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="request-form__right">
+                            <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+                
+                            <form class="request-form__form" action="">
+                                <div class="input-group">
+                                    <div class="required">
+                                        <input class="input" type="text" placeholder="Имя" required>
+                                    </div>
+                                </div>
+                
+                                <div class="input-group">
+                                    <div class="required">
+                                        <input class="input" type="text" placeholder="Телефон" required>
+                                    </div>
+                                </div>
+                
+                                <div class="input-group">
+                                    <div class="required">
+                                        <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                                    </div>
+                                </div>
+                
+                                <button class="request-form__submit button button--light button--h_56" type="submit">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#doc_icon" />
+                                    </svg>
+                                    <span>Отправить заявку</span>
+                                </button>
+                            </form>
                         </div>
                     </div>
-            
-                    <div class="request-form__right">
-                        <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
-            
-                        <form class="request-form__form" action="">
-                            <div class="input-group">
-                                <div class="required">
-                                    <input class="input" type="text" placeholder="Имя" required>
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <div class="required">
-                                    <input class="input" type="text" placeholder="Телефон" required>
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <div class="required">
-                                    <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
-                                </div>
-                            </div>
-            
-                            <button class="request-form__submit button button--light button--h_56" type="submit">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#doc_icon" />
-                                </svg>
-                                <span>Отправить заявку</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                </section>
             </section>
         </div>
     </main>
@@ -2719,6 +2896,7 @@
     
     <script src="js/main.js"></script>
 
+    <script src="js/big_cards_slider.js"></script>
     <script src="js/tarifs_slider.js"></script>
     <script src="js/persons_slider.js"></script>
     <script src="js/reviews_slider.js"></script>

@@ -1,0 +1,40 @@
+.cut {
+    @media(max-width: $md - 0.02px) {
+        display: none;
+    }
+}
+
+.cut-toggler {
+    @include button-reset;
+    @include active-area;
+    align-items: center;
+    color: var(--primary);
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 8px;
+    position: relative;
+    transition: color 0.3s;
+    z-index: 1;
+    @media(min-width: $md) {
+        display: none;
+    }
+    @include hover {
+        color: var(--primary_hover);
+    }
+    @include active {
+        color: var(--primary_pressed);
+    }
+
+    &.is-active {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    svg {
+        fill: currentColor;
+        height: 20px;
+        min-width: 20px;
+        width: 20px;
+    }
+}

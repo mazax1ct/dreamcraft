@@ -34,9 +34,62 @@
             </section>
 
             <section class="page__section">
-                <h2 class="text-center">Самые популярные запросы наших клиентов</h2>
+                <h2 class="text-center-desktop">Самые популярные запросы наших клиентов</h2>
 
                 //= template/links-cards-slider.html
+            </section>
+
+            <section class="page__section">
+                <div class="content-block content-block--type_1">
+                    <div class="content-block__image">
+                        <img src="images/content/content_blocks/img.png" srcset="images/content/content_blocks/img@2x.png 2x" alt="">
+                    </div>
+
+                    <div class="content-block__text">
+                        <h2>Будущее уже здесь</h2>
+
+                        <p>С развитием технологий каждое новое открытие становится значительным шагом вперёд. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в курсе последних
+                            тенденций, чтобы не упустить новые возможности.</p>
+
+                        <div class="cut" data-cut="1">
+                            <blockquote>
+                                <p>Никогда не стойте на месте. Идите вперёд, даже если путь кажется трудным. Главное — не останавливаться и верить в успех.</p>
+                            </blockquote>
+
+                            <p>Сотрудничество и обмен опытом становятся ключевыми факторами в успешной реализации проектов. Совместные усилия ведут к более быстрым и эффективным решениям, открывая новые горизонты для развития. Постоянное обучение
+                                и адаптация к изменениям — залог успешного будущего.</p>
+                        </div>
+
+                        <button class="js-cut-toggler cut-toggler" type="button" data-text="Скрыть" data-cut="1">
+                            <span>Показать больше</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                //= template/features.html
+            </section>
+
+            <section class="page__section">
+                <h2>Наши проекты</h2>
+
+                //= template/projects-slider.html
+
+                <div class="arrow-button-block">
+                    <a class="arrow-button" href="#">
+                        <span>Смотреть все проекты</span>
+
+                        <span class="arrow-button__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </section>
 
             <section class="page__section">
@@ -67,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="text-right">
+                <div class="arrow-button-block">
                     <a class="arrow-button" href="#">
                         <span>Узнать больше</span>
 
@@ -80,7 +133,13 @@
                 </div>
             </section>
 
-            //= template/request_form.html
+            <section class="page__section">
+                //= template/request_form.html
+            </section>
+
+            <section class="page__section">
+                //= template/contacts.html
+            </section>
         </div>
     </main>
 
@@ -91,6 +150,7 @@
     //= template/common/scripts.html
 
     <script src="js/links_cards_slider.js"></script>
+    <script src="js/big_cards_slider.js"></script>
     <script src="js/services_cards_slider.js"></script>
     <script src="js/articles_slider.js"></script>
 </body>

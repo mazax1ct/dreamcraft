@@ -31,18 +31,81 @@
                         <use xlink:href="images/sprite.svg#separator" />
                     </svg>
                 </li>
-                <li class="breadcrumbs__item">О компании</li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Портфолио</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">Fantasy Hearts</li>
             </ul>
         </div>
     </div>
 
     <main class="page__content">
         <div class="container">
-            <section class="service-banner">
+            <section class="page__section service-banner">
                 <picture>
                     <source srcset="images/backgrounds/service/desktop.svg" media="(min-width: 1024px)">
                     <img src="images/backgrounds/service/mobile.svg" alt="">
                 </picture>
+
+                <div class="service-banner__inner container">
+                    <div class="service-banner__picture">
+                        <img src="images/content/services/detail.jpg" srcset="images/content/services/detail@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div class="service-banner__text-block">
+                        <h1>Разработка игр</h1>
+
+                        <p class="service-banner__subtitle">Профессиональная разработка игр по вашим требоавниями.</p>
+
+                        <p><b>Наши преимущества</b></p>
+
+                        <ul class="bullet bullet--type_2_white">
+                            <li>Полный цикл разработки</li>
+                            <li>Гибкая и вовлечённая команда</li>
+                            <li>Фокус на результат и масштаб</li>
+                        </ul>
+
+                        <div class="service-banner__price-block">
+                            <div>
+                                <p class="service-banner__price">от 500 000 ₽</p>
+                                <p>Бюджет проекта</p>
+                            </div>
+
+                            <div>
+                                <p class="service-banner__price">от 6 месяцев</p>
+                                <p>Срок разработки</p>
+                            </div>
+                        </div>
+
+                        <button class="service-banner__button button button--dark button--h_56" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#report_icon" />
+                            </svg>
+                            <span>Заказать проект</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section page__section--decor_1">
+                <h2>Наши проекты</h2>
+
+                //= template/projects-slider.html
+
+                <div class="arrow-button-block">
+                    <a class="arrow-button" href="#">
+                        <span>Смотреть все проекты</span>
+
+                        <span class="arrow-button__icon">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </section>
 
             <section class="page__section">
@@ -114,7 +177,9 @@
                 //= template/stages.html
             </section>
 
-            //= template/request_form.html
+            <section class="page__section">
+                //= template/request_form.html
+            </section>
         </div>
     </main>
 
@@ -124,6 +189,7 @@
 
     //= template/common/scripts.html
 
+    <script src="js/big_cards_slider.js"></script>
     <script src="js/tarifs_slider.js"></script>
     <script src="js/persons_slider.js"></script>
     <script src="js/reviews_slider.js"></script>
