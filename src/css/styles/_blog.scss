@@ -431,8 +431,9 @@ a.blog-card__author {
 
             .blog-card__image {
                 @media(min-width: $md) {
-                    min-width: 37.6%;
-                    width: 37.6%;
+                    margin-bottom: 0;
+                    min-width: 40.315%;
+                    width: 40.315%;
                 }
 
                 img {

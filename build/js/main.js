@@ -9,9 +9,17 @@ var resize_scroll = function(e) {
   if (scrolled > 0) {
 		header.addClass('is-scrolled');
     toTop.addClass('is-active');
-	} else {
+	}
+
+  if (scrolled == 0) {
 		header.removeClass('is-scrolled');
     toTop.removeClass('is-active');
+	}
+
+  if ( scrolled > 0 && scrolled > scrollPrev ) {
+		header.addClass('is-out');
+	} else {
+		header.removeClass('is-out');
 	}
 
 	scrollPrev = scrolled;

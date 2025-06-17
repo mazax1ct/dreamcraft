@@ -37,6 +37,7 @@
 
         &:checked:disabled ~ .checkbox__icon {
             background-color: var(--grey_medium);
+            border-color: var(--grey_medium);
         }
     }
 

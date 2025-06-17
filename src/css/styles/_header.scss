@@ -177,6 +177,14 @@
         }
     }
 
+    &.is-scrolled {
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    &.is-out {
+        transform: translateY(-100%);
+    }
+
     &__container {
         min-height: 56px;
         margin-left: auto;

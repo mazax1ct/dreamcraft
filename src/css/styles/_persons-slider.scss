@@ -297,6 +297,13 @@
                 display: none;
             }
         }
+
+        .arrow-button {
+            margin-top: 16px;
+            @media(min-width: $md) {
+                display: none;
+            }
+        }
     }
 
     &__props {

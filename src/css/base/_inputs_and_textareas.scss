@@ -1,4 +1,6 @@
 .input-group {
+    color: #fff;
+
     &:not(:last-child) {
         margin-bottom: 8px;
         @media(min-width: $fhd) {
@@ -49,10 +51,9 @@
 }
 
 .error-text {
-    color: var(--red_1);
-    font-size: 13px;
-    line-height: 1.23076;
-    margin-bottom: 8px;
+    color: var(--alert);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .required {
