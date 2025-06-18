@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.js-reviews-slider').each(function(index, el) {
+  $('.js-gallery-slider').each(function(index, el) {
     new Swiper(el, {
       loop: false,
       spaceBetween: 8,
@@ -16,20 +16,20 @@ $(document).ready(function() {
         },
         1900: {
           slidesPerView: 2,
-          spaceBetween: 48,
+          spaceBetween: 24,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0,
         },
       },
 
       pagination: {
-        el: '.js-reviews-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        el: '.js-gallery-slider-pagination[data-slider="'+el.dataset.slider+'"]',
         clickable: true,
       },
 
       navigation: {
-        nextEl: '.js-reviews-slider-next[data-slider="'+el.dataset.slider+'"]',
-        prevEl: '.js-reviews-slider-prev[data-slider="'+el.dataset.slider+'"]',
+        nextEl: '.js-gallery-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-gallery-slider-prev[data-slider="'+el.dataset.slider+'"]',
       },
     });
   });

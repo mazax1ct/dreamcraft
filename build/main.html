@@ -722,11 +722,27 @@
 
     <main class="page__content">
         <div class="container">
-            <section class="main-banner">
+            <section class="main-banner page__section">
                 <picture>
-                    <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 1024px)">
+                    <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 768px)">
                     <img src="images/content/main_banner/banner_mobile.svg" alt="">
                 </picture>
+
+                <div class="main-banner__inner">
+                    <img class="main-banner__girl" src="images/content/main_banner/girl.svg" alt="">
+
+                    <h1>
+                        <img class="main-banner__logo" src="images/content/main_banner/logo.svg" alt="DreamCraft">
+                        Студия<br> разработки игр
+                    </h1>
+
+                    <button class="button button--dark button--h_56" type="button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chat_icon" />
+                        </svg>
+                        <span>Обсудить проект</span>
+                    </button>
+                </div>
             </section>
 
             <section class="page__section">
@@ -990,6 +1006,10 @@
                         <p>Обучение и повышение<br> квалификации</p>
                     </div>
                 </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Почему выбирают нас?</h2>
             </section>
 
             <section class="page__section">
@@ -1490,6 +1510,624 @@
                             </svg>
                         </span>
                     </a>
+                </div>
+            </section>
+
+            <section class="page__section page__section--bg">
+                <div class="tabs">
+                    <div class="title-block">
+                        <div class="tabs__title is-active" data-tab="1">
+                            <h2>Отзывы наших клиентов</h2>
+                        </div>
+
+                        <div class="tabs__title" data-tab="2">
+                            <h2>Нам доверяют</h2>
+                            <p>Мы гордимся сотрудничеством с ведущими компаниями</p>
+                        </div>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Отзывы <span class="mobile-hidden"> клиентов</span></button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Нам доверяют</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        <div class="reviews-slider">
+                            <div class="js-reviews-slider swiper" data-slider="reviews_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_1" data-src="#review">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_3" data-src="#review_3">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review_3" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                            <p class="review__text review__text--overflow">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень
+                                                довольны результатами.
+                                                Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности, потенциальных клиентов и других
+                                                заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                            <button class="review__more more-button" type="button" data-fancybox="review_4" data-src="#review_4">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#popup_icon" />
+                                                </svg>
+                                            </button>
+                        
+                                            <div id="review_4" class="review-popup">
+                                                <div class="review-popup__inner">
+                                                    <div class="review">
+                                                        <div class="review__rating">
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                            <svg aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                            </svg>
+                                                        </div>
+                        
+                                                        <h3 class="review__about">Игра Undeads Rush</h3>
+                        
+                                                        <p class="review__text">Хочу поделиться своим положительным опытом работы со студией разработки игр DreamCraft Studio. Нам нужна была игра для представления компании на выставке "Россия". Мы остались очень довольны
+                                                            результатами. Все поставленные цели были достигнуты, а работа выполнена точно в срок. Более того, на выставке игра произвела ВАУ-эффект, произошел подъем позитивного образа бренда в глазах общественности,
+                                                            потенциальных клиентов
+                                                            и других заинтересованных сторон (партнёров, инвесторов и конкурентов).</p>
+                        
+                                                        <div class="review__author author-short">
+                                                            <div class="author-short__avatar author-short__avatar--bordered">
+                                                                <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                            </div>
+                        
+                                                            <div class="author-short__info">
+                                                                <p class="author-short__name">Иван Ургинт</p>
+                                                                <p class="author-short__about">Директор компании «Diamant»</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Иван Ургинт">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Иван Ургинт</p>
+                                                    <p class="author-short__about">Директор компании «Diamant»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review__rating">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                </svg>
+                                            </div>
+                        
+                                            <h3 class="review__about">Игра «Кит на самокате»</h3>
+                        
+                                            <p class="review__text review__text--overflow">Когда нам нужно было разработать дизайн экрана оператора крана, мы сами не знали, чего хотим, пока не получили результат, который всем понравился. Это была классическая задача - нам
+                                                нужно было не просто
+                                                отрисовать интерфейс, но и придумать что-то по-настоящему удобное и эргономичное для пользователя.</p>
+                        
+                                            <div class="review__author author-short">
+                                                <div class="author-short__avatar author-short__avatar--bordered">
+                                                    <img src="images/content/reviews/img.jpg" srcset="images/content/reviews/img@2x.jpg 2x" alt="Евгений Колюк">
+                                                </div>
+                        
+                                                <div class="author-short__info">
+                                                    <p class="author-short__name">Евгений Колюк</p>
+                                                    <p class="author-short__about">Директор компании «Ростех»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="js-reviews-slider-pagination slider-pagination swiper-pagination" data-slider="reviews_slider"></div>
+                            </div>
+                        
+                            <button class="js-reviews-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="reviews_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_left_24" />
+                                </svg>
+                            </button>
+                        
+                            <button class="js-reviews-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="reviews_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        <div class="reviews-slider">
+                            <div class="js-reviews-slider swiper" data-slider="clients_cards_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_2.jpg" srcset="images/content/reviews/img_2@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Крупный банк обратился к нам с задачей повысить вовлеченность новых сотрудников в процесс обучения.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы разработали геймифицированную платформу с квестами и симуляцией реальных банковских ситуаций. Результат — рост прохождения обучающих программ на 45% и сокращение срока адаптации персонала.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_3.jpg" srcset="images/content/reviews/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Банк хотел усилить узнаваемость бренда среди молодежной аудитории.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы предложили решение — яркую мобильную аркаду с элементами банковских сервисов и бонусной системой. За первый месяц игру скачали более 100 000 пользователей, а узнаваемость бренда в целевой группе выросла на 30%.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_2.jpg" srcset="images/content/reviews/img_2@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Крупный банк обратился к нам с задачей повысить вовлеченность новых сотрудников в процесс обучения.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы разработали геймифицированную платформу с квестами и симуляцией реальных банковских ситуаций. Результат — рост прохождения обучающих программ на 45% и сокращение срока адаптации персонала.</p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="client-card">
+                                            <div class="client-card__image">
+                                                <img src="images/content/reviews/img_3.jpg" srcset="images/content/reviews/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                        
+                                            <h5>Задача клиента</h5>
+                        
+                                            <p>Банк хотел усилить узнаваемость бренда среди молодежной аудитории.</p>
+                        
+                                            <h5>Решение</h5>
+                        
+                                            <p>Мы предложили решение — яркую мобильную аркаду с элементами банковских сервисов и бонусной системой. За первый месяц игру скачали более 100 000 пользователей, а узнаваемость бренда в целевой группе выросла на 30%.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="js-reviews-slider-pagination slider-pagination swiper-pagination" data-slider="clients_cards_slider"></div>
+                            </div>
+                        
+                            <button class="js-reviews-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="clients_cards_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_left_24" />
+                                </svg>
+                            </button>
+                        
+                            <button class="js-reviews-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="clients_cards_slider">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-button-block">
+                    <a class="button button--h_56 button--dark" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#star_review_icon" />
+                        </svg>
+                        <span>Читать все отзывы</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center-desktop">Как мы создаем игры</h2>
+            </section>
+
+            <section class="page__section">
+                <div class="banner banner--bg_1">
+                    <div class="banner__inner banner__columns banner__columns--reverse">
+                        <div class="banner__column">
+                            <img class="banner__illustration" src="images/backgrounds/banners/img.svg" alt="">
+                        </div>
+                
+                        <div class="banner__column">
+                            <h2>Специальные условия</h2>
+                
+                            <p class="big-text">Закажите игру до конца месяца и получите скидку 10%</p>
+                
+                            <a class="button button--light button--h_56" href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                                <span>Узнать больше</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Технологии, которые мы используем</h2>
+            </section>
+
+            <section class="page__section">
+                <h2>Наша экспертиза в цифрах</h2>
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center-desktop">Как мы выстраиваем работу с клиентами</h2>
+
+                <div class="features">
+                    <div class="features__item">
+                        <img src="images/content/features/icon_5.svg" alt="">
+
+                        <p>Еженедельная отчетность<br> и созвоны</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_6.svg" alt="">
+
+                        <p>Персональный менеджер проекта</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_7.svg" alt="">
+
+                        <p>Полная прозрачность процессов</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_8.svg" alt="">
+
+                        <p>Быстрая реакция на изменения<br> и пожелания</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="banner banner--bg_2">
+                    <div class="banner__inner banner__columns">
+                        <div class="banner__column">
+                            <h2>Не готовы к полной разработке? Начните с&nbsp;малого</h2>
+                
+                            <a class="button button--light button--h_56 mobile-hidden" href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                                <span>Узнать больше</span>
+                            </a>
+                        </div>
+                
+                        <div class="banner__column">
+                            <p class="big-text">Мы поможем вам создать гейм-дизайн документацию (ГДД) или подготовить питч-презентацию для поиска инвесторов</p>
+                
+                            <p>Это идеальный вариант, если вы хотите проработать концепцию или привлечь финансирование</p>
+                
+                            <a class="button button--light button--h_56 desktop-hidden" href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right_24" />
+                                </svg>
+                                <span>Узнать больше</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="decor decor--1"></div>
+                    <div class="decor decor--2"></div>
                 </div>
             </section>
 
@@ -2711,6 +3349,7 @@
     <script src="js/links_cards_slider.js"></script>
     <script src="js/big_cards_slider.js"></script>
     <script src="js/services_cards_slider.js"></script>
+    <script src="js/reviews_slider.js"></script>
     <script src="js/articles_slider.js"></script>
 </body>
 

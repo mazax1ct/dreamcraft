@@ -6,7 +6,7 @@ var header = $('.header'),
 var resize_scroll = function(e) {
   var scrolled = $(window).scrollTop();
 
-  if (scrolled > 0) {
+  if (scrolled > header.height() * 2) {
 		header.addClass('is-scrolled');
     toTop.addClass('is-active');
 	}
@@ -16,7 +16,7 @@ var resize_scroll = function(e) {
     toTop.removeClass('is-active');
 	}
 
-  if ( scrolled > 0 && scrolled > scrollPrev ) {
+  if ( scrolled > header.height() && scrolled > scrollPrev ) {
 		header.addClass('is-out');
 	} else {
 		header.removeClass('is-out');

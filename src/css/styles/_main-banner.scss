@@ -1,18 +1,104 @@
 .main-banner {
+    background: linear-gradient(180.85deg, #0045A2 0.72%, #2FA5E6 59.84%, #BCE2F9 83.27%, #EFF8FF 99.26%);
+    color: #fff;
+    min-height: 100dvh;
     margin-left: calc(0.02px - var(--container_padding));
     margin-right: calc(0.02px - var(--container_padding));
+    padding-bottom: 24px;
+    padding-top: 180px;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        padding-bottom: 100px;
+    }
     @media(min-width: 1248px) {
         margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
         margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
     }
 
     picture {
-        display: block;
-        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
 
         img {
             display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
             width: 100%;
         }
+    }
+
+    &__inner {
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &__girl {
+        display: block;
+        height: 269px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+        animation: moveUpDown 3s ease-in-out infinite;
+        width: 131px;
+        @media(min-width: $md) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $fhd) {
+            height: 346px;
+            width: 169px;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 122px;
+        @media(min-width: $fhd) {
+            width: 200px;
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.16666;
+        margin-bottom: 24px;
+        @media(min-width: $md) {
+            font-size: 48px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 88px;
+            line-height: 1.1;
+        }
+    }
+
+    .button {
+        @media(max-width: $md - 0.02px) {
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

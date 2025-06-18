@@ -1,0 +1,113 @@
+.speech-card {
+    background-color: var(--blue_medium);
+    border-radius: 24px;
+    padding: 16px;
+    @media(min-width: $md) {
+        display: flex;
+        gap: 48px;
+        padding: 48px;
+    }
+    @media(min-width: $hd) {
+        gap: 60px;
+    }
+    @media(min-width: $fhd) {
+        gap: 88px;
+        padding: 64px 80px;
+    }
+
+    &--reverse {
+        @media(min-width: $md) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__author {
+        @media(min-width: $md) {
+            min-width: 312px;
+            width: 312px;
+        }
+        @media(max-width: $md - 0.02px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__author-avatar {
+        background-color: #8ABDDC;
+        border-radius: 16px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        @media(max-width: $md - 0.02px) {
+            width: 120px;
+        }
+        @media(min-width: $md) {
+            border-radius: 24px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 24px;
+        }
+
+        img {
+            background-color: #8ABDDC;
+            mix-blend-mode: overlay;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__author-name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+
+    &__author-place {
+        color: var(--grey_dark);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &__text {
+        blockquote {
+            @media(min-width: $md) {
+                margin-left: -32px;
+            }
+        }
+    }
+}
+
+.speech-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $md - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .swiper {
+        &:not(.swiper-initialized) {
+            .swiper-wrapper {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .slider-pagination {
+                display: none;
+            }
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+        @media(max-width: $md - 0.02px) {
+            width: 328px;
+        }
+
+        .speech-card {
+            height: 100%;
+        }
+    }
+}

@@ -89,7 +89,7 @@
 .header {
     color: var(--dark);
     left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     transition: background-color 0.3s;
@@ -178,6 +178,7 @@
     }
 
     &.is-scrolled {
+        position: fixed;
         transition: background-color 0.3s, transform 0.3s;
     }
 

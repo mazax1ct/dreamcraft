@@ -26,11 +26,27 @@
 
     <main class="page__content">
         <div class="container">
-            <section class="main-banner">
+            <section class="main-banner page__section">
                 <picture>
-                    <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 1024px)">
+                    <source srcset="images/content/main_banner/banner_desktop.svg" media="(min-width: 768px)">
                     <img src="images/content/main_banner/banner_mobile.svg" alt="">
                 </picture>
+
+                <div class="main-banner__inner">
+                    <img class="main-banner__girl" src="images/content/main_banner/girl.svg" alt="">
+
+                    <h1>
+                        <img class="main-banner__logo" src="images/content/main_banner/logo.svg" alt="DreamCraft">
+                        Студия<br> разработки игр
+                    </h1>
+
+                    <button class="button button--dark button--h_56" type="button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chat_icon" />
+                        </svg>
+                        <span>Обсудить проект</span>
+                    </button>
+                </div>
             </section>
 
             <section class="page__section">
@@ -75,6 +91,10 @@
             </section>
 
             <section class="page__section">
+                <h2>Почему выбирают нас?</h2>
+            </section>
+
+            <section class="page__section">
                 <h2>Наши проекты</h2>
 
                 //= template/projects-slider.html
@@ -114,6 +134,93 @@
                         </span>
                     </a>
                 </div>
+            </section>
+
+            <section class="page__section page__section--bg">
+                <div class="tabs">
+                    <div class="title-block">
+                        <div class="tabs__title is-active" data-tab="1">
+                            <h2>Отзывы наших клиентов</h2>
+                        </div>
+
+                        <div class="tabs__title" data-tab="2">
+                            <h2>Нам доверяют</h2>
+                            <p>Мы гордимся сотрудничеством с ведущими компаниями</p>
+                        </div>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Отзывы <span class="mobile-hidden"> клиентов</span></button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Нам доверяют</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        //= template/reviews-slider.html
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        //= template/clients-cards-slider.html
+                    </div>
+                </div>
+
+                <div class="more-button-block">
+                    <a class="button button--h_56 button--dark" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#star_review_icon" />
+                        </svg>
+                        <span>Читать все отзывы</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center-desktop">Как мы создаем игры</h2>
+            </section>
+
+            <section class="page__section">
+                //= template/banners/banner_1.html
+            </section>
+
+            <section class="page__section">
+                <h2>Технологии, которые мы используем</h2>
+            </section>
+
+            <section class="page__section">
+                <h2>Наша экспертиза в цифрах</h2>
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center-desktop">Как мы выстраиваем работу с клиентами</h2>
+
+                <div class="features">
+                    <div class="features__item">
+                        <img src="images/content/features/icon_5.svg" alt="">
+
+                        <p>Еженедельная отчетность<br> и созвоны</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_6.svg" alt="">
+
+                        <p>Персональный менеджер проекта</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_7.svg" alt="">
+
+                        <p>Полная прозрачность процессов</p>
+                    </div>
+
+                    <div class="features__item">
+                        <img src="images/content/features/icon_8.svg" alt="">
+
+                        <p>Быстрая реакция на изменения<br> и пожелания</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                //= template/banners/banner_2.html
             </section>
 
             <section class="page__section">
@@ -170,6 +277,7 @@
     <script src="js/links_cards_slider.js"></script>
     <script src="js/big_cards_slider.js"></script>
     <script src="js/services_cards_slider.js"></script>
+    <script src="js/reviews_slider.js"></script>
     <script src="js/articles_slider.js"></script>
 </body>
 
