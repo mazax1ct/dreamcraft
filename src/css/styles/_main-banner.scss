@@ -76,6 +76,9 @@
         @media(min-width: $md) {
             font-size: 48px;
         }
+        @media(min-width: $lg) {
+            font-size: 56px;
+        }
         @media(min-width: $fhd) {
             font-size: 88px;
             line-height: 1.1;

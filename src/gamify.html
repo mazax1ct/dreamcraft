@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>DreamCraft</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--banner">
+    <div class="header-container">
+        <div class="header-container__inner">
+            //= template/common/header.html
+        </div>
+
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Портфолио</a>
+                    <svg class="breadcrumbs__separator" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#separator" />
+                    </svg>
+                </li>
+                <li class="breadcrumbs__item">Fantasy Hearts</li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+            <section class="case-banner page__section">
+                <img src="images/content/hero/hero.jpg" srcset="images/content/hero/hero@2x.jpg 2x" alt="">
+
+                <div class="case-banner__inner case-banner__inner--centered container">
+                    <h1>Геймификация бизнеса</h1>
+
+                    <p>Усиление вовлечённости, мотивации и результата</p>
+
+                    <button class="button button--dark button--h_56" type="button">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#report_icon" />
+                        </svg>
+                        <span>Заказать услугу</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="content-block content-block--type_3">
+                    <h1>Описание услуги</h1>
+
+                    <div class="content-block__slider">
+                        //= template/single-slider.html
+                    </div>
+
+                    <div class="content-block__text">
+                        <p>С развитием технологий каждое новое открытие становится значительным шагом вперёд. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в курсе последних
+                            тенденций, чтобы не упустить новые возможности.</p>
+
+                        <blockquote>
+                            <p>Каждая область предлагает уникальные испытания и награды. Вас ждут приключения, где каждый шаг открывает нечто новое!</p>
+                        </blockquote>
+
+                        <p>Сотрудничество и обмен опытом становятся ключевыми факторами в успешной реализации проектов. Совместные усилия ведут к более быстрым и эффективным решениям, открывая новые горизонты для развития. Постоянное обучение и
+                            адаптация к изменениям — залог успешного будущего.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="big-features">Преимущество</div>
+            </section>
+
+            <section class="page__section">
+                <h2>Сферы бизнеса, где нужна геймификация</h2>
+            </section>
+
+            <section class="page__section">
+                <div class="content-block content-block--type_3">
+                    <h2>Описание услуги</h2>
+
+                    <div class="content-block__slider">
+                        //= template/single-slider.html
+                    </div>
+
+                    <div class="content-block__text">
+                        <p>С развитием технологий каждое новое открытие становится значительным шагом вперёд. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в курсе последних
+                            тенденций, чтобы не упустить новые возможности.</p>
+
+                        <blockquote>
+                            <p>Каждая область предлагает уникальные испытания и награды. Вас ждут приключения, где каждый шаг открывает нечто новое!</p>
+                        </blockquote>
+
+                        <p><b>Ключевые особенности</b></p>
+
+                        <ul class="bullet bullet--type_1">
+                            <li>Генерация процедурных подземелий</li>
+                            <li>Глубокая кастомизация персонажа (100+ комбинаций навыков)</li>
+                            <li>PvP-арены с системой сезонных рейтингов</li>
+                            <li>Адаптивный ИИ противников</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                //= template/stages.html
+            </section>
+
+            <section class="page__section">
+                <h2>Сроки разработки</h2>
+            </section>
+
+            <section class="page__section">
+                <div class="tabs">
+                    <div class="title-block">
+                        <h2>Команда</h2>
+
+                        <div class="tabs-nav">
+                            <button class="js-tabs-button tabs-nav__button is-active" type="button" data-tab="1">Геймдизайнеры</button>
+                            <button class="js-tabs-button tabs-nav__button" type="button" data-tab="2">Разработчики</button>
+                        </div>
+                    </div>
+
+                    <div class="tab is-active" data-tab="1">
+                        //= template/persons-slider-big.html
+                    </div>
+
+                    <div class="tab" data-tab="2">
+                        //= template/persons-slider-small.html
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Тарифы</h2>
+
+                //= template/tarifs-slider.html
+            </section>
+
+            <section class="page__section">
+                //= template/faq.html
+            </section>
+
+            <section class="page__section">
+                <h2 class="text-center">Наши преимущества</h2>
+
+                //= template/features.html
+            </section>
+
+            <section class="page__section">
+                <h2>Наши партнеры</h2>
+
+            </section>
+
+            <section class="page__section">
+                //= template/request_form.html
+            </section>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/single_slider.js"></script>
+    <script src="js/speech_slider.js"></script>
+    <script src="js/gallery_slider.js"></script>
+    <script src="js/big_cards_slider.js"></script>
+    <script src="js/persons_slider.js"></script>
+    <script src="js/tarifs_slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+.case-banner {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 680px;
+    margin-left: calc(0.02px - var(--container_padding));
+    margin-right: calc(0.02px - var(--container_padding));
+    position: relative;
+    z-index: 0;
+    @media(min-width: 1248px) {
+        margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+        margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+    }
+    @media(min-width: $fhd) {
+        min-height: 744px;
+    }
+
+    & > img {
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &__inner {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex-end;
+        padding-bottom: 24px;
+        padding-top: 120px;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        @media(min-width: $md) {
+            align-items: center;
+            padding-top: 180px;
+            padding-bottom: 64px;
+        }
+
+        &--centered {
+            @media(min-width: $fhd) {
+                justify-content: center;
+            }
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1.16666;
+            margin-bottom: 8px;
+            @media(min-width: $md) {
+                font-size: 48px;
+                margin-bottom: 12px;
+            }
+            @media(min-width: $lg) {
+                font-size: 56px;
+                margin-bottom: 16px;
+            }
+            @media(min-width: $fhd) {
+                font-size: 88px;
+                line-height: 1.1;
+                margin-bottom: 24px;
+            }
+        }
+
+        p {
+            color: var(--grey_light);
+            font-family: var(--secondary_font);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.4;
+            @media(min-width: $lg) {
+                font-size: 24px;
+                line-height: 1.25;
+            }
+            @media(min-width: $fhd) {
+                font-size: 32px;
+            }
+
+            & + .button {
+                margin-top: 24px;
+                @media(min-width: $md) {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .button {
+            @media(max-width: $md - 0.02px) {
+                max-width: 360px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__rating {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 24px;
+
+        svg {
+            fill: var(--attention);
+            height: 32px;
+            min-width: 32px;
+            width: 32px;
+        }
+    }
+}
