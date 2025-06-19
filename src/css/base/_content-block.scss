@@ -55,6 +55,7 @@
         }
 
         .content-block__text {
+            flex-grow: 1;
             max-width: 750px;
             position: relative;
             z-index: 1;
@@ -62,6 +63,23 @@
             h1,
             h2 {
                 margin-bottom: 24px;
+            }
+
+            .big-text {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.22222;
+                @media(min-width: $fhd) {
+                    font-size: 24px;
+                    line-height: 1.33333;
+                }
+            }
+        }
+
+        .content-block__slider {
+            @media(min-width: $sm) {
+                max-width: 594px;
+                width: 50%;
             }
         }
     }

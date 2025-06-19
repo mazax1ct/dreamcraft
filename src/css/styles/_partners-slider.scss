@@ -1,0 +1,70 @@
+.partners-logos {
+    --gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    @media(min-width: $md) {
+        --gap: 16px;
+    }
+
+    &__item {
+        align-items: center;
+        border-radius: 8px;
+        background-color: #fff;
+        display: flex;
+        flex-grow: 1;
+        height: 80px;
+        justify-content: center;
+        padding: 8px;
+        width: calc(100% / 2 - var(--gap) / 2);
+        @media(min-width: $md) {
+            border-radius: 16px;
+            height: 100px;
+            padding: 8px 24px;
+        }
+        @media(min-width: $hd) {
+            border-radius: 24px;
+            height: 132px;
+            padding: 8px 24px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            background-color: var(--blue_medium);
+        }
+
+        img {
+            display: block;
+        }
+    }
+}
+
+.partners-slider {
+    position: relative;
+    z-index: 1;
+    @media(max-width: $sm - 0.02px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    .swiper-slide {
+        height: 100%;
+        @media(max-width: $sm - 0.02px) {
+            width: 328px;
+        }
+    }
+}
+
+.partners-slider-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    @media(max-width: $md - 0.02px) {
+        display: none;
+    }
+
+    .slider-arrow {
+        position: static;
+        transform: none;
+    }
+}

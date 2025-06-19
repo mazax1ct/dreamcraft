@@ -63,7 +63,7 @@
 
             <section class="page__section">
                 <div class="content-block content-block--type_3">
-                    <h1>Описание услуги</h1>
+                    <h2>Описание услуги</h2>
 
                     <div class="content-block__slider">
                         //= template/single-slider.html
@@ -84,11 +84,13 @@
             </section>
 
             <section class="page__section">
-                <div class="big-features">Преимущество</div>
+                //= template/big-features.html
             </section>
 
             <section class="page__section">
                 <h2>Сферы бизнеса, где нужна геймификация</h2>
+
+                //= template/features-cards-slider.html
             </section>
 
             <section class="page__section">
@@ -125,6 +127,31 @@
 
             <section class="page__section">
                 <h2>Сроки разработки</h2>
+
+                <div class="big-card big-card--type_2">
+                    <div class="big-card__image">
+                        <img src="images/content/content_blocks/img_10.png" srcset="images/content/content_blocks/img_10@2x.png 2x" alt="">
+                        <img class="big-card__image-decor" src="images/backgrounds/big-card/decor_3.svg" alt="">
+                    </div>
+
+                    <div class="big-card__text-block">
+                        <h4>Зависимость от масштаба и сложности механик</h4>
+
+                        <ul class="bullet bullet--type_1">
+                            <li>Сроки напрямую зависят от глубины геймификации.</li>
+                            <li>Простые элементы (бейджи, уровни, баллы) можно внедрить за 1–2 недели.</li>
+                            <li>Более сложные сценарии с логикой, анимацией, пользовательскими путями и аналитикой требуют от 3 до 6 недель.</li>
+                            <li>Мы всегда предварительно оцениваем задачу и предлагаем оптимальный план внедрения.</li>
+                        </ul>
+
+                        <h4>Этапность разработки</h4>
+
+                        <ul class="bullet bullet--type_1">
+                            <li>Проект делится на этапы, каждый из которых влияет на общий срок.</li>
+                            <li>Такой подход помогает гибко управлять проектом, а также запускать MVP-геймификацию раньше, постепенно её расширяя.</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section class="page__section">
@@ -165,8 +192,7 @@
             </section>
 
             <section class="page__section">
-                <h2>Наши партнеры</h2>
-
+                //= template/partners-slider.html
             </section>
 
             <section class="page__section">
@@ -182,11 +208,11 @@
     //= template/common/scripts.html
 
     <script src="js/single_slider.js"></script>
-    <script src="js/speech_slider.js"></script>
-    <script src="js/gallery_slider.js"></script>
-    <script src="js/big_cards_slider.js"></script>
+    <script src="js/big_features_slider.js"></script>
+    <script src="js/features_cards_slider.js"></script>
     <script src="js/persons_slider.js"></script>
     <script src="js/tarifs_slider.js"></script>
+    <script src="js/partners_slider.js"></script>
 </body>
 
 </html>
