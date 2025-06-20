@@ -24,6 +24,18 @@
             object-position: center;
             width: 64px;
         }
+
+        &--faded {
+            background-color: #8ABDDC;
+            border-radius: 50%;
+
+            img {
+                background-color: #8ABDDC;
+                mix-blend-mode: overlay;
+                display: block;
+                width: 100%;
+            }
+        }
     }
 
     &__info {}

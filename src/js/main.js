@@ -192,3 +192,28 @@ $(document).on('click', '.js-cut-toggler', function () {
 
   return false;
 });
+
+//оценка
+$(document).on('mouseenter', '.rate__button', function () {
+  $(this).prevAll('.rate__button').addClass('hover');
+  return false;
+});
+
+$(document).on('mouseleave', '.rate__button', function () {
+  $(this).prevAll('.rate__button').toggleClass('hover');
+  return false;
+});
+
+$(document).on('click', '.rate__button', function () {
+  if(!$(this).hasClass('checked')){
+    $(this).nextAll('.rate__button').removeClass('filled');
+    $(this).closest('.rate').find('.rate__button').removeClass('checked');
+    $(this).removeClass('filled').addClass('checked');
+    $(this).prevAll('.rate__button').addClass('filled');
+  } else {
+    $(this).nextAll('.rate__button').removeClass('filled');
+    $(this).removeClass('checked');
+    $(this).prevAll('.rate__button').removeClass('filled');
+  }
+  return false;
+});

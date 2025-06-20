@@ -1,0 +1,55 @@
+.rate {
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 16px;
+        text-align: center;
+        @media(min-width: $fhd) {
+            font-size: 32px;
+            line-height: 1.25;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        @include button-reset;
+        align-items: center;
+        color: var(--primary);
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 48px;
+        @include hover {
+            color: var(--attention);
+
+            svg {
+                fill: currentColor;
+            }
+        }
+
+        &.checked,
+        &.filled,
+        &.hover {
+            color: var(--attention);
+
+            svg {
+                fill: currentColor;
+            }
+        }
+
+        svg {
+            fill: transparent;
+            height: 40px;
+            stroke: currentColor;
+            transition: fill 0.3s, stroke 0.3s;
+            width: 40px;
+        }
+    }
+}

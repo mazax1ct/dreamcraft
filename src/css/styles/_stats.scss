@@ -1,0 +1,40 @@
+.stats {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    @media(max-width: $sm - 0.02px) {
+        flex-direction: column;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 14px;
+        gap: 8px;
+        line-height: 1.28571;
+        min-width: 140px;
+        margin: 0;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+            min-width: 180px;
+        }
+    }
+
+    &__item-title {
+        color: var(--primary);
+        display: block;
+        font-family: var(--secondary_font);
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.41176;
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            line-height: 1.33333;
+        }
+    }
+}

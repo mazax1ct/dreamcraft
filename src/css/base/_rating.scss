@@ -1,0 +1,13 @@
+.rating {
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+    vertical-align: baseline;
+
+    svg {
+        fill: var(--attention);
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

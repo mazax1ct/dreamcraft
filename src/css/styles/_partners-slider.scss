@@ -40,31 +40,32 @@
 }
 
 .partners-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $sm - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
-    .swiper-slide {
-        height: 100%;
+    &__slider {
         @media(max-width: $sm - 0.02px) {
-            width: 328px;
+            margin-top: 32px;
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+
+        .swiper-slide {
+            height: 100%;
+            @media(max-width: $sm - 0.02px) {
+                width: 328px;
+            }
         }
     }
-}
 
-.partners-slider-buttons {
-    display: flex;
-    gap: 12px;
-    margin-top: 32px;
-    @media(max-width: $md - 0.02px) {
-        display: none;
-    }
+    &__buttons {
+        display: flex;
+        gap: 12px;
+        margin-top: 32px;
+        @media(max-width: $md - 0.02px) {
+            display: none;
+        }
 
-    .slider-arrow {
-        position: static;
-        transform: none;
+        .slider-arrow {
+            position: static;
+            transform: none;
+        }
     }
 }

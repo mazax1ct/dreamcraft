@@ -41,6 +41,7 @@
             overflow-x: auto;
             padding-left: var(--container_padding);
             padding-right: var(--container_padding);
+            scrollbar-width: none;
         }
         @media(min-width: $md) {
             margin-bottom: 24px;
@@ -132,7 +133,6 @@
         svg {
             fill: var(--blue_dark);
             height: 40px;
-            transition: fill 0.3s;
             width: 40px;
         }
     }
