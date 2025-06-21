@@ -1,0 +1,140 @@
+.slider-arrow {
+    @include button-reset;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    color: var(--primary);
+    cursor: default;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+    width: 40px;
+    z-index: 1;
+
+    &:not(.swiper-button-lock) {
+        cursor: pointer;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @include active {
+            color: var(--primary_pressed);
+        }
+    }
+    @media(max-width: 1319.98px) {
+        display: none;
+    }
+    @media(min-width: $fhd) {
+        height: 56px;
+        width: 56px;
+    }
+
+    &.swiper-button-prev {
+        left: -44px;
+        @media(min-width: $lg) {
+            left: -56px;
+        }
+        @media(min-width: $fhd) {
+            left: -80px;
+        }
+    }
+
+    &.swiper-button-next {
+        right: -44px;
+        @media(min-width: $lg) {
+            right: -56px;
+        }
+        @media(min-width: $fhd) {
+            right: -80px;
+        }
+    }
+
+    &.swiper-button-lock {
+        color: var(--grey_dark);
+    }
+
+    &::after {
+        display: none;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.slider-pagination {
+    bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+    position: static;
+    top: auto;
+    @media(min-width: $hd) {
+        display: none;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid transparent;
+        background-color: rgba(0,122, 255,0.15);
+        height: 8px;
+        margin: 0 !important;
+        opacity: 1;
+        width: 8px;
+
+        &.swiper-pagination-bullet-active {
+            border-color: rgba(30, 118, 226,0.18);
+            background: linear-gradient(180deg, #1066D0 -46.38%, #5BA5FF 79.82%);
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    z-index: 1;
+
+    .swiper-slide {
+        height: auto;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    &--type_1 {
+        @media(max-width: $md - 0.02px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+
+        .swiper-slide {
+            @media(max-width: $md - 0.02px) {
+                width: 328px;
+            }
+        }
+    }
+
+    &--type_2 {
+        @media(max-width: $hd - 0.02px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+
+        .slider-pagination {
+            @media (min-width: $hd) and (max-width: 1319.98px) {
+                display: flex;
+            }
+        }
+
+        .swiper-slide {
+            @media(max-width: $hd - 0.02px) {
+                width: 328px;
+            }
+        }
+    }
+}

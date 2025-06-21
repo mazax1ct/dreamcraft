@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  if($('body').width() < 768){
+  if($('body').width() < 768) {
     $('.js-partners-slider').each(function(index, el) {
       new Swiper(el, {
         loop: false,

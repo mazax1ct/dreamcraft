@@ -52,12 +52,6 @@ h2 + .links-cards-slider {
 }
 
 .links-cards-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $hd - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
     @media(min-width: $lg) {
         margin-left: -24px;
         margin-right: -24px;
@@ -67,17 +61,8 @@ h2 + .links-cards-slider {
         margin-right: -48px;
     }
 
-    .slider-pagination {
-        @media (min-width: $hd) and (max-width: 1319.98px) {
-            display: flex;
-        }
-    }
-
     .swiper-slide {
-        height: auto;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        @media(max-width: $md - 0.02px) {
+        @media(max-width: $hd - 0.02px) {
             width: 328px;
         }
 

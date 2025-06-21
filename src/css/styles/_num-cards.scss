@@ -41,27 +41,7 @@
 }
 
 .num-cards-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $hd - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
-    .slider-pagination {
-        @media (min-width: $hd) and (max-width: 1319.98px) {
-            display: flex;
-        }
-    }
-
     .swiper-slide {
-        height: auto;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        @media(max-width: $hd - 0.02px) {
-            width: 328px;
-        }
-
         .num-card {
             height: 100%;
         }

@@ -1,0 +1,36 @@
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media(min-width: $md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px 32px;
+    }
+
+    &:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    &__item {
+        @media(min-width: $md) {
+            width: calc(100% / 2 - 32px / 2);
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 24px;
+            line-height: 1.16666;
+            @media(min-width: $hd) {
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            @media(min-width: $fhd) {
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+        }
+    }
+}

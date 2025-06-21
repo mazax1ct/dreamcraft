@@ -80,13 +80,6 @@
 }
 
 .speech-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $md - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
     .swiper {
         &:not(.swiper-initialized) {
             .swiper-wrapper {
@@ -101,11 +94,6 @@
     }
 
     .swiper-slide {
-        height: auto;
-        @media(max-width: $md - 0.02px) {
-            width: 328px;
-        }
-
         .speech-card {
             height: 100%;
         }

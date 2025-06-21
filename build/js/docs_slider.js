@@ -9,7 +9,6 @@ $(document).ready(function() {
 
       breakpoints: {
         1024: {
-          slidesPerView: 3,
           spaceBetween: 16,
           slidesOffsetBefore: 16,
           slidesOffsetAfter: 16,

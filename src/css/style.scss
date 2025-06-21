@@ -13,8 +13,8 @@
 @import "base/_pager.scss";
 @import "base/_more-button.scss";
 @import "base/_back-link.scss";
-@import "base/_slider-arrow.scss";
-@import "base/_slider-pagination.scss";
+@import "base/_slider.scss"; //@import "base/_slider-arrow.scss";
+//@import "base/_slider-pagination.scss";
 @import "base/_tabs.scss";
 @import "base/_tables.scss";
 @import "base/_arrow-button.scss";
@@ -53,3 +53,5 @@
 @import "styles/_partners-slider.scss";
 @import "styles/_stats.scss";
 @import "styles/_num-cards.scss";
+@import "styles/_why.scss";
+@import "styles/_results.scss";

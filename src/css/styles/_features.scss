@@ -34,6 +34,7 @@ h2 + .features {
             padding-right: 8px;
         }
         @media(min-width: $md) {
+            align-items: center;
             width: calc(100% / 2 - var(--gap) / 2);
         }
         @media(min-width: $md) {
@@ -125,13 +126,6 @@ h2 + .features {
 }
 
 .big-features-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $md - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
     .swiper {
         &:not(.swiper-initialized) {
             .swiper-wrapper {
@@ -146,11 +140,9 @@ h2 + .features {
     }
 
     .swiper-slide {
-        height: auto;
         @media(max-width: $md - 0.02px) {
             padding-top: 15px;
             padding-bottom: 15px;
-            width: 328px;
         }
 
         .big-feature {
@@ -209,27 +201,9 @@ h2 + .features {
 }
 
 .features-cards-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $hd - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
     .swiper-slide {
-        height: auto;
-        @media(max-width: $md - 0.02px) {
-            width: 328px;
-        }
-
         .feature-card {
             height: 100%;
-        }
-    }
-
-    .slider-pagination {
-        @media (min-width: $hd) and (max-width: 1319.98px) {
-            display: flex;
         }
     }
 }

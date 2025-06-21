@@ -1,11 +1,4 @@
 .persons-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $hd - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
     .swiper {
         margin-top: -15px;
 
@@ -79,7 +72,7 @@
     &--big {
         .swiper-slide {
             @media(min-width: $md) {
-                width: 704px;
+                width: 704px !important;
             }
             @media(max-width: $md - 0.02px) {
                 width: 328px;

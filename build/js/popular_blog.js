@@ -10,21 +10,18 @@ $(document).ready(function() {
       breakpoints: {
         1024: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
           spaceBetween: 16,
           slidesOffsetBefore: 16,
           slidesOffsetAfter: 16,
         },
         1280: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
           spaceBetween: 16,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0
         },
         1900: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
           spaceBetween: 24,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0

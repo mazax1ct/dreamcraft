@@ -55,7 +55,8 @@
                 //= template/links-cards-slider.html
             </section>
 
-            <section class="page__section">
+            <section class="page__section page__section--clouds">
+                <div class="cloud cloud--type_1 cloud--ltr cloud--move"></div>
                 <div class="content-block content-block--type_1 content-block--reverse">
                     <div class="content-block__image">
                         <img src="images/content/content_blocks/img.png" srcset="images/content/content_blocks/img@2x.png 2x" alt="">
@@ -90,8 +91,11 @@
                 //= template/features.html
             </section>
 
-            <section class="page__section">
-                <h2>Почему выбирают нас?</h2>
+            <section class="page__section page__section--clouds page__section--section_decor_2">
+                <div class="cloud cloud--type_2 cloud--ltr cloud--move"></div>
+                <div class="cloud cloud--type_3 cloud--bottom cloud--rtl cloud--move"></div>
+
+                //= template/why-we.html
             </section>
 
             <section class="page__section">
@@ -112,13 +116,17 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section page__section--clouds">
+                <div class="cloud cloud--type_2 cloud--ltr cloud--move"></div>
+
                 <h2>Услуги</h2>
 
                 //= template/services-cards-slider.html
             </section>
 
-            <section class="page__section">
+            <section class="page__section page__section--clouds">
+                <div class="cloud cloud--type_5 cloud--rtl cloud--move"></div>
+
                 <h2 class="text-center-desktop">Результаты, которые говорят сами за себя</h2>
 
                 //= template/cases-slider.html
@@ -173,20 +181,56 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section page__section--clouds">
+                <div class="cloud cloud--type_2 cloud--ltr cloud--move"></div>
+
                 <h2 class="text-center-desktop">Как мы создаем игры</h2>
+
+                //= template/num-cards-slider.html
             </section>
 
             <section class="page__section">
                 //= template/banners/banner_1.html
             </section>
 
-            <section class="page__section">
-                <h2>Технологии, которые мы используем</h2>
+            <section class="page__section page__section--section_decor_3">
+                //= template/technologia.html
             </section>
 
-            <section class="page__section">
-                <h2>Наша экспертиза в цифрах</h2>
+            <section class="page__section page__section--clouds page__section--section_decor_2">
+                <div class="cloud cloud--type_4 cloud--ltr cloud--move"></div>
+                <div class="cloud cloud--type_3 cloud--bottom cloud--rtl cloud--move"></div>
+
+                <div class="content-block content-block--type_1">
+                    <div class="content-block__image">
+                        <img src="images/content/content_blocks/img_5.png" srcset="images/content/content_blocks/img_5@2x.png 2x" alt="">
+                    </div>
+
+                    <div class="content-block__text">
+                        <h2>Наша экспертиза<br> в&nbsp;цифрах</h2>
+
+                        <p class="big-text">Мы знаем, как создать игру, которая принесет результат</p>
+
+                        <div class="results">
+                            <div class="results__item">
+                                <h3>146</h3>
+                                <p>Количество выпущенных игр<br> для разных платформ</p>
+                            </div>
+                            <div class="results__item">
+                                <h3>8</h3>
+                                <p>Лет мы занимаемся разработкой<br> мобильных и компьютерных игр </p>
+                            </div>
+                            <div class="results__item">
+                                <h3>10%</h3>
+                                <p>Средний рост метрик клиентов<br> после внедрения игр</p>
+                            </div>
+                            <div class="results__item">
+                                <h3>146</h3>
+                                <p>Количество довольных клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="page__section">
@@ -275,9 +319,12 @@
     //= template/common/scripts.html
 
     <script src="js/links_cards_slider.js"></script>
+    <script src="js/why.js"></script>
     <script src="js/big_cards_slider.js"></script>
     <script src="js/services_cards_slider.js"></script>
     <script src="js/reviews_slider.js"></script>
+    <script src="js/num_cards_slider.js"></script>
+    <script src="js/partners_slider.js"></script>
     <script src="js/articles_slider.js"></script>
 </body>
 

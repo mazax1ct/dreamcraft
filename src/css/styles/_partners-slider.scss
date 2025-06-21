@@ -59,11 +59,12 @@
         display: flex;
         gap: 12px;
         margin-top: 32px;
-        @media(max-width: $md - 0.02px) {
+        @media(max-width: $sm - 0.02px) {
             display: none;
         }
 
         .slider-arrow {
+            display: flex;
             position: static;
             transform: none;
         }

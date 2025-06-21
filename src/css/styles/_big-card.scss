@@ -79,20 +79,14 @@
     }
 
     &__image-decor {
-        bottom: 0;
+        height: 100%;
         left: 0;
         object-fit: contain;
         object-position: center;
         position: absolute;
-        right: 0;
         top: 0;
+        width: 100%;
         z-index: 1;
-        /*@media(min-width: $md) {
-            bottom: 8px;
-            left: 8px;
-            right: 8px;
-            top: 8px;
-        }*/
     }
 
     &__text-block {
@@ -235,21 +229,7 @@
 }
 
 .big-cards-slider {
-    position: relative;
-    z-index: 1;
-    @media(max-width: $md - 0.02px) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
-
     .swiper-slide {
-        height: auto;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        @media(max-width: $md - 0.02px) {
-            width: 328px;
-        }
-
         .big-card {
             height: 100%;
         }
