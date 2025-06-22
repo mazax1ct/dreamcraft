@@ -1,6 +1,8 @@
 //отслеживание скролла для шапки
 var header = $('.header'),
     toTop = $('.js-to-top'),
+    article = $('.article');
+    articleMenu = $('.article-menu');
     scrollPrev = 0;
 
 var resize_scroll = function(e) {
@@ -16,11 +18,17 @@ var resize_scroll = function(e) {
     toTop.removeClass('is-active');
 	}
 
-  if ( scrolled > header.height() && scrolled > scrollPrev ) {
+  if (scrolled > header.height() && scrolled > scrollPrev) {
 		header.addClass('is-out');
 	} else {
 		header.removeClass('is-out');
 	}
+
+  if(scrolled > article.offset().top - header.height()) {
+    articleMenu.addClass('is-scrolled');
+  } else {
+    articleMenu.removeClass('is-scrolled');
+  }
 
 	scrollPrev = scrolled;
 };
@@ -214,6 +222,19 @@ $(document).on('click', '.rate__button', function () {
     $(this).nextAll('.rate__button').removeClass('filled');
     $(this).removeClass('checked');
     $(this).prevAll('.rate__button').removeClass('filled');
+  }
+  return false;
+});
+
+//меню статьи
+$(document).on('click', '.js-article-menu-toggler', function() {
+  let _this = $(this);
+  if(!_this.hasClass('is-active')){
+    $('.article-menu__links').slideDown();
+    _this.addClass('is-active');
+  }else{
+    $('.article-menu__links').slideUp();
+    _this.removeClass('is-active');
   }
   return false;
 });

@@ -445,6 +445,12 @@ ul {
 
 ol {
     list-style-position: inside;
+
+    li {
+        &::marker {
+            font-family: var(--secondary_font);
+        }
+    }
 }
 
 ul {
