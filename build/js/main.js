@@ -24,11 +24,19 @@ var resize_scroll = function(e) {
 		header.removeClass('is-out');
 	}
 
-  if(scrolled > article.offset().top - header.height()) {
-    articleMenu.addClass('is-scrolled');
-  } else {
-    articleMenu.removeClass('is-scrolled');
+  if(article.length && articleMenu.length){
+    if(scrolled > article.offset().top - header.height()) {
+      articleMenu.addClass('is-scrolled');
+    } else {
+      articleMenu.removeClass('is-scrolled');
+    }
   }
+
+  if (scrolled > scrollPrev) {
+    $('.article__sidebar-inner').removeClass('is-scrolled');
+	} else {
+    $('.article__sidebar-inner').addClass('is-scrolled');
+	}
 
 	scrollPrev = scrolled;
 };
@@ -36,6 +44,13 @@ var resize_scroll = function(e) {
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  $('.article-menu__links a').onePgaeNav({
+    wrapper: '.article-menu__links',
+    activeClass: 'is-active',
+    navStop: 150,
+	  navStart: 160
+	});
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -236,5 +251,26 @@ $(document).on('click', '.js-article-menu-toggler', function() {
     $('.article-menu__links').slideUp();
     _this.removeClass('is-active');
   }
+  return false;
+});
+
+$(document).on('click', '.article-menu__links a', function() {
+  $('.article-menu__links a').removeClass('is-active');
+  $('.article-menu__val').text($(this).text());
+  $('.js-article-menu-toggler').removeClass('is-active');
+  if($('body').width() < 1024){
+    $('.article-menu__links').slideUp();
+  }
+  $(this).addClass('is-active');
+});
+
+//форма отзывов
+$(document).on('click', '.js-comments-form-opener', function () {
+  $('.comments__form').slideDown();
+  return false;
+});
+
+$(document).on('click', '.js-comments-form-closer', function () {
+  $('.comments__form').slideUp();
   return false;
 });

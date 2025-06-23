@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page page--banner">
+<body class="page page--banner page--article">
     <div class="header-container">
         <div class="header-container__inner">
             <header class="header compensate-for-scrollbar">
@@ -811,7 +811,7 @@
             </section>
 
             <section class="article page__section">
-                <div class="article__content">
+                <div class="article__content typo-content">
                     <div class="article__links">
                         <h3>Содержание</h3>
 
@@ -825,12 +825,12 @@
                         </ul>
                     </div>
 
-                    <h2>Что такое вишлист?</h2>
+                    <h2 id="1">Что такое вишлист?</h2>
 
                     <p>Если вы делаете игру для ПК, особенно под Steam, то на определённом этапе встанет вопрос: а как её заметят игроки? Один из ответов — вишлисты. Это не панацея, но важный маркер интереса аудитории и сигнал для платформы: игру
                         ждут.</p>
 
-                    <blockquote>
+                    <blockquote class="decorated">
                         <p>Никогда не стойте на месте. Идите вперед, даже если путь кажется трудным. Главное — не останавливаться и верить в успех.</p>
                     </blockquote>
 
@@ -844,11 +844,216 @@
                         <li>Игры с высоким потенциалом</li>
                     </ul>
 
-                    <div class="responsive-video">
+                    <div class="image">
+                        <img src="images/content/content_blocks/img_14.jpg" srcset="images/content/content_blocks/img_14@2x.jpg 2x" alt="">
 
+                        <p class="image__caption">Подпись к изображению</p>
                     </div>
 
-                    <h2>Что такое вишлисты и зачем они нужны</h2>
+                    <h6 id="2">H6 Header two line words description</h6>
+
+                    <div class="trans-table">
+                        <table class="trans-table__table">
+                            <tr class="trans-table__header">
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Стоимость</th>
+                                <th></th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Прототипирование игры</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Создание базового играбельного прототипа для тестирования механик и концепции</td>
+                                    <td class="trans-table__price-block">от 50 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Геймдизайн-документ (GDD)</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Разработка подробного документа с описанием механик, баланса, сюжета и интерфейса</td>
+                                    <td class="trans-table__price-block">от 30 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Разработка механик</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Проектирование и реализация игровых механик под конкретные цели и платформы</td>
+                                    <td class="trans-table__price-block">от 40 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Нарративный дизайн</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Написание сюжета, диалогов, проработка лора и повествовательной структуры</td>
+                                    <td class="trans-table__price-block">от 25 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>UI/UX дизайн для игр</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Создание удобного и стильного пользовательского интерфейса</td>
+                                    <td class="trans-table__price-block">от 35 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Арт-дирекция и концепт-арт</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Разработка визуального стиля и концепт-арта персонажей, окружения и предметов</td>
+                                    <td class="trans-table__price-block">от 45 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Продюсирование проекта</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Ведение проекта под ключ: контроль сроков, бюджета, команды и качества</td>
+                                    <td class="trans-table__price-block">от 80 000 ₽/мес.</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Балансировка игры</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Анализ и настройка игровых систем для достижения справедливости и интересного геймплея</td>
+                                    <td class="trans-table__price-block">от 20 000 ₽</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td class="trans-table__toggler-block">
+                                        <span>Консультации по геймдизайну</span>
+                                        <span class="js-trans-table-toggler trans-table__toggler">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                            </svg>
+                                        </span>
+                                    </td>
+                                    <td>Индивидуальные сессии по проектированию и развитию игрового проекта</td>
+                                    <td class="trans-table__price-block">от 3 000 ₽/час</td>
+                                    <td>
+                                        <button class="trans-table__button button button--dark button--h_24" type="button">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#doc_icon" />
+                                            </svg>
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 id="3">Что такое вишлисты и зачем они нужны</h3>
 
                     <p>Вишлист — это список желаемого. Пользователь добавляет туда игру, чтобы не забыть про неё и купить, когда она выйдет. Чем больше таких добавлений, тем выше шансы, что игру начнут показывать другим пользователям: в подборках, в
                         рекомендациях, в рассылках. Но не всё так просто.</p>
@@ -880,77 +1085,1070 @@
                         </div>
                     </div>
 
-                    <h2>Что мы предлагаем</h2>
+                    <h4 id="4">Что мы предлагаем</h4>
 
                     <p>Мы не узкопрофильное агентство по набору вишлистов. Мы в первую очередь делаем игры на заказ. Но иногда к нам приходят с запросом «хочу больше вишлистов», и у нас есть партнёры, которые могут помочь.</p>
+
+                    <h5 id="5">О чём важно помнить</h5>
+
+                    <div class="js-audio audio">
+                        <audio src="https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"></audio>
+
+                        <button class="audio__play-pause play" type="button">
+                            <img src="images/content/content_blocks/img_15.jpg" srcset="images/content/content_blocks/img_15@2x.jpg 2x" alt="">
+
+                            <span></span>
+                        </button>
+
+                        <div class="audio__info">
+                            <h3 class="audio__title">Разбираем на примере Steam</h3>
+
+                            <div class="audio__bottom">
+                                <div class="audio__timeline">
+                                    <div class="audio__progress" style="width: 0%"></div>
+                                </div>
+
+                                <div class="audio__time">
+                                    <span class="audio__current">00:00</span> / <span class="audio__total">00:00</span>
+                                </div>
+
+                                <button class="audio__mute unmute" type="button" title="Выключить звук"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="6" class="slider slider--type_3">
+                        <div class="js-slider swiper" data-slider="slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image">
+                                        <img src="images/content/content_blocks/img_16.jpg" srcset="images/content/content_blocks/img_16@2x.jpg 2x" alt="">
+
+                                        <p class="image__caption">Подпись к изображению</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image">
+                                        <img src="images/content/content_blocks/img_16.jpg" srcset="images/content/content_blocks/img_16@2x.jpg 2x" alt="">
+
+                                        <p class="image__caption">Подпись к изображению</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="image">
+                                        <img src="images/content/content_blocks/img_16.jpg" srcset="images/content/content_blocks/img_16@2x.jpg 2x" alt="">
+
+                                        <p class="image__caption">Подпись к изображению</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-slider-pagination slider-pagination swiper-pagination" data-slider="slider"></div>
+                        </div>
+
+                        <button class="js-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="slider">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_left_24" />
+                            </svg>
+                        </button>
+
+                        <button class="js-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="slider">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right_24" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="responsive-video">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-186322004&id=456239032&hash=e7733e56ee6446cb" width="1280" height="720" frameborder="0" allowfullscreen="1"
+                          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+
+                    <p><b>Поделиться</b></p>
+
+                    <div class="share">
+                        <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg_icon" />
+                            </svg>
+                        </a>
+
+                        <a class="social-link" href="#" target="_blank" title="Мы Вконтакте" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk_2_icon" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="article__sidebar">
-                    <div class="article-menu">
-                        <div class="article-menu__top">
-                            <div>
-                                <h3>Содержание</h3>
+                    <div class="article__sidebar-inner">
+                        <div class="article-menu">
+                            <div class="article-menu__top">
+                                <div>
+                                    <h3>Содержание</h3>
 
-                                <p class="article-menu__val">Что такое вишлист в игровой индустрии.</p>
+                                    <p class="article-menu__val">Что такое вишлист в игровой индустрии.</p>
+                                </div>
+
+                                <button class="js-article-menu-toggler article-menu__toggler" type="button" title="Открыть меню">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down_light_16" />
+                                    </svg>
+                                </button>
                             </div>
 
-                            <button class="js-article-menu-toggler article-menu__toggler" type="button" title="Открыть меню">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#chevron_down_light_16" />
-                                </svg>
-                            </button>
+                            <ul class="article-menu__links">
+                                <li><a class="is-active" href="#1">Что такое вишлист в игровой индустрии.</a></li>
+                                <li><a href="#2">Зачем добавлять игры в вишлист.</a></li>
+                                <li><a href="#3">Зачем разработчикам важны вишлисты.</a></li>
+                                <li><a href="#4">Как вишлист влияет на успех игры.</a></li>
+                                <li><a href="#5">Как использовать вишлист эффективно.</a></li>
+                                <li><a href="#6">Мифы и заблуждения о вишлистах.</a></li>
+                            </ul>
                         </div>
 
-                        <ul class="article-menu__links">
-                            <li><a class="is-active" href="#">Что такое вишлист в игровой индустрии.</a></li>
-                            <li><a href="#">Зачем добавлять игры в вишлист.</a></li>
-                            <li><a href="#">Зачем разработчикам важны вишлисты.</a></li>
-                            <li><a href="#">Как вишлист влияет на успех игры.</a></li>
-                            <li><a href="#">Как использовать вишлист эффективно.</a></li>
-                            <li><a href="#">Мифы и заблуждения о вишлистах.</a></li>
-                        </ul>
+                        <h3>Популярные темы</h3>
+
+                        <div class="popular-themes">
+                            <a class="popular-theme" href="#">
+                                <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
+                                <span>
+                                    <span class="popular-theme__title">Браузерные игры</span>
+                                    <span class="popular-theme__count">16 статей</span>
+                                </span>
+                            </a>
+
+                            <a class="popular-theme" href="#">
+                                <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
+                                <span>
+                                    <span class="popular-theme__title">Промоигры</span>
+                                    <span class="popular-theme__count">16 статей</span>
+                                </span>
+                            </a>
+
+                            <a class="popular-theme" href="#">
+                                <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
+                                <span>
+                                    <span class="popular-theme__title">Мобильные игры</span>
+                                    <span class="popular-theme__count">16 статей</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <h3>Навигация по тегам</h3>
+
+                        <div class="tags">
+                            <a class="tag" href="#">Геймдизайн</a>
+                            <a class="tag" href="#">Советы</a>
+                            <a class="tag" href="#">Невероятное</a>
+                            <a class="tag" href="#">Лайфхаки</a>
+                            <a class="tag" href="#">Маркетинг</a>
+                            <a class="tag" href="#">События</a>
+                            <a class="tag" href="#">Советы</a>
+                            <a class="tag" href="#">Геймдизайн</a>
+                            <a class="tag" href="#">Лайфхаки</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Похожие статьи</h2>
+
+                <div class="articles-slider slider slider--type_2 desktop-hidden">
+                    <div class="js-articles-slider swiper" data-slider="articles_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img_3.jpg" srcset="images/content/blog/img_3@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img_3.jpg" srcset="images/content/blog/img_3@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <a class="blog-card__image" href="#">
+                                        <img src="images/content/blog/img_3.jpg" srcset="images/content/blog/img_3@2x.jpg 2x" alt="">
+                                    </a>
+                
+                                    <div class="blog-card__info">
+                                        <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                        <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                        <div class="blog-card__bottom">
+                                            <a class="blog-card__author" href="#">
+                                                <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                <span>Habr</span>
+                                            </a>
+                
+                                            <div class="blog-card__props">
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#timer_icon" />
+                                                    </svg>
+                
+                                                    <span>22 мин</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#comment_icon" />
+                                                    </svg>
+                
+                                                    <span>389</span>
+                                                </div>
+                
+                                                <div class="blog-card__prop">
+                                                    <svg class="star" aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                    </svg>
+                
+                                                    <span>4.9</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="js-articles-slider-pagination slider-pagination swiper-pagination" data-slider="articles_slider"></div>
+                    </div>
+                
+                    <button class="js-articles-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="articles_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+                
+                    <button class="js-articles-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="articles_slider">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="articles-slider articles-slider--big slider mobile-hidden">
+                    <div class="js-articles-big-slider swiper" data-slider="articles_slider_2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="blog-group">
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="swiper-slide">
+                                <div class="blog-group">
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blog-card">
+                                        <a class="blog-card__image" href="#">
+                                            <img src="images/content/blog/img.jpg" srcset="images/content/blog/img@2x.jpg 2x" alt="">
+                                        </a>
+                
+                                        <div class="blog-card__info">
+                                            <time class="blog-card__date" datetime="2024-02-18">18.02.2024</time>
+                
+                                            <h3 class="blog-card__title"><a href="#">DreamCraftStudio анонсировала мобильный хоррор с ИИ-пропсами — игра сама генерирует уровни под ваш страх</a></h3>
+                
+                                            <div class="blog-card__bottom">
+                                                <a class="blog-card__author" href="#">
+                                                    <img src="images/content/blog/author_2.svg" alt="">
+                
+                                                    <span>Habr</span>
+                                                </a>
+                
+                                                <div class="blog-card__props">
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#timer_icon" />
+                                                        </svg>
+                
+                                                        <span>22 мин</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#comment_icon" />
+                                                        </svg>
+                
+                                                        <span>389</span>
+                                                    </div>
+                
+                                                    <div class="blog-card__prop">
+                                                        <svg class="star" aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                                        </svg>
+                
+                                                        <span>4.9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="js-articles-big-slider-pagination slider-pagination swiper-pagination" data-slider="articles_slider_2"></div>
+                    </div>
+                
+                    <button class="js-articles-big-slider-prev slider-arrow swiper-button-prev" type="button" title="Назад" data-slider="articles_slider_2">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_left_24" />
+                        </svg>
+                    </button>
+                
+                    <button class="js-articles-big-slider-next slider-arrow swiper-button-next" type="button" title="Вперёд" data-slider="articles_slider_2">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#chevron_right_24" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <div class="comments">
+                    <div class="comments__top">
+                        <h2 class="comments__title"><span>Комментарии</span> <span class="comments__count">4</span></h2>
+
+                        <button class="js-comments-form-opener comments__form-opener" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#comment_icon" />
+                            </svg>
+                            <span>Комментировать</span>
+                        </button>
                     </div>
 
-                    <h3>Популярные темы</h3>
+                    <div class="comments__form-block">
+                        <button class="js-comments-form-closer comments__form-closer" type="button" title="Закрыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon" />
+                            </svg>
+                        </button>
 
-                    <div class="popular-themes">
-                        <a class="popular-theme" href="#">
-                            <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
-                            <span>
-                                <span class="popular-theme__title">Браузерные игры</span>
-                                <span class="popular-theme__count">16 статей</span>
-                            </span>
-                        </a>
+                        <form class="comments__form" action="">
+                            <div class="comments__input-block">
+                                <div class="comments__avatar">
+                                    <img src="images/content/comments/avatar.svg" alt="">
+                                </div>
 
-                        <a class="popular-theme" href="#">
-                            <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
-                            <span>
-                                <span class="popular-theme__title">Промоигры</span>
-                                <span class="popular-theme__count">16 статей</span>
-                            </span>
-                        </a>
+                                <input class="comments__input" type="text" value="" placeholder="Ваше имя">
+                            </div>
 
-                        <a class="popular-theme" href="#">
-                            <img class="popular-theme__image" src="images/content/article/img.jpg" srcset="images/content/article/img@2x.jpg 2x" alt="">
-                            <span>
-                                <span class="popular-theme__title">Мобильные игры</span>
-                                <span class="popular-theme__count">16 статей</span>
-                            </span>
-                        </a>
+                            <div class="comments__textarea-block">
+                                <textarea class="comments__textarea" placeholder="Напишите комментарий"></textarea>
+                            </div>
+
+                            <div class="rate">
+                                <div class="rate__buttons">
+                                    <button class="rate__button" type="button" title="1 балл">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <button class="rate__button" type="button" title="2 баллa">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <button class="rate__button" type="button" title="3 баллa">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <button class="rate__button" type="button" title="4 баллa">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <button class="rate__button" type="button" title="5 баллов">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="comments__form-submit button button--dark button--h_56" type="submit"><span>Отправить</span></button>
+                        </form>
                     </div>
 
-                    <h3>Навигация по тегам</h3>
+                    <div class="comments__list">
+                        <div class="comment">
+                            <div class="comment__inner">
+                                <div class="comment__left">
+                                    <div class="comment__author">
+                                        <div class="comment__author-avatar">
+                                            <img src="images/content/comments/avatar.svg" alt="">
+                                        </div>
 
-                    <div class="tags">
-                        <a class="tag" href="#">Геймдизайн</a>
-                        <a class="tag" href="#">Советы</a>
-                        <a class="tag" href="#">Невероятное</a>
-                        <a class="tag" href="#">Лайфхаки</a>
-                        <a class="tag" href="#">Маркетинг</a>
-                        <a class="tag" href="#">События</a>
-                        <a class="tag" href="#">Советы</a>
-                        <a class="tag" href="#">Геймдизайн</a>
-                        <a class="tag" href="#">Лайфхаки</a>
+                                        <div class="comment__author-info">
+                                            <p class="comment__author-name">Егор Дружинин</p>
+                                            <p class="comment__date">8 декабря 2019 в 17:04</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment__body">
+                                    <div class="comment__rating">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </div>
+
+                                    <p>Отличная статья! Особенно понравился раздел про приоритизацию хотелок — часто забываю об этом на старте проекта. Буду использовать этот подход в следующей итерации разработки, спасибо!</p>
+                                </div>
+
+                                <div class="comment__controls">
+                                    <button class="comment__like" type="button" title="Нравится">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#heart_icon" />
+                                        </svg>
+                                        <span>52</span>
+                                    </button>
+
+                                    <button class="comment__answer" type="button">
+                                        <span>Ответить</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#answer_arrow_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment comment--answer">
+                            <p class="comment__answered-to">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#answered_arrow_icon" />
+                                </svg>
+                                <span>Егор Дружинин</span>
+                            </p>
+
+                            <div class="comment__inner">
+                                <div class="comment__left">
+                                    <div class="comment__author">
+                                        <div class="comment__author-avatar">
+                                            <img src="images/content/comments/avatar.svg" alt="">
+                                        </div>
+
+                                        <div class="comment__author-info">
+                                            <p class="comment__author-name">Анастасия</p>
+                                            <p class="comment__date">8 декабря 2019 в 17:04</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment__body">
+                                    <p>Согласна, приоритизация — ключ к успеху. Я раньше тратила время на мелочи, а важное откладывала. Теперь всё строго по списку — продуктивность выросла ощутимо!</p>
+                                </div>
+
+                                <div class="comment__controls">
+                                    <button class="comment__like liked" type="button" title="Нравится">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#heart_icon" />
+                                        </svg>
+                                        <span>37</span>
+                                    </button>
+
+                                    <button class="comment__answer" type="button">
+                                        <span>Ответить</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#answer_arrow_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment__inner">
+                                <div class="comment__left">
+                                    <div class="comment__author">
+                                        <div class="comment__author-avatar">
+                                            <img src="images/content/comments/avatar.svg" alt="">
+                                        </div>
+
+                                        <div class="comment__author-info">
+                                            <p class="comment__author-name">Егор Дружинин</p>
+                                            <p class="comment__date">8 декабря 2019 в 17:04</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment__body">
+                                    <div class="comment__rating">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_filled_icon" />
+                                        </svg>
+                                    </div>
+
+                                    <p>Отличная статья! Особенно понравился раздел про приоритизацию хотелок — часто забываю об этом на старте проекта. Буду использовать этот подход в следующей итерации разработки, спасибо!</p>
+                                </div>
+
+                                <div class="comment__controls">
+                                    <button class="comment__like" type="button" title="Нравится">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#heart_icon" />
+                                        </svg>
+                                        <span>52</span>
+                                    </button>
+
+                                    <button class="comment__answer" type="button">
+                                        <span>Ответить</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#answer_arrow_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment comment--answer">
+                            <p class="comment__answered-to">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#answered_arrow_icon" />
+                                </svg>
+                                <span>Егор Дружинин</span>
+                            </p>
+
+                            <div class="comment__inner">
+                                <div class="comment__left">
+                                    <div class="comment__author">
+                                        <div class="comment__author-avatar">
+                                            <img src="images/content/comments/avatar.svg" alt="">
+                                        </div>
+
+                                        <div class="comment__author-info">
+                                            <p class="comment__author-name">Анастасия</p>
+                                            <p class="comment__date">8 декабря 2019 в 17:04</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment__body">
+                                    <p>Согласна, приоритизация — ключ к успеху. Я раньше тратила время на мелочи, а важное откладывала. Теперь всё строго по списку — продуктивность выросла ощутимо!</p>
+                                </div>
+
+                                <div class="comment__controls">
+                                    <button class="comment__like liked" type="button" title="Нравится">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#heart_icon" />
+                                        </svg>
+                                        <span>37</span>
+                                    </button>
+
+                                    <button class="comment__answer" type="button">
+                                        <span>Ответить</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#answer_arrow_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pager">
+                        <a class="pager__show-more" href="#">
+                            <span>Показать больше</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down_16" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -1433,12 +2631,10 @@
     
     <script src="js/main.js"></script>
 
-    <script src="js/single_slider.js"></script>
-    <script src="js/speech_slider.js"></script>
-    <script src="js/gallery_slider.js"></script>
-    <script src="js/big_cards_slider.js"></script>
-    <script src="js/persons_slider.js"></script>
-    <script src="js/num_cards_slider.js"></script>
+    <script src="js/onepageNav.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/articles_slider.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,477 @@
+.comments {
+    background-color: #E5F4FF;
+    border-radius: 16px;
+    padding: 16px;
+    @media(min-width: $md) {
+        border-radius: 24px;
+        padding: 40px 56px;
+    }
+    @media(min-width: $fhd) {
+        border-radius: 32px;
+        padding: 64px 96px;
+    }
+
+    &__top {
+        align-items: center;
+        border-bottom: 1px solid var(--blue_dark);
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        @media(max-width: 600px - 0.02px) {
+            flex-direction: column;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        gap: 8px;
+        line-height: 1.4;
+        margin-bottom: 0;
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+        }
+        @media(min-width: $fhd) {
+            font-size: 32px;
+            line-height: 1.25;
+        }
+    }
+
+    &__count {
+        align-items: center;
+        border-radius: 12px;
+        background-color: var(--primary);
+        color: #fff;
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        height: 24px;
+        justify-content: center;
+        min-width: 24px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    &__form-opener {
+        @include active-area;
+        @include button-reset;
+        align-items: center;
+        color: var(--primary);
+        display: flex;
+        gap: 14px;
+        font-size: 20px;
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            display: none;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    &__form-block {
+        @media(max-width: $sm - 0.02px) {
+            background-color: var(--blue_medium);
+            box-shadow: 0 0 25px rgba(0, 90, 199, 0.25);
+            border-radius: 16px 16px 0 0;
+            bottom: 0;
+            display: none;
+            left: 0;
+            position: fixed;
+            padding: 16px;
+            right: 0;
+            top: auto;
+            z-index: 2;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 48px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 72px;
+        }
+    }
+
+    &__form-closer {
+        @include active-area;
+        @include button-reset;
+        height: 24px;
+        left: auto;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        transition: color 0.3s;
+        width: 24px;
+        z-index: 1;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @media(min-width: $sm) {
+            display: none;
+        }
+
+        svg {
+            color: currentColor;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &__form {
+        @media(min-width: $sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__input-block {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8px;
+        @media(min-width: $sm) {
+            flex-grow: 1;
+            flex-direction: row;
+            margin-right: 24px;
+            margin-bottom: 16px;
+            max-width: 592px;
+            order: 1;
+        }
+    }
+
+    &__input,
+    &__textarea {
+        border: none;
+        box-shadow: none;
+        background-color: #fff;
+        border-radius: 8px;
+        height: 40px;
+        padding: 0 12px;
+        width: 100%;
+
+        &::-webkit-input-placeholder {
+            color: var(--blue_dark);
+            opacity: 1;
+        }
+
+        &::-moz-placeholder {
+            color: var(--blue_dark);
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--blue_dark);
+            opacity: 1;
+        }
+    }
+
+    &__textarea-block {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            order: 3;
+            padding-left: 48px;
+            width: 100%;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__textarea {
+        height: 80px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        resize: none;
+        margin: 0;
+        scrollbar-width: thin;
+        @media(min-width: $sm) {
+            height: 128px;
+        }
+    }
+
+    .rate {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-left: auto;
+            order: 2;
+        }
+
+        .rate__buttons {
+            justify-content: flex-start;
+        }
+
+        .rate__button {
+            height: 36px;
+            width: 36px;
+
+            svg {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+
+    &__form-submit {
+        @media(max-width: $sm - 0.02px) {
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            margin-left: 48px;
+            order: 4;
+        }
+    }
+
+    &__avatar {
+        min-width: 40px;
+        width: 40px;
+
+        img {
+            aspect-ratio: 1;
+            display: flex;
+            height: 40px;
+            object-fit: cover;
+            object-position: center;
+            width: 40px;
+        }
+    }
+
+    .pager {
+        margin-top: 24px;
+        text-align: center;
+
+        .pager__show-more {
+            background: none;
+            display: inline-flex;
+            font-weight: 600;
+        }
+    }
+}
+
+.comment {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &--answer {
+        @media(min-width: $sm) {
+            padding-left: 32px;
+        }
+        @media(min-width: $hd) {
+            padding-left: 56px;
+        }
+
+        & + .comment {
+            border-top: 1px solid var(--blue_dark);
+            padding-top: 32px;
+        }
+    }
+
+    &__inner {
+        @media(min-width: $sm) {
+            --gap: 16px;
+            align-items: flex-start;
+            display: flex;
+            gap: var(--gap);
+            justify-content: space-between;
+        }
+        @media(min-width: $sm) and (max-width: $hd - 0.02px) {
+            flex-wrap: wrap;
+        }
+        @media(min-width: $fhd) {
+            --gap: 32px;
+        }
+    }
+
+    &__left {
+        @media(max-width: $sm - 0.02px) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $sm) {
+            min-width: 270px;
+            width: 270px;
+        }
+    }
+
+    &__answered-to {
+        align-items: center;
+        color: var(--grey_dark);
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 1.28571;
+        margin-bottom: 8px;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+
+    &__author {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__author-avatar {
+        min-width: 40px;
+        width: 40px;
+
+        img {
+            aspect-ratio: 1;
+            display: flex;
+            height: 40px;
+            object-fit: cover;
+            object-position: center;
+            width: 40px;
+        }
+    }
+
+    &__author-info {
+        font-family: var(--secondary_font);
+        font-size: 14px;
+        line-height: 1.28571;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    &__author-name {
+        font-weight: 600;
+        margin-bottom: 4px;
+        max-width: 216px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__date {
+        color: var(--grey_dark);
+    }
+
+    &__body {
+        flex-grow: 1;
+        @media(max-width: $sm - 0.02px) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $sm) and (max-width: $hd - 0.02px) {
+            order: 3;
+            width: 100%;
+        }
+        @media(min-width: $hd) {
+            width: calc(100% - 270px);
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 8px;
+
+        svg {
+            fill: var(--attention);
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        font-family: var(--secondary_font);
+        font-size: 14px;
+        line-height: 1.28571;
+        gap: 16px;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    &__like {
+        @include active-area;
+        @include button-reset;
+        align-items: center;
+        background-color: var(--blue_medium);
+        border-radius: 13px;
+        display: flex;
+        gap: 8px;
+        height: 26px;
+        padding-left: 8px;
+        padding-right: 8px;
+        position: relative;
+        transition: color 0.3s;
+        z-index: 1;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @media(min-width: $fhd) {
+            border-radius: 16px;
+            height: 32px;
+        }
+
+        &.liked {
+            svg {
+                fill: var(--primary);
+                stroke: none;
+            }
+        }
+
+        svg {
+            fill: none;
+            height: 16px;
+            min-width: 16px;
+            stroke: currentColor;
+            width: 16px;
+        }
+    }
+
+    &__answer {
+        @include active-area;
+        @include button-reset;
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        height: 26px;
+        position: relative;
+        transition: color 0.3s;
+        z-index: 1;
+        @include hover {
+            color: var(--primary_hover);
+        }
+        @media(min-width: $fhd) {
+            height: 32px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+}

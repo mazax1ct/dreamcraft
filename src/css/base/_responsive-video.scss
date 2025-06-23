@@ -1,11 +1,19 @@
 .responsive-video {
     border-radius: 8px;
     height: 0;
+    margin-bottom: 40px;
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%;
     @media(min-width: $md) {
         border-radius: 16px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 48px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 
     iframe,

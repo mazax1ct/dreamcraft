@@ -1,0 +1,167 @@
+.audio {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    @media(max-width: $sm - 0.02px) {
+        border-radius: 16px;
+        background-color: var(--blue_medium);
+        padding: 16px;
+    }
+    @media(min-width: $sm) {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 48px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    & > audio {
+        display: none;
+    }
+
+    &__info {
+        @media(min-width: $sm) {
+            border-radius: 8px;
+            background-color: var(--blue_medium);
+            min-height: 128px;
+            padding: 28px 32px 28px 248px;
+        }
+    }
+
+    &__play-pause {
+        @include button-reset;
+        background-color: rgba(#005AC7, 0.43);
+        border-radius: 8px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            border-radius: 16px;
+            left: 32px;
+            margin-bottom: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 184px;
+            z-index: 1;
+        }
+        @include hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        img {
+            background-color: rgba(#005AC7, 0.43);
+            display: block;
+            mix-blend-mode: overlay;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+
+        span {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+            height: 72px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 72px;
+            z-index: 1;
+            @media(min-width: $sm) {
+                height: 44px;
+                width: 44px;
+            }
+        }
+
+        &.play {
+            span {
+                background-image: url("data:image/svg+xml,%3Csvg width='44' height='45' viewBox='0 0 44 45' fill='%23FFF' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.875 6.17026V37.9734C6.875 39.4855 8.48831 40.4507 9.82069 39.7357L39.3522 23.8884C40.7556 23.1352 40.7585 21.1236 39.3572 20.3665L9.82571 4.41067C8.49316 3.6907 6.875 4.65566 6.875 6.17026Z'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        &.pause {
+            span {
+                background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='%23FFF' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='13.4131' y='10.9082' width='15.2844' height='50.1843' rx='2'/%3E%3Crect x='43.3076' y='10.9082' width='15.2844' height='50.1843' rx='2'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin: 0;
+        @media(min-width: $fhd) {
+            font-size: 32px;
+            line-height: 1.25;
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__timeline {
+        background-color: var(--blue_dark);
+        cursor: pointer;
+        flex-grow: 1;
+        height: 4px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__progress {
+        background-color: var(--primary);
+        height: 4px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    &__time {
+        font-family: var(--secondary_font);
+        font-size: 14px;
+        line-height: 1.28571;
+        white-space: nowrap;
+        @media(min-width: $fhd) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    &__mute {
+        @include button-reset;
+        align-items: center;
+        background-position: 50% 50%;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        border: 1px solid var(--primary_pressed);
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        width: 32px;
+
+        &.unmute {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 576'%3E%3Cpath fill='%2300A3FF' d='M317.2,66.8c-4.3-2-8.6-2.8-13.2-2.8c-7.5,0-14.9,2.6-20.8,7.7l-103,119.4H48c-17.7,0-32,14.3-32,32v128c0,17.7,14.3,32,32,32h132.2l102.1,120.3c6.8,6,14.2,8.6,21.7,8.6c4.5,0,8.9-0.9,13.2-2.8c11.3-5.3,18.8-16.7,18.8-29.2V96C336,83.5,328.5,72.1,317.2,66.8z M320,479.1c0,6.2-3.7,11.9-9.3,14.5c-2.1,1.9-4.4,1.5-6.7,1.5c-3.5,0-6.8-1.1-9.6-3.2L187.5,367.1H48c-8.8,0-16-7.2-16-16v-128c0-8.8,7.2-16,16-16h139.6L294.4,82.3c2.7-2.1,6.1-3.2,9.6-3.2c2.3,0,4.6,0.5,6.7,1.5c5.6,3.5,9.3,9.2,9.3,15.4V479.1z M494.1,152.4c-3.3-2.8-8.4-2.3-11.3,1.1c-2.8,3.4-2.3,8.4,1.1,11.3c38.4,30.8,60,75.7,60,122.3s-21.6,92.4-59.2,123.3c-3.4,2.8-3.9,7.8-1.1,11.3c1.6,1.9,3.9,2.9,6.2,2.9c1.8,0,3.6-0.6,5.1-1.8c41.3-33.1,65-82.5,65-134.8S536.3,186.2,494.1,152.4z M423.2,227.5c-2.8,3.4-2.3,8.5,1.1,11.3c15.1,12.3,23.7,29.3,23.7,48.3s-8.6,37-23.7,49.3c-3.4,2.8-3.9,7.8-1.1,11.3c1.6,1.9,3.9,2.9,6.2,2.9c1.8,0,3.6-0.6,5.1-1.8c18.8-14.5,29.6-37,29.6-60.8s-10.8-46.3-29.6-61.7C431,223.6,425.9,224,423.2,227.5z'/%3E%3C/svg%3E");
+        }
+
+        &.mute {
+            background-color: var(--primary_hover);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 576'%3E%3Cpath fill='%23FFF' d='M309.2,67.3c-4.3-2-8.6-2.8-13.2-2.8c-7.5,0-14.9,2.6-20.8,7.7l-103,119.4H40c-17.7,0-32,14.3-32,32v128c0,17.7,14.3,32,32,32h132.2l102.1,120.3c5.9,5.1,13.3,7.7,20.8,7.7c4.5,0,8.9-0.9,13.2-2.8c11.3-5.2,18.8-16.7,18.8-29.2V96.4C327.1,83.9,320.5,72.5,309.2,67.3z M311.1,480.4c0,6.2-3.7,11.9-9.3,14.5c-1.2,1-3.5,1.5-6.7,1.5c-3.5,0-6.8-1.1-9.6-3.2L179.6,367.5H40c-8.8,0-16-7.2-16-16v-128c0-8.8,7.2-16,16-16h139.6L286.4,82.7c2.8-1.2,6.1-2.3,8.7-2.3c2.3,0,4.6,0.5,6.7,1.5c5.7,2.6,9.3,8.3,9.3,14.5L311.1,480.4L311.1,480.4z M499.3,287.5l66.3-66.3c3.1-3.1,3.1-8.2,0-11.3c-3.1-3.1-8.2-3.1-11.3,0L488,277.1l-66.3-66.3c-3.1-3.1-8.2-3.1-11.3,0s-3.1,8.2,0,11.3l66.3,66.3l-66.3,66.3c-3.1,3.1-3.1,8.2,0,11.3c3.1,3.1,8.2,3.1,11.3,0l66.3-66.4l66.3,66.3c3.1,3.1,8.2,3.1,11.3,0c3.1-3.1,3.1-8.2,0-11.3L499.3,287.5z'/%3E%3C/svg%3E%0A");
+        }
+    }
+}

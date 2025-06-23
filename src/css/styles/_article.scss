@@ -156,16 +156,23 @@
         z-index: 2;
     }
     @media(min-width: $md) {
+        --gap: 24px;
+        --sidebar_width: 270px;
         display: flex;
-        gap: 24px;
+        gap: var(--gap);
     }
     @media(min-width: $lg) {
-        gap: 48px;
+        --gap: 48px;
     }
 
     &__content {
+        &:not(:last-child) {
+            @media(max-width: $md - 0.02px) {
+                margin-bottom: 24px;
+            }
+        }
         @media(min-width: $md) {
-            flex-grow: 1;
+            width: calc(100% - var(--gap) - var(--sidebar_width));
         }
 
         .banner--bg_1 {
@@ -183,8 +190,8 @@
             padding-bottom: 16px;
         }
         @media(min-width: $md) {
-            min-width: 270px;
-            width: 270px;
+            min-width: var(--sidebar_width);
+            width: var(--sidebar_width);
         }
 
         h3 {
@@ -192,6 +199,21 @@
             @media(min-width: $fhd) {
                 font-size: 20px;
                 margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__sidebar-inner {
+        @media(min-width: $md) {
+            position: sticky;
+            top: 10px;
+            transition: top 0.3s;
+            z-index: 1;
+        }
+
+        &.is-scrolled {
+            @media(min-width: $md) {
+                top: 140px;
             }
         }
     }

@@ -39,4 +39,29 @@ $(document).ready(function() {
       },
     });
   });
+
+  $('.js-articles-big-slider').each(function(index, el) {
+    new Swiper(el, {
+      loop: false,
+      spaceBetween: 16,
+      slidesPerView: 1,
+
+      breakpoints: {
+        1900: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+        },
+      },
+
+      pagination: {
+        el: '.js-articles-big-slider-pagination[data-slider="'+el.dataset.slider+'"]',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.js-articles-big-slider-next[data-slider="'+el.dataset.slider+'"]',
+        prevEl: '.js-articles-big-slider-prev[data-slider="'+el.dataset.slider+'"]',
+      },
+    });
+  });
 });

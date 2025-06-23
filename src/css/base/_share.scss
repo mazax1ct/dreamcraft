@@ -1,0 +1,11 @@
+.share {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    .social-link {
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        color: var(--primary);
+    }
+}
