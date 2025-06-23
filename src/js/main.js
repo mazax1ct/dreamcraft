@@ -266,11 +266,11 @@ $(document).on('click', '.article-menu__links a', function() {
 
 //форма отзывов
 $(document).on('click', '.js-comments-form-opener', function () {
-  $('.comments__form').slideDown();
+  $('.comments__form-block').slideDown();
   return false;
 });
 
 $(document).on('click', '.js-comments-form-closer', function () {
-  $('.comments__form').slideUp();
+  $('.comments__form-block').slideUp();
   return false;
 });
