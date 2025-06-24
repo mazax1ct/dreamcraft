@@ -1,0 +1,73 @@
+.float-block {
+    align-items: center;
+    bottom: 10px;
+    display: flex;
+    gap: 8px;
+    left: auto;
+    position: fixed;
+    right: 8px;
+    top: auto;
+    z-index: 3;
+    @media(max-width: $md - 0.02px) {
+        flex-direction: column;
+    }
+}
+
+.recall,
+.to-top {
+    .arrow-button__icon {
+        height: 40px;
+        min-width: 40px;
+        width: 40px;
+    }
+}
+
+.to-top {
+    display: none;
+
+    &.is-active {
+        display: inline-flex;
+    }
+}
+
+.recall {
+    @include hover {
+        .recall__tooltip {
+            visibility: visible;
+        }
+    }
+
+    &__tooltip {
+        background-color: #fff;
+        border-radius: 8px;
+        color: var(--dark);
+        font-size: 14px;
+        font-weight: 500;
+        left: 0;
+        padding: 4px 8px;
+        position: absolute;
+        pointer-events: none;
+        touch-action: none;
+        top: 50%;
+        transform: translate(calc(-100% - 10px), -50%);
+        visibility: hidden;
+        transition: visibility 0.3s;
+        white-space: nowrap;
+        z-index: 1;
+
+        &::after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: '';
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+            border-width: 6px;
+            margin-top: -6px;
+        }
+    }
+}

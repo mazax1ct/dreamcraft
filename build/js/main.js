@@ -41,16 +41,25 @@ var resize_scroll = function(e) {
 	scrollPrev = scrolled;
 };
 
+AOS.init({
+  disable: 'mobile',
+  offset: 120,
+  delay: 100,
+  duration: 600
+});
+
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
 
-  $('.article-menu__links a').onePgaeNav({
-    wrapper: '.article-menu__links',
-    activeClass: 'is-active',
-    navStop: 150,
-	  navStart: 160
-	});
+  if($('.article-menu__links a').length){
+    $('.article-menu__links a').onePgaeNav({
+      wrapper: '.article-menu__links',
+      activeClass: 'is-active',
+      navStop: 150,
+  	  navStart: 160
+  	});
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -244,24 +253,24 @@ $(document).on('click', '.rate__button', function () {
 //меню статьи
 $(document).on('click', '.js-article-menu-toggler', function() {
   let _this = $(this);
-  if(!_this.hasClass('is-active')){
-    $('.article-menu__links').slideDown();
-    _this.addClass('is-active');
+  if(!_this.hasClass('is-active')) {
+    $('.article-menu__links').slideDown(function () {
+      _this.addClass('is-active');
+    });
   }else{
-    $('.article-menu__links').slideUp();
-    _this.removeClass('is-active');
+    $('.article-menu__links').slideUp(function () {
+      _this.removeClass('is-active');
+    });
   }
   return false;
 });
 
 $(document).on('click', '.article-menu__links a', function() {
-  $('.article-menu__links a').removeClass('is-active');
-  $('.article-menu__val').text($(this).text());
-  $('.js-article-menu-toggler').removeClass('is-active');
   if($('body').width() < 1024){
-    $('.article-menu__links').slideUp();
+    $('.article-menu__links').slideUp(function() {
+      $('.js-article-menu-toggler').removeClass('is-active');
+    });
   }
-  $(this).addClass('is-active');
 });
 
 //форма отзывов
@@ -273,4 +282,10 @@ $(document).on('click', '.js-comments-form-opener', function () {
 $(document).on('click', '.js-comments-form-closer', function () {
   $('.comments__form-block').slideUp();
   return false;
+});
+
+//to top
+$(document).on('click', '.js-to-top', function () {
+  $('html, body').animate({scrollTop: 0}, 1000);
+  return false
 });

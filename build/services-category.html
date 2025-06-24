@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#393185">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="DreamCraft" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -30,6 +27,7 @@
 
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -751,8 +749,7 @@
 
                 <div class="section-text">
                     <p>С развитием технологий каждое новое открытие становится значительным шагом вперед. Современные решения находят применение в различных сферах жизни, улучшая качество и ускоряя процессы. Важно быть в курсе последних тенденций,
-                        чтобы
-                        не упустить новые возможности.</p>
+                        чтобы не упустить новые возможности.</p>
                 </div>
 
                 <div class="catalog">
@@ -1075,7 +1072,7 @@
                         </div>
 
                         <div class="catalog__list">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img_2@2x.jpg 2x" alt="">
 
@@ -1120,7 +1117,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="400">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img_2@2x.jpg 2x" alt="">
 
@@ -1165,7 +1162,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img@2x.jpg 2x" alt="">
 
@@ -1210,7 +1207,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="200">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img_2@2x.jpg 2x" alt="">
 
@@ -1255,7 +1252,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="400">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img_2@2x.jpg 2x" alt="">
 
@@ -1300,7 +1297,7 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
                                 <div class="card__image-block">
                                     <img src="images/content/catalog/img_2.jpg" srcset="images/content/catalog/img@2x.jpg 2x" alt="">
 
@@ -1395,7 +1392,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2 class="text-center">Наши преимущества</h2>
 
                 <div class="features">
@@ -1425,7 +1422,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2>Прайс</h2>
 
                 <div class="trans-table">
@@ -1630,7 +1627,7 @@
                 </div>
             </section>
 
-            <section class="page__section page__section--bg">
+            <section class="page__section page__section--bg" data-aos="fade-up">
                 <div class="tabs">
                     <div class="title-block">
                         <div class="tabs__title is-active" data-tab="1">
@@ -2151,57 +2148,59 @@
                 </div>
             </section>
 
-            <section class="request-form request-form--stand_alone">
-                <div class="request-form__inner">
-                    <div class="request-form__left">
-                        <h2>Готовы создать свою<br> игру?</h2>
-            
-                        <div class="request-form__socials">
-                            <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#tg_icon" />
-                                </svg>
-                            </a>
-            
-                            <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#wa_icon" />
-                                </svg>
-                            </a>
+            <section class="page__section" data-aos="fade-up">
+                <section class="request-form request-form--stand_alone">
+                    <div class="request-form__inner">
+                        <div class="request-form__left">
+                            <h2>Готовы создать свою<br> игру?</h2>
+                
+                            <div class="request-form__socials">
+                                <a class="social-link" href="#" target="_blank" title="Наш Telegram" rel="nofollow noreferrer">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#tg_icon" />
+                                    </svg>
+                                </a>
+                
+                                <a class="social-link" href="#" target="_blank" title="Наш WhatsApp" rel="nofollow noreferrer">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#wa_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <div class="request-form__right">
+                            <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
+                
+                            <form class="request-form__form" action="">
+                                <div class="input-group">
+                                    <div class="required">
+                                        <input class="input" type="text" placeholder="Имя" required>
+                                    </div>
+                                </div>
+                
+                                <div class="input-group">
+                                    <div class="required">
+                                        <input class="input" type="text" placeholder="Телефон" required>
+                                    </div>
+                                </div>
+                
+                                <div class="input-group">
+                                    <div class="required">
+                                        <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
+                                    </div>
+                                </div>
+                
+                                <button class="request-form__submit button button--light button--h_56" type="submit">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#doc_icon" />
+                                    </svg>
+                                    <span>Отправить заявку</span>
+                                </button>
+                            </form>
                         </div>
                     </div>
-            
-                    <div class="request-form__right">
-                        <p class="request-form__text">Оставьте заявку, и мы свяжемся с вами для обсуждения проекта</p>
-            
-                        <form class="request-form__form" action="">
-                            <div class="input-group">
-                                <div class="required">
-                                    <input class="input" type="text" placeholder="Имя" required>
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <div class="required">
-                                    <input class="input" type="text" placeholder="Телефон" required>
-                                </div>
-                            </div>
-            
-                            <div class="input-group">
-                                <div class="required">
-                                    <textarea class="textarea" placeholder="Расскажите о вашем проекте"></textarea>
-                                </div>
-                            </div>
-            
-                            <button class="request-form__submit button button--light button--h_56" type="submit">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#doc_icon" />
-                                </svg>
-                                <span>Отправить заявку</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
+                </section>
             </section>
         </div>
     </main>
@@ -2632,6 +2631,26 @@
             </div>
     </footer>
 
+    <div class="float-block">
+        <button class="recall arrow-button" type="button">
+            <span class="recall__tooltip">Перезвоните мне</span>
+    
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+            </span>
+        </button>
+    
+        <a class="js-to-top to-top arrow-button" href="#" title="В начало страницы">
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#to_top" />
+                </svg>
+            </span>
+        </a>
+    </div>
+
     <div id="request" class="request-popup">
         <div class="request-popup__inner">
             <div class="request-form">
@@ -2679,6 +2698,8 @@
     <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/aos.js"></script>
     
     <script src="js/main.js"></script>
 

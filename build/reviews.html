@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#393185">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="DreamCraft" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -30,6 +27,7 @@
 
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -1764,6 +1762,26 @@
             </div>
     </footer>
 
+    <div class="float-block">
+        <button class="recall arrow-button" type="button">
+            <span class="recall__tooltip">Перезвоните мне</span>
+    
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+            </span>
+        </button>
+    
+        <a class="js-to-top to-top arrow-button" href="#" title="В начало страницы">
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#to_top" />
+                </svg>
+            </span>
+        </a>
+    </div>
+
     <div id="request" class="request-popup">
         <div class="request-popup__inner">
             <div class="request-form">
@@ -1811,6 +1829,8 @@
     <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/aos.js"></script>
     
     <script src="js/main.js"></script>
 </body>

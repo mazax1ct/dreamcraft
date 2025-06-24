@@ -101,6 +101,34 @@
         }
     }
 
+    &--bg_5 {
+        .banner__inner {
+            background-image: url("../images/backgrounds/banners/banner_4_mobile.svg");
+            background-position: 50% 0;
+            @media(min-width: $md) {
+                background-image: url("../images/backgrounds/banners/banner_5_desktop.svg");
+                background-position: 100% 0;
+                background-size: cover;
+            }
+        }
+
+        .banner__columns--reverse {
+            .banner__column {
+                &:first-child {
+                    @media(min-width: $md) {
+                        width: calc(35% - 48px / 2);
+                    }
+                }
+
+                &:last-child {
+                    @media(min-width: $md) {
+                        width: calc(65% - 48px / 2);
+                    }
+                }
+            }
+        }
+    }
+
     .big-text {
         font-size: 18px;
         font-weight: 500;

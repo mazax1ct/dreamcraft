@@ -10,15 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#393185">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="DreamCraft" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 
     <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -30,6 +27,7 @@
 
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -786,7 +784,7 @@
                 </div>
             </section>
 
-            <section class="page__section page__section--section_decor_1">
+            <section class="page__section page__section--section_decor_1" data-aos="fade-up">
                 <h2>Наши проекты</h2>
 
                 <div class="big-cards-slider slider slider--type_1">
@@ -941,13 +939,13 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2>Тарифы</h2>
 
                 <div class="tarifs-slider">
                     <div class="js-tarifs-slider swiper" data-slider="tarifs_slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                                 <div class="tarif tarif--light">
                                     <div class="tarif__inner">
                                         <h3 class="tarif__title">Minimum</h3>
@@ -966,7 +964,7 @@
                                 </div>
                             </div>
                 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
                                 <div class="tarif tarif--light">
                                     <div class="tarif__inner">
                                         <h3 class="tarif__title">Standart</h3>
@@ -987,7 +985,7 @@
                                 </div>
                             </div>
                 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="600">
                                 <div class="tarif tarif--dark">
                                     <div class="tarif__badge">Оптимальный</div>
                 
@@ -1011,7 +1009,7 @@
                                 </div>
                             </div>
                 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up" data-aos-delay="800">
                                 <div class="tarif tarif--light">
                                     <div class="tarif__inner">
                                         <h3 class="tarif__title">Ultimate</h3>
@@ -1050,7 +1048,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2 class="text-center">Наши преимущества</h2>
 
                 <div class="features">
@@ -1080,7 +1078,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2>Команда</h2>
 
                 <div class="persons-slider persons-slider--big slider slider--type_2">
@@ -1494,7 +1492,7 @@
                 </div>
             </section>
 
-            <section class="page__section page__section--bg">
+            <section class="page__section page__section--bg" data-aos="fade-up">
                 <div class="tabs">
                     <div class="title-block">
                         <div class="tabs__title is-active" data-tab="1">
@@ -2015,7 +2013,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <h2>Дополнительные услуги</h2>
 
                 <div class="services-cards-slider slider slider--type_2">
@@ -2189,13 +2187,14 @@
                 </div>
             </section>
 
-            <section class="page__section page__section--clouds">
+            <section class="page__section page__section--clouds" data-aos="fade-up">
                 <div class="cloud cloud--type_5 cloud--bottom cloud--ltr cloud--move"></div>
                 <div class="cloud cloud--type_5 cloud--rtl cloud--move"></div>
+
                 <div class="content-block content-block--type_2">
                     <h2>Частые вопросы</h2>
                 
-                    <div class="content-block__image">
+                    <div class="content-block__image" data-aos-delay="600" data-aos="zoom-in">
                         <img src="images/content/content_blocks/img_9.png" srcset="images/content/content_blocks/img_9@2x.png 2x" alt="">
                     </div>
                 
@@ -2261,7 +2260,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <div class="stages">
                     <div class="tabs stages__inner">
                         <h2>Этапы разработки</h2>
@@ -2440,7 +2439,7 @@
                 </div>
             </section>
 
-            <section class="page__section">
+            <section class="page__section" data-aos="fade-up">
                 <section class="request-form request-form--stand_alone">
                     <div class="request-form__inner">
                         <div class="request-form__left">
@@ -2923,6 +2922,26 @@
             </div>
     </footer>
 
+    <div class="float-block">
+        <button class="recall arrow-button" type="button">
+            <span class="recall__tooltip">Перезвоните мне</span>
+    
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#phone_icon" />
+                </svg>
+            </span>
+        </button>
+    
+        <a class="js-to-top to-top arrow-button" href="#" title="В начало страницы">
+            <span class="arrow-button__icon">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#to_top" />
+                </svg>
+            </span>
+        </a>
+    </div>
+
     <div id="request" class="request-popup">
         <div class="request-popup__inner">
             <div class="request-form">
@@ -2970,6 +2989,8 @@
     <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/aos.js"></script>
     
     <script src="js/main.js"></script>
 

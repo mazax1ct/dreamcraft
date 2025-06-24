@@ -282,7 +282,8 @@
     <symbol id="answered_arrow_icon" viewBox="0 0 16 16">
       <path d="M11,3v1H4.7l8.3,8.3L12.3,13L4,4.7V11H3V3H11z"/>
     </symbol>
-    <symbol id="" viewBox="0 0 24 24">
+    <symbol id="to_top" viewBox="0 0 24 24">
+      <path d="M19.6,11.4l-0.8,0.8l-6-6v14h-1.2V5.9l-6.3,6.3l-0.8-0.8L12,3.8L19.6,11.4z"/>
     </symbol>
     <symbol id="" viewBox="0 0 24 24">
     </symbol>
