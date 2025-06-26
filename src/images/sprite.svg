@@ -285,66 +285,10 @@
     <symbol id="to_top" viewBox="0 0 24 24">
       <path d="M19.6,11.4l-0.8,0.8l-6-6v14h-1.2V5.9l-6.3,6.3l-0.8-0.8L12,3.8L19.6,11.4z"/>
     </symbol>
-    <symbol id="" viewBox="0 0 24 24">
+    <symbol id="chevron_left_20" viewBox="0 0 20 20">
+      <path d="M13.1,2.4l1.4,1.4L8.3,10l6.2,6.2l-1.4,1.4L5.5,10L13.1,2.4z"/>
     </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
-    </symbol>
-    <symbol id="" viewBox="0 0 24 24">
+    <symbol id="chevron_right_20" viewBox="0 0 20 20">
+      <path d="M6.9,17.6l-1.4-1.4l6.2-6.2L5.5,3.8l1.4-1.4l7.6,7.6L6.9,17.6z"/>
     </symbol>
 </svg>

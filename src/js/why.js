@@ -10,7 +10,7 @@ function changeImage(el) {
   }
 }
 
-$(document).on('click', '.js-why-toggler', function() {
+/*$(document).on('click', '.js-why-toggler', function() {
   let _this = $(this).closest('.why');
   if(!_this.hasClass('is-active')){
     _this.closest('.why-block').find('.why').removeClass('is-active');
@@ -23,9 +23,50 @@ $(document).on('click', '.js-why-toggler', function() {
     _this.find('.why__body').slideUp();
   }
   return false;
-});
+});*/
 
 $(document).ready(function() {
+  if($('body').width() > 1024) {
+    var options_1 = {
+      threshold: 1
+    }
+
+    var observer_1 = new IntersectionObserver(callback_1, options_1);
+
+    var target_1 = document.querySelector('.why-block');
+
+    observer_1.observe(target_1);
+
+    function callback_1(entries, observer_1) {
+      if(entries[0].isIntersecting){
+        observer_1.disconnect();
+
+        $('.why:first').addClass('is-active').find('.why__body').slideDown();
+
+        setInterval(function () {
+          let _first = $('.why.is-active');
+          if(_first.next('.why').length) {
+            _first.next('.why').addClass('is-active');
+            _first.next('.why').find('.why__body').slideDown();
+
+            _first.removeClass('is-active');
+            _first.find('.why__body').slideUp();
+
+          } else {
+            $('.why').removeClass('is-active');
+            $('.why').find('.why__body').slideUp();
+
+            $('.why:first').addClass('is-active');
+            $('.why:first').find('.why__body').slideDown();
+          }
+
+          changeImage($('.why.is-active'));
+
+        }, 4000);
+      }
+    }
+  }
+
   if($('body').width() < 1024) {
     $('.js-why-slider').each(function(index, el) {
       new Swiper(el, {

@@ -30,6 +30,23 @@
         font-size: 24px;
     }
 
+    &--light {
+        .arrow-button__icon {
+            background-color: var(--blue_light);
+            @include hover {
+                background-color: var(--blue_light);
+            }
+
+            &::before {
+                display: none;
+            }
+
+            svg {
+                fill: var(--primary);
+            }
+        }
+    }
+
     &__icon {
         align-items: center;
         border-radius: 50%;

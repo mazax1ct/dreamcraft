@@ -41,6 +41,9 @@
             height: 24px;
             min-width: 24px;
             width: 24px;
+            @media(min-width: $fhd) {
+                transform: translateY(-4px);
+            }
         }
     }
 }
@@ -68,6 +71,30 @@ h2 + .links-cards-slider {
 
         .link-card {
             height: 100%;
+        }
+    }
+
+    .slider-arrow {
+        background-color: var(--primary);
+        height: 36px;
+        width: 36px;
+
+        &.swiper-button-prev {
+            @media(min-width: $lg) {
+                left: -52px;
+            }
+        }
+
+        &.swiper-button-next {
+            @media(min-width: $lg) {
+                right: -52px;
+            }
+        }
+
+        svg {
+            fill: #fff;
+            height: 20px;
+            width: 20px;
         }
     }
 }

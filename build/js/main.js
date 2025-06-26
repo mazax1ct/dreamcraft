@@ -10,12 +10,12 @@ var resize_scroll = function(e) {
 
   if (scrolled > header.height() * 2) {
 		header.addClass('is-scrolled');
-    toTop.addClass('is-active');
+    toTop.addClass('is-show');
 	}
 
   if (scrolled == 0) {
 		header.removeClass('is-scrolled');
-    toTop.removeClass('is-active');
+    toTop.removeClass('is-show');
 	}
 
   if (scrolled > header.height() && scrolled > scrollPrev) {
@@ -286,6 +286,15 @@ $(document).on('click', '.js-comments-form-closer', function () {
 
 //to top
 $(document).on('click', '.js-to-top', function () {
-  $('html, body').animate({scrollTop: 0}, 1000);
+  let _this = $(this);
+  if(!_this.hasClass('is-active')) {
+    _this.addClass('is-active');
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000, function () {
+      _this.removeClass('is-active');
+    });
+  }
+
   return false
 });

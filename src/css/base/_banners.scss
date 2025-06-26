@@ -39,6 +39,10 @@
                 background-position: 100% 0;
                 background-size: 55% auto;
             }
+            @media(min-width: $fhd) {
+                background-position: 106% 0;
+                background-size: 60% auto;
+            }
         }
     }
 

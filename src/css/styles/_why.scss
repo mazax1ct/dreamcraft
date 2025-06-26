@@ -21,9 +21,28 @@
         .why__toggler {
             color: var(--primary);
         }
+
+        .why__progress {
+            animation: widthChange 3.8s linear;
+        }
     }
 
-    &::after {
+    &__progress-bar {
+        bottom: 0;
+        height: 2px;
+        left: 40px;
+        position: absolute;
+        top: auto;
+        width: calc(100% - 80px);
+        z-index: 1;
+    }
+
+    &__progress {
+        background-color: var(--primary);
+        height: 2px;
+        width: 0;
+    }
+    /*&::after {
         bottom: 0;
         background-color: var(--primary);
         content: '';
@@ -35,11 +54,11 @@
         transition: opacity 0.3s;
         width: 140px;
         z-index: 1;
-    }
-
+    }*/
     &__toggler {
         @include button-reset;
         align-items: center;
+        cursor: default;
         display: flex;
         gap: 8px;
         font-size: 18px;
@@ -53,12 +72,11 @@
         @media(min-width: $fhd) {
             font-size: 24px;
         }
-        @include hover {
+        /*@include hover {
             &:not(.is-active) {
                 color: var(--primary_hover);
             }
-        }
-
+        }*/
         &.is-active {
             color: var(--primary);
         }
@@ -74,6 +92,15 @@
     &__body {
         display: none;
         padding-bottom: 8px;
+    }
+}
+@keyframes widthChange {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
     }
 }
 

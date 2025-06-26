@@ -9,7 +9,7 @@
     top: auto;
     z-index: 3;
     @media(max-width: $md - 0.02px) {
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 }
 
@@ -25,7 +25,7 @@
 .to-top {
     display: none;
 
-    &.is-active {
+    &.is-show {
         display: inline-flex;
     }
 }

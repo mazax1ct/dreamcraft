@@ -2,6 +2,7 @@
     background-color: var(--blue_light);
     @media(min-width: $md) {
         display: flex;
+        gap: 32px;
     }
 
     &--type_1 {

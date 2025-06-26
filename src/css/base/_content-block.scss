@@ -29,6 +29,7 @@
                 filter: blur(175px);
                 height: 448px;
                 left: 50%;
+                opacity: 0.9;
                 pointer-events: none;
                 position: absolute;
                 top: 50%;
@@ -37,10 +38,9 @@
                 width: 216px;
                 z-index: 0;
                 @media(min-width: $fhd) {
-                    width: 80%;
                     height: 80%;
-                    opacity: 0.9;
                     transform: translate(-50%, -50%) rotate(130deg);
+                    width: 80%;
                 }
             }
         }
@@ -52,6 +52,9 @@
             h1,
             h2 {
                 margin-bottom: 24px;
+                @media(min-width: $fhd) {
+                    margin-bottom: 40px;
+                }
             }
 
             .big-text {
@@ -117,6 +120,7 @@
                 filter: blur(175px);
                 height: 448px;
                 left: 50%;
+                opacity: 0.9;
                 pointer-events: none;
                 position: absolute;
                 top: 50%;
@@ -125,10 +129,9 @@
                 width: 216px;
                 z-index: 0;
                 @media(min-width: $fhd) {
-                    width: 80%;
                     height: 80%;
-                    opacity: 0.9;
                     transform: translate(-50%, -50%) rotate(131deg);
+                    width: 80%;
                 }
             }
         }

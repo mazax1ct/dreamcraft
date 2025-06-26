@@ -160,11 +160,11 @@
         flex-direction: column;
 
         &--mobile {
-            flex-wrap: wrap;
-
-            & > * {
+            //flex-wrap: wrap;
+            flex-direction: row;
+            /*& > * {
                 width: calc(100% / 2 - 8px / 2);
-            }
+            }*/
         }
 
         & > * {
