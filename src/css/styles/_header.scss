@@ -31,7 +31,15 @@
 
         &.is-scrolled {
             color: var(--dark);
+
+            .header__top {
+                border-bottom-color: var(--blue_medium);
+            }
         }
+    }
+
+    .header__top {
+        border-bottom-color: rgba(#fff, 0.30);
     }
 }
 

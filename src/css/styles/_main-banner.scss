@@ -1,19 +1,22 @@
 .main-banner {
     background: linear-gradient(180.85deg, #0045A2 0.72%, #2FA5E6 59.84%, #BCE2F9 83.27%, #EFF8FF 99.26%);
     color: #fff;
+    display: flex;
     min-height: 100dvh;
     margin-left: calc(0.02px - var(--container_padding));
     margin-right: calc(0.02px - var(--container_padding));
-    padding-bottom: 24px;
-    padding-top: 180px;
     position: relative;
     z-index: 1;
-    @media(min-width: $md) {
-        padding-bottom: 100px;
-    }
     @media(min-width: 1248px) {
         margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
         margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media(min-width: $fhd) {
+            margin-bottom: 32px;
+        }
     }
 
     picture {
@@ -34,11 +37,23 @@
     }
 
     &__inner {
-        padding-left: var(--container_padding);
-        padding-right: var(--container_padding);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+        padding: 90px var(--container_padding) 24px;
         position: relative;
         text-align: center;
+        width: 100%;
         z-index: 1;
+        @media(min-width: $sm) {
+            justify-content: center;
+            padding-top: 180px;
+        }
+        @media(min-width: $md) {
+            padding-bottom: 100px;
+        }
     }
 
     &__girl {
@@ -46,7 +61,7 @@
         height: 269px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 48px;
+        margin-bottom: 40px;
         animation: moveUpDown 3s ease-in-out infinite;
         width: 131px;
         @media(min-width: $md) {

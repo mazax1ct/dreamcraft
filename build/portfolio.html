@@ -732,7 +732,16 @@
 
     <main class="page__content">
         <div class="container">
-            <section class="page__section">
+            <section class="page__section page__section--clouds">
+                <div class="cloud cloud--type_1 cloud--ltr cloud--move cloud--bottom"></div>
+
+                <a class="back-link" href="#">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_left_light_24" />
+                    </svg>
+                    <span>Назад</span>
+                </a>
+
                 <div class="title-block">
                     <h1>Портфолио</h1>
 
@@ -1373,7 +1382,9 @@
                 </div>
             </section>
 
-            <section class="page__section" data-aos="fade-up">
+            <section class="page__section page__section--clouds" data-aos="fade-up">
+                <div class="cloud cloud--type_5 cloud--rtl cloud--move"></div>
+
                 <h2 class="text-center">Наши преимущества</h2>
 
                 <div class="features">
@@ -1403,7 +1414,9 @@
                 </div>
             </section>
 
-            <section class="page__section" data-aos="fade-up">
+            <section class="page__section page__section--clouds" data-aos="fade-up">
+                <div class="cloud cloud--type_1 cloud--delay_10 cloud--rtl cloud--move"></div>
+
                 <h2>Прайс</h2>
 
                 <div class="trans-table">
@@ -1609,7 +1622,7 @@
             </section>
 
             <section class="page__section page__section--bg" data-aos="fade-up">
-                <div class="tabs">
+                <div class="tabs reviews-tabs">
                     <div class="title-block">
                         <div class="tabs__title is-active" data-tab="1">
                             <h2>Отзывы наших клиентов</h2>
@@ -2178,6 +2191,10 @@
                                     </svg>
                                     <span>Отправить заявку</span>
                                 </button>
+                
+                                <div class="request-form__note">
+                                    Нажимая на кнопку «Оставить заявку», вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a>
+                                </div>
                             </form>
                         </div>
                     </div>

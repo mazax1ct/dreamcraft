@@ -45,7 +45,8 @@ AOS.init({
   disable: 'mobile',
   offset: 120,
   delay: 100,
-  duration: 600
+  duration: 600,
+  once: true
 });
 
 $(document).ready(function() {
@@ -282,19 +283,4 @@ $(document).on('click', '.js-comments-form-opener', function () {
 $(document).on('click', '.js-comments-form-closer', function () {
   $('.comments__form-block').slideUp();
   return false;
-});
-
-//to top
-$(document).on('click', '.js-to-top', function () {
-  let _this = $(this);
-  if(!_this.hasClass('is-active')) {
-    _this.addClass('is-active');
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1000, function () {
-      _this.removeClass('is-active');
-    });
-  }
-
-  return false
 });

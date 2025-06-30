@@ -119,4 +119,17 @@
             width: 100%;
         }
     }
+
+    &__note {
+        font-family: var(--secondary_font);
+        font-size: 10px;
+        margin-top: 15px;
+        @media(min-width: $fhd) {
+            font-size: 12px;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
 }

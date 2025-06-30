@@ -69,6 +69,14 @@ html {
             margin-bottom: var(--section_vertical_gap);
         }
 
+        &--mb_24 {
+            &:not(:last-child) {
+                @media(max-width: $sm - 0.02px) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
         &--bg {
             @media(min-width: $lg) {
                 padding-top: 64px;
@@ -232,7 +240,6 @@ html {
         .cloud {
             background-position: 0 0;
             background-repeat: no-repeat;
-            left: 0;
             position: absolute;
             top: -50px;
             z-index: 0;
@@ -254,12 +261,27 @@ html {
                 animation-duration: 100s;
                 animation-name: moveLeftToRight;
                 animation-timing-function: linear;
+                left: 0;
             }
 
             &--rtl {
                 animation-duration: 100s;
                 animation-name: moveRightToLeft;
                 animation-timing-function: linear;
+                left: auto;
+                right: 0;
+            }
+
+            &--delay_10 {
+                animation-delay: 10s;
+
+                &.cloud--ltr {
+                    transform: translateX(-200%);
+                }
+
+                &.cloud--rtl {
+                    transform: translateX(200%);
+                }
             }
 
             &--type_1 {
@@ -467,13 +489,30 @@ ul {
 ol {
     list-style-position: inside;
 
-    li {
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
+    &:not([class]) {
+        counter-reset: num;
+        list-style: none;
 
-        &::marker {
-            font-family: var(--secondary_font);
+        li {
+            padding-left: 40px;
+            position: relative;
+            z-index: 1;
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            &::before {
+                content: counter(num) '.';
+                counter-increment: num;
+                display: inline-block;
+                font-family: var(--secondary_font);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 32px;
+                text-align: center;
+            }
         }
     }
 }

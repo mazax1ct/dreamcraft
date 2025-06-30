@@ -238,3 +238,12 @@
         }
     }
 }
+
+.reviews-tabs {
+    @media(min-width: $md) {
+        min-height: 450px;
+    }
+    @media(min-width: $fhd) {
+        min-height: 540px;
+    }
+}

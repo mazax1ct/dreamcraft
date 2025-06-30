@@ -98,6 +98,12 @@
         @media(min-width: $fhd) {
             padding: 48px 48px 48px 0;
         }
+
+        & > .button {
+            @media(min-width: $md) {
+                display: none;
+            }
+        }
     }
 
     &__text {
@@ -225,6 +231,10 @@
     &__more {
         @media(min-width: $md) {
             display: none;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
         }
     }
 }

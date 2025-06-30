@@ -107,6 +107,9 @@
         display: flex;
         flex-wrap: wrap;
         gap: 16px 32px;
+        @media(max-width: $sm - 0.02px) {
+            flex-direction: column;
+        }
         @media(min-width: $fhd) {
             gap: 24px 60px;
         }

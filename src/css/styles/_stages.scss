@@ -173,6 +173,12 @@
             min-width: 37.4%;
             width: 37.4%;
         }
+        @media(min-width: $hd) {
+            min-height: 420px;
+        }
+        @media(min-width: $fhd) {
+            min-height: 460px;
+        }
 
         img {
             display: block;
