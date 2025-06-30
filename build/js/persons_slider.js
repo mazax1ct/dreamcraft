@@ -51,12 +51,14 @@ $(document).ready(function() {
       breakpoints: {
         1024: {
           centeredSlides: true,
+          initialSlide: 1,
           slidesPerView: 'auto',
           spaceBetween: 16,
           slidesOffsetBefore: 0,
           slidesOffsetAfter: 0,
         },
         1900: {
+          initialSlide: 1,
           centeredSlides: true,
           slidesPerView: 'auto',
           spaceBetween: 24,
